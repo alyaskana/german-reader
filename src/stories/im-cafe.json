@@ -96,6 +96,5 @@
     "lange": "долго",
     "guter": "хороший (gut)",
     "tag": "день"
-  },
-  "cover": "<svg viewBox='0 0 640 360' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='360' fill='#f3e7d7'/><rect x='60' y='50' width='220' height='170' rx='10' fill='#bcd4dc'/><line x1='60' y1='135' x2='280' y2='135' stroke='#faf7f2' stroke-width='6'/><line x1='170' y1='50' x2='170' y2='220' stroke='#faf7f2' stroke-width='6'/><g stroke='#8fb3bf' stroke-width='5' stroke-linecap='round'><line x1='95' y1='70' x2='80' y2='115'/><line x1='135' y1='90' x2='120' y2='135'/><line x1='225' y1='65' x2='210' y2='110'/><line x1='255' y1='150' x2='240' y2='195'/></g><rect x='0' y='250' width='640' height='110' fill='#a9805b'/><rect x='330' y='170' width='230' height='80' rx='14' fill='#faf7f2'/><rect x='420' y='120' width='90' height='62' rx='10' fill='#d9534f'/><path d='M510 132 h20 a16 16 0 0 1 0 32 h-20' fill='none' stroke='#d9534f' stroke-width='10'/><g stroke='#c96f6c' stroke-width='6' stroke-linecap='round' fill='none'><path d='M440 100 q6 -14 0 -26'/><path d='M465 104 q6 -14 0 -26'/><path d='M490 100 q6 -14 0 -26'/></g><circle cx='120' cy='300' r='26' fill='#e8b84b'/><rect x='108' y='322' width='24' height='38' fill='#2c2825' opacity='0'/></svg>"
+  }
 }

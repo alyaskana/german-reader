@@ -99,6 +99,5 @@
     "kranksein": "болезнь, быть больным (das Kranksein)",
     "nur": "только, лишь",
     "halb": "наполовину"
-  },
-  "cover": "<svg viewBox='0 0 640 360' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='360' fill='#eef3f4'/><rect x='70' y='70' width='190' height='230' rx='14' fill='#faf7f2' stroke='#d8dfe1' stroke-width='4'/><rect x='125' y='50' width='80' height='40' rx='8' fill='#bcd4dc'/><g stroke='#c7ced1' stroke-width='8' stroke-linecap='round'><line x1='100' y1='150' x2='230' y2='150'/><line x1='100' y1='190' x2='230' y2='190'/><line x1='100' y1='230' x2='190' y2='230'/></g><circle cx='430' cy='170' r='95' fill='#fbeeed'/><rect x='410' y='115' width='40' height='110' rx='8' fill='#d9534f'/><rect x='375' y='150' width='110' height='40' rx='8' fill='#d9534f'/><path d='M300 300 q40 -35 80 0 q40 35 80 0' fill='none' stroke='#7fa98c' stroke-width='10' stroke-linecap='round'/><circle cx='545' cy='300' r='16' fill='#e8b84b'/></svg>"
+  }
 }
