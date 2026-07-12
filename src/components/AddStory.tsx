@@ -46,7 +46,7 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
       <ol className="add-steps">
         <li>
           Скопируй промпт — в нём уже твои оценки сложности, слова, которые ты учишь, и слова,
-          которые ты уже выучила.
+          которые ты уже знаешь.
         </li>
         <li>
           Вставь его в{' '}
