@@ -1,5 +1,6 @@
 import type { Feedback, Story } from '../lib/types'
 import { storyWordCount } from '../lib/parse'
+import { coverSrc } from '../lib/cover'
 
 interface Props {
   stories: Story[]
@@ -19,6 +20,7 @@ export function StoryList({ stories, feedback, onOpen, onAdd }: Props) {
           return (
             <li key={s.id}>
               <button type="button" className="story-card" onClick={() => onOpen(s.id)}>
+                {s.cover && <img className="story-thumb" src={coverSrc(s.cover)} alt="" />}
                 <span className="story-card-main">
                   <span className="story-title">
                     {s.title}

@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
+import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
 import { WordPopover } from './WordPopover'
 
@@ -81,6 +82,8 @@ export function StoryReader({
       <p className="subtitle">
         {story.titleRu} · {story.level} · {wordCount} слов
       </p>
+
+      {story.cover && <img className="reader-cover" src={coverSrc(story.cover)} alt="" />}
 
       <div className="text">
         {paragraphs.map((tokens, pi) => (

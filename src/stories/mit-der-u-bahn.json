@@ -87,5 +87,6 @@
     "u3": "U3 — линия метро",
     "münchen": "Мюнхен",
     "marienplatz": "Мариенплац (площадь в центре Мюнхена)"
-  }
+  },
+  "cover": "<svg viewBox='0 0 640 360' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='360' fill='#2f3a44'/><path d='M0 360 a640 640 0 0 1 640 0 z' fill='#3d4a56'/><rect x='170' y='90' width='300' height='230' rx='26' fill='#f3f0ea'/><rect x='200' y='120' width='240' height='90' rx='12' fill='#8fb3bf'/><line x1='320' y1='120' x2='320' y2='210' stroke='#f3f0ea' stroke-width='8'/><rect x='200' y='240' width='240' height='40' rx='8' fill='#d9534f'/><circle cx='240' cy='305' r='12' fill='#e8b84b'/><circle cx='400' cy='305' r='12' fill='#e8b84b'/><rect x='60' y='40' width='70' height='70' rx='12' fill='#2464a4'/><text x='95' y='92' font-family='Arial, sans-serif' font-size='52' font-weight='bold' fill='#ffffff' text-anchor='middle'>U</text><g stroke='#5a6874' stroke-width='10' stroke-linecap='round'><line x1='30' y1='340' x2='180' y2='340'/><line x1='460' y1='340' x2='610' y2='340'/></g></svg>"
 }

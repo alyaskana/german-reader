@@ -85,5 +85,6 @@
     "ja": "да",
     "sagt": "говорит (sagen)",
     "ohne": "без"
-  }
+  },
+  "cover": "<svg viewBox='0 0 640 360' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='360' fill='#dcebe2'/><circle cx='530' cy='80' r='46' fill='#e8b84b'/><ellipse cx='190' cy='150' rx='95' ry='75' fill='#7fa98c'/><ellipse cx='120' cy='185' rx='55' ry='45' fill='#8fb794'/><rect x='178' y='210' width='24' height='70' rx='6' fill='#a9805b'/><rect x='0' y='270' width='640' height='90' fill='#bcd7c4'/><g fill='#2c2825'><rect x='370' y='210' width='170' height='16' rx='8'/><rect x='378' y='240' width='14' height='50' rx='6'/><rect x='518' y='240' width='14' height='50' rx='6'/><rect x='370' y='180' width='170' height='14' rx='7'/></g><circle cx='300' cy='305' r='18' fill='#d9534f'/><path d='M60 320 q18 -22 36 0' fill='none' stroke='#faf7f2' stroke-width='7' stroke-linecap='round'/></svg>"
 }

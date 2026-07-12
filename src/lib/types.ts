@@ -6,6 +6,8 @@ export interface Story {
   paragraphs: string[]
   /** contextual translations for every word of the text (lowercased keys) */
   dict?: Record<string, string>
+  /** cover illustration: inline SVG markup, rendered via <img> data URI */
+  cover?: string
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
 }

@@ -26,6 +26,13 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
   )
     return { error: 'Поле "paragraphs" должно быть непустым массивом строк.' }
 
+  let cover: string | undefined
+  if (s.cover !== undefined) {
+    if (typeof s.cover !== 'string' || !s.cover.trim().startsWith('<svg'))
+      return { error: 'Поле "cover" должно быть строкой с SVG-разметкой (<svg ...>...</svg>).' }
+    cover = s.cover.trim()
+  }
+
   let dict: Record<string, string> | undefined
   if (s.dict !== undefined) {
     if (
@@ -57,6 +64,7 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       level: typeof s.level === 'string' && s.level.trim() ? s.level.trim() : 'A1',
       paragraphs: s.paragraphs as string[],
       dict,
+      cover,
       custom: true,
     },
   }
