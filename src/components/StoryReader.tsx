@@ -3,6 +3,7 @@ import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, storyWordCount } from '../lib/parse'
 import { isSaved, setFeedback, toggleWord } from '../lib/storage'
 import { GlossWord } from './GlossWord'
+import { WordPopover } from './WordPopover'
 
 interface Props {
   story: Story
@@ -19,6 +20,7 @@ interface ActiveWord {
   key: string
   word: string
   gloss: string
+  anchor: HTMLElement
 }
 
 const FEEDBACK_OPTIONS: { value: Feedback; label: string; emoji: string }[] = [
@@ -41,13 +43,8 @@ export function StoryReader({
   const paragraphs = useMemo(() => story.paragraphs.map(parseParagraph), [story])
   const wordCount = useMemo(() => storyWordCount(story), [story])
 
-  function tapWord(key: string, word: string, gloss: string) {
-    setActive((cur) => (cur?.key === key ? null : { key, word, gloss }))
-  }
-
-  function toggleSaveActive() {
-    if (!active) return
-    onWordsChange(toggleWord(active.word, active.gloss, story.id))
+  function tapWord(key: string, word: string, gloss: string, anchor: HTMLElement) {
+    setActive((cur) => (cur?.key === key ? null : { key, word, gloss, anchor }))
   }
 
   return (
@@ -60,7 +57,7 @@ export function StoryReader({
           type="button"
           className="mode-toggle"
           onClick={() => onModeChange(mode === 'always' ? 'tap' : 'always')}
-          title="Показывать переводы всегда или только по тапу"
+          title="Показывать переводы рядом со словами или только по тапу"
         >
           {mode === 'always' ? 'Переводы: видны' : 'Переводы: по тапу'}
         </button>
@@ -71,7 +68,7 @@ export function StoryReader({
         {story.titleRu} · {story.level} · {wordCount} слов
       </p>
 
-      <div className="text" onClick={(e) => e.target === e.currentTarget && setActive(null)}>
+      <div className="text">
         {paragraphs.map((tokens, pi) => (
           <p key={pi}>
             {tokens.map((t, ti) => {
@@ -82,10 +79,10 @@ export function StoryReader({
                   key={ti}
                   word={t.word}
                   gloss={t.gloss}
-                  showGloss={mode === 'always' || active?.key === key}
+                  showInline={mode === 'always'}
                   saved={isSaved(words, t.word)}
                   active={active?.key === key}
-                  onTap={() => tapWord(key, t.word, t.gloss)}
+                  onTap={(anchor) => tapWord(key, t.word, t.gloss, anchor)}
                 />
               )
             })}
@@ -112,18 +109,14 @@ export function StoryReader({
       </footer>
 
       {active && (
-        <div className="word-card" role="dialog">
-          <div className="word-card-text">
-            <strong>{active.word}</strong>
-            <span>{active.gloss}</span>
-          </div>
-          <button type="button" className="word-card-save" onClick={toggleSaveActive}>
-            {isSaved(words, active.word) ? '✓ В моих словах' : '+ В мои слова'}
-          </button>
-          <button type="button" className="word-card-close" onClick={() => setActive(null)} aria-label="Закрыть">
-            ×
-          </button>
-        </div>
+        <WordPopover
+          word={active.word}
+          gloss={active.gloss}
+          anchor={active.anchor}
+          saved={isSaved(words, active.word)}
+          onToggleSave={() => onWordsChange(toggleWord(active.word, active.gloss, story.id))}
+          onClose={() => setActive(null)}
+        />
       )}
     </article>
   )

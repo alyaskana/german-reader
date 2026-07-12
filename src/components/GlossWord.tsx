@@ -1,23 +1,21 @@
 interface Props {
   word: string
   gloss: string
-  showGloss: boolean
+  showInline: boolean
   saved: boolean
   active: boolean
-  onTap: () => void
+  onTap: (anchor: HTMLElement) => void
 }
 
-export function GlossWord({ word, gloss, showGloss, saved, active, onTap }: Props) {
+export function GlossWord({ word, gloss, showInline, saved, active, onTap }: Props) {
   return (
     <button
       type="button"
       className={`gloss-word${saved ? ' saved' : ''}${active ? ' active' : ''}`}
-      onClick={onTap}
+      onClick={(e) => onTap(e.currentTarget)}
     >
-      <span className={`gloss-ru${showGloss ? '' : ' hidden'}`} aria-hidden={!showGloss}>
-        {gloss}
-      </span>
       <span className="gloss-de">{word}</span>
+      {showInline && <span className="gloss-inline">{gloss}</span>}
     </button>
   )
 }

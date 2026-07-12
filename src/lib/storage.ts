@@ -55,7 +55,7 @@ export function setFeedback(storyId: string, value: Feedback): Record<string, Fe
 }
 
 export function getMode(): GlossMode {
-  return read<GlossMode>(KEYS.mode, 'always')
+  return read<GlossMode>(KEYS.mode, 'tap')
 }
 
 export function setMode(mode: GlossMode) {

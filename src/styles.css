@@ -266,52 +266,129 @@ button {
 .text p {
   font-family: var(--serif);
   font-size: 1.2rem;
-  line-height: 2.45;
+  line-height: 1.95;
   margin-bottom: 1.1em;
 }
 
-/* glossed word: word highlighted, tiny Russian gloss floating above */
+/* glossed word: subtle dotted underline, popover on tap */
 .gloss-word {
-  position: relative;
-  display: inline-block;
-  vertical-align: baseline;
-  padding: 0 1px;
+  display: inline;
+  padding: 1px 2px;
+  margin: -1px -2px;
   border-radius: 4px;
-  line-height: 1.25;
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
   transition: background 0.15s;
 }
 
 .gloss-de {
   color: var(--accent);
-  font-weight: 600;
-}
-
-.gloss-ru {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: calc(100% + 0.1em);
-  font-family: var(--sans);
-  font-size: 0.58em;
-  line-height: 1;
-  color: var(--accent-soft);
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-.gloss-ru.hidden {
-  visibility: hidden;
+  text-decoration: underline dotted var(--accent-soft) 1.5px;
+  text-underline-offset: 5px;
 }
 
 .gloss-word.saved .gloss-de {
-  border-bottom: 2px dotted var(--accent-soft);
+  text-decoration-style: solid;
 }
 
 .gloss-word.active,
 .gloss-word:hover {
   background: var(--accent-wash);
+}
+
+/* inline gloss when "always show" mode is on */
+.gloss-inline {
+  font-family: var(--sans);
+  font-size: 0.68em;
+  color: var(--ink-soft);
+  margin-left: 5px;
+  vertical-align: 0.12em;
+}
+
+/* ---------- word popover ---------- */
+
+.popover-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+}
+
+.popover {
+  position: fixed;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: calc(100vw - 24px);
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
+  animation: pop-in 0.15s ease-out;
+}
+
+.popover::after {
+  content: '';
+  position: absolute;
+  left: var(--arrow-x, 50%);
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  background: var(--ink);
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+.popover.below::after {
+  bottom: auto;
+  top: -5px;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popover-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+}
+
+.popover-text strong {
+  font-family: var(--serif);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.popover-text span {
+  font-size: 0.85rem;
+  opacity: 0.78;
+}
+
+.popover-save {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.popover-save.is-saved {
+  background: rgba(255, 255, 255, 0.14);
 }
 
 /* ---------- feedback ---------- */
@@ -356,71 +433,6 @@ button {
 
 .feedback-emoji {
   margin-right: 4px;
-}
-
-/* ---------- word card (bottom sheet) ---------- */
-
-.word-card {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 20px;
-  width: min(580px, calc(100vw - 32px));
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 14px 18px;
-  background: var(--ink);
-  color: var(--paper);
-  border-radius: var(--radius);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-  animation: card-in 0.18s ease-out;
-}
-
-@keyframes card-in {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
-
-.word-card-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  min-width: 0;
-  flex: 1;
-}
-
-.word-card-text strong {
-  font-family: var(--serif);
-  font-size: 1.05rem;
-}
-
-.word-card-text span {
-  font-size: 0.85rem;
-  opacity: 0.75;
-}
-
-.word-card-save {
-  flex-shrink: 0;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.word-card-close {
-  flex-shrink: 0;
-  font-size: 1.3rem;
-  opacity: 0.6;
-  padding: 4px 8px;
 }
 
 /* ---------- word list ---------- */
