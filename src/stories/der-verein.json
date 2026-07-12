@@ -11,7 +11,7 @@
     "Der Vorsitzende sagt, dass es eine {{Satzung|устав}} gibt. Die Satzung hat dreißig {{Paragrafen|параграфы, статьи}}. Es gibt Regeln für den Rasen, für den Zaun und sogar für die {{Gartenzwerge|садовые гномы}}. Tom denkt, dass das ein Witz ist. Aber niemand lacht. Tom kann das kaum glauben.",
     "Dann {{liest|читает вслух (vorlesen: liest … vor)}} eine Frau das {{Protokoll|протокол}} vom letzten Treffen {{+vor}}. Es dauert zwanzig Minuten. „Warum {{schreibt|записываете (aufschreiben: schreibt … auf)}} ihr alles {{+auf}}?“, fragt Tom leise. „Weil man alles genau {{dokumentieren|документировать}} muss“, antwortet Jonas.",
     "Nach einer Stunde entscheiden alle: Tom darf {{Mitglied|член клуба}} werden. Er muss ein {{Formular|бланк, анкета}} ausfüllen und den {{Beitrag|взнос}} bezahlen. Jonas sagt, dass Tom jetzt zum Verein gehört. Alle klatschen kurz. Tom ist froh, weil er endlich einen Garten bekommt.",
-    "„Wann kann ich {{anfangen|начать}}?“, fragt Tom. Jonas lächelt. „Nicht so schnell. Du stehst auf der {{Warteliste|лист ожидания}}. Es gibt keinen freien Garten.“ „Und wie lange muss ich warten?“ „Vielleicht fünf Jahre“, sagt Jonas. „Aber du bist schon ein perfektes Mitglied: Du hast alle Formulare.“"
+    "„Wann kann ich {{anfangen|начать}}?“, fragt Tom. Jonas lächelt. „Nicht so schnell. Du stehst auf der {{Warteliste|лист ожидания}}. Es gibt keinen freien Garten.“ „Und wie lange muss ich warten?“ „Vielleicht fünf Jahre“, sagt Jonas. „Aber du bist schon ein perfektes Mitglied: Du hast alle Formulare.“ In Deutschland gehört zu einem Garten eben viel Geduld."
   ],
   "dict": {
     "erzählt": "рассказывает (erzählen)",
@@ -144,6 +144,19 @@
     "schon": "уже",
     "perfektes": "идеальный (perfekt)",
     "hast": "имеешь (haben); du hast — у тебя есть",
-    "formulare": "бланки, анкеты (das Formular)"
+    "formulare": "бланки, анкеты (das Formular)",
+    "jeder": "каждый",
+    "kleines": "маленькое (klein)",
+    "schild": "табличка, значок (das Schild)",
+    "mit": "с",
+    "seinem": "своим, его (sein)",
+    "namen": "именем (der Name)",
+    "kaum": "едва, с трудом",
+    "glauben": "верить (glauben)",
+    "klatschen": "хлопают, аплодируют (klatschen)",
+    "kurz": "коротко, недолго",
+    "eben": "именно, просто (частица)",
+    "viel": "много",
+    "geduld": "терпение (die Geduld)"
   }
 }
