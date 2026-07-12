@@ -120,5 +120,7 @@
     "notizbuch": "блокнот",
     "lieblingswort": "любимое слово",
     "schlafzimmer": "спальня"
-  }
+  },
+  "collection": "deutscher",
+  "order": 7
 }

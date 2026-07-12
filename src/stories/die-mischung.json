@@ -113,5 +113,7 @@
     "besser": "лучше (gut — besser)",
     "deutsche": "немецкая (deutsch)",
     "logik": "логика"
-  }
+  },
+  "collection": "deutscher",
+  "order": 10
 }

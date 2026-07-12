@@ -10,6 +10,8 @@ export interface Story {
   cover?: string
   /** id of the collection this story belongs to (see lib/collections) */
   collection?: string
+  /** sort order within its collection (ascending) */
+  order?: number
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
 }

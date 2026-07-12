@@ -12,9 +12,9 @@
     "Am nächsten Tag steht Tom allein an einer roten Ampel. Die Straße ist leer. Er wartet. Ein kleines Mädchen kommt und wartet neben ihm. Tom lächelt {{stolz|гордо}}. Heute ist er das Vorbild."
   ],
   "dict": {
+    "23": "двадцать три",
     "es": "оно; здесь безличное: es ist 23 Uhr — сейчас 23 часа",
     "ist": "есть, является (sein)",
-    "23": "двадцать три",
     "uhr": "час, часы (23 Uhr — 23 часа)",
     "und": "и",
     "gehen": "идти, идут",
@@ -95,5 +95,7 @@
     "stolz": "гордо, гордый",
     "heute": "сегодня",
     "vorbild": "пример для подражания"
-  }
+  },
+  "collection": "deutscher",
+  "order": 8
 }

@@ -99,5 +99,7 @@
     "beginnt": "начинается (beginnen)",
     "party": "вечеринка (die Party)",
     "deutschland": "Германия"
-  }
+  },
+  "collection": "deutscher",
+  "order": 3
 }

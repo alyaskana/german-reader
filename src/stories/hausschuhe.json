@@ -124,5 +124,7 @@
     "fast": "почти",
     "echter": "настоящий (echt)",
     "deutscher": "немец"
-  }
+  },
+  "collection": "deutscher",
+  "order": 1
 }

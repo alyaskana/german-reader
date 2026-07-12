@@ -85,5 +85,7 @@
     "ja": "да",
     "sagt": "говорит (sagen)",
     "ohne": "без"
-  }
+  },
+  "collection": "alltag",
+  "order": 5
 }

@@ -116,5 +116,7 @@
     "kauft": "покупает (kaufen)",
     "hause": "дом (für zu Hause = для дома)",
     "flasche": "бутылка"
-  }
+  },
+  "collection": "deutscher",
+  "order": 9
 }
