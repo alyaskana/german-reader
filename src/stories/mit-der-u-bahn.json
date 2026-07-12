@@ -1,0 +1,13 @@
+{
+  "id": "mit-der-u-bahn",
+  "title": "Mit der U-Bahn",
+  "titleRu": "На метро",
+  "level": "A1",
+  "paragraphs": [
+    "Tom ist neu in München. Heute fährt er zum ersten Mal mit der {{U-Bahn|метро}}. Er steht auf dem {{Bahnsteig|платформа}} und schaut auf den Plan. So viele Linien! So viele {{Stationen|станции}}!",
+    "„{{Entschuldigung|извините}}, welche Linie fährt zum Marienplatz?“, fragt Tom eine Frau. „Die U3. Sie kommt in zwei Minuten“, sagt die Frau. „Danke!“",
+    "Die U-Bahn kommt. Sie ist sehr {{voll|переполненный}}. Viele Menschen {{steigen ein|заходят (в вагон)}}. Tom findet keinen {{Sitzplatz|сидячее место}}, also steht er an der Tür und {{hält sich fest|держится}}.",
+    "Die Bahn fährt los. Eine Stimme sagt: „{{Nächster Halt|следующая остановка}}: Marienplatz.“ Das ging schnell! Tom {{steigt aus|выходит}} und fährt mit der {{Rolltreppe|эскалатор}} nach oben.",
+    "Oben ist der Marienplatz: das Rathaus, die Touristen, die Musik. Tom lächelt. München ist groß, aber die U-Bahn ist einfach. Morgen fährt er ohne Plan."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "im-supermarkt",
+  "title": "Im Supermarkt",
+  "titleRu": "В супермаркете",
+  "level": "A1",
+  "paragraphs": [
+    "Es ist Samstag. Lena geht in den Supermarkt. Sie hat eine {{Einkaufsliste|список покупок}}: Brot, Milch, Eier, Käse und {{Zwiebeln|лук}}. Heute Abend kocht sie für Freunde.",
+    "Lena nimmt einen {{Einkaufswagen|тележка}} und geht los. Das Brot ist frisch und {{duftet|приятно пахнет}}. Die Milch steht ganz hinten im {{Kühlregal|холодильная полка}}. Aber wo sind die Zwiebeln?",
+    "Lena {{sucht|ищет}} und sucht. Sie fragt einen {{Verkäufer|продавец}}: „Entschuldigung, wo finde ich Zwiebeln?“ – „{{Gang|ряд, проход}} drei, bei dem {{Gemüse|овощи}}“, sagt er.",
+    "An der {{Kasse|касса}} ist eine lange {{Schlange|очередь}}. Lena wartet und schaut auf ihr Handy. Dann {{bezahlt|платит}} sie mit Karte – 23 Euro 40.",
+    "Zu Hause packt Lena die {{Tüte|пакет}} aus. Brot, Milch, Eier, Zwiebeln … aber kein Käse! Der Käse liegt noch im Supermarkt. „Na gut“, sagt Lena, „dann gibt es heute Pasta ohne Käse.“"
+  ]
+}

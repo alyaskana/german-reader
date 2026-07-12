@@ -1,0 +1,14 @@
+{
+  "id": "beim-arzt",
+  "title": "Beim Arzt",
+  "titleRu": "У врача",
+  "level": "A1",
+  "paragraphs": [
+    "Jonas ist {{krank|болен}}. Sein {{Hals|горло}} tut weh, und er hat {{Fieber|температура, жар}}. Er ruft in der {{Arztpraxis|врачебный кабинет}} an: „Guten Morgen, ich brauche einen {{Termin|запись, приём}}, bitte.“",
+    "„Kommen Sie heute um elf Uhr“, sagt die Frau am Telefon.",
+    "Im {{Wartezimmer|зал ожидания}} sitzen viele Menschen. Jonas wartet und trinkt Wasser. Dann ruft eine Stimme: „Herr Weber, bitte!“",
+    "Die Ärztin ist ruhig und freundlich. „Machen Sie den Mund auf. Sagen Sie Aaa.“ Sie schaut in seinen Hals. „Sie sind {{erkältet|простужен}}. Das ist nicht schlimm.“",
+    "Die Ärztin gibt Jonas ein {{Rezept|рецепт}}: Er soll Tee trinken, {{Tabletten|таблетки}} nehmen und drei Tage zu Hause bleiben. „Und {{schlafen|спать}} Sie viel!“, sagt sie.",
+    "Zu Hause liegt Jonas im Bett. Sein Kater Momo liegt neben ihm. Tee, ein Buch, ein warmer Kater – so ist Kranksein nur halb so {{schlimm|плохо, страшно}}."
+  ]
+}

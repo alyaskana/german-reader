@@ -1,0 +1,13 @@
+{
+  "id": "im-cafe",
+  "title": "Im Café",
+  "titleRu": "В кафе",
+  "level": "A1",
+  "paragraphs": [
+    "Anna hat heute {{frei|выходной}}. Sie geht in ein kleines Café in der Stadt. Das Café heißt „Sonne“. Es ist warm, und es {{riecht|пахнет}} nach Kaffee und Kuchen.",
+    "Anna {{bestellt|заказывает}} einen Cappuccino und ein Stück {{Apfelkuchen|яблочный пирог}}. Die {{Kellnerin|официантка}} ist freundlich. „Möchten Sie noch etwas?“, fragt sie. „Nein, danke“, sagt Anna und {{lächelt|улыбается}}.",
+    "Anna sitzt am Fenster. {{Draußen|на улице}} regnet es, aber im Café ist es {{gemütlich|уютно}}. Sie trinkt ihren Kaffee langsam und liest ein Buch.",
+    "Dann kommt ein Mann mit einem großen Hund. Der Hund ist {{nass|мокрый}} vom Regen. Er läuft zu Anna und legt den Kopf auf ihren {{Schoß|колени}}. „Oh, {{Entschuldigung|извините}}!“, sagt der Mann. „Kein Problem“, lacht Anna. „Ich mag Hunde.“",
+    "Der Mann heißt Paul. Er und Anna sprechen über Hunde, Bücher und Kaffee. Der Regen ist bald vorbei, aber Anna und Paul sitzen noch lange im Café. Es ist ein guter Tag."
+  ]
+}

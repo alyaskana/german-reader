@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/GlossWord.tsx","./src/components/StoryList.tsx","./src/components/StoryReader.tsx","./src/components/WordList.tsx","./src/lib/parse.ts","./src/lib/prompt.ts","./src/lib/storage.ts","./src/lib/types.ts","./src/stories/index.ts"],"version":"5.9.3"}
