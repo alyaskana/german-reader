@@ -8,7 +8,6 @@ import {
   getWords,
   setMode as persistMode,
 } from './lib/storage'
-import { dueWords } from './lib/srs'
 import { StoryList } from './components/StoryList'
 import { StoryReader } from './components/StoryReader'
 import { WordList } from './components/WordList'
@@ -39,7 +38,7 @@ export default function App() {
   const [mode, setMode] = useState<GlossMode>(getMode)
 
   const allStories = useMemo(() => [...builtinStories, ...customStories], [customStories])
-  const due = dueWords(words).length
+  const learning = words.filter((w) => !w.learned).length
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash())
@@ -83,7 +82,7 @@ export default function App() {
               className={route.screen === 'words' ? 'current' : ''}
               onClick={() => go('words')}
             >
-              Мои слова{due > 0 && <span className="badge">{due}</span>}
+              Мои слова{learning > 0 && <span className="badge">{learning}</span>}
             </button>
           </nav>
         </header>

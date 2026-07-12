@@ -1,8 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, storyWordCount } from '../lib/parse'
-import { isSaved, setFeedback, toggleWord } from '../lib/storage'
-import { learnedSet } from '../lib/srs'
+import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
 import { GlossWord } from './GlossWord'
 import { WordPopover } from './WordPopover'
 

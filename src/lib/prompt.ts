@@ -1,7 +1,6 @@
 import { stories as builtinStories } from '../stories'
 import { storyGlosses } from './parse'
 import { getCustomStories, getFeedback, getWords } from './storage'
-import { isLearned } from './srs'
 import type { Feedback } from './types'
 
 const FEEDBACK_RU: Record<Feedback, string> = {
@@ -34,8 +33,8 @@ export function buildPrompt(): string {
     (s) => `- «${s.title}» — ${FEEDBACK_RU[feedback[s.id]]}`,
   )
 
-  const learnedWords = words.filter(isLearned).map((w) => w.word)
-  const learningWords = words.filter((w) => !isLearned(w)).map((w) => `${w.word} (${w.gloss})`)
+  const learnedWords = words.filter((w) => w.learned).map((w) => w.word)
+  const learningWords = words.filter((w) => !w.learned).map((w) => `${w.word} (${w.gloss})`)
 
   const knownGlosses = new Set<string>()
   for (const s of readStories) {

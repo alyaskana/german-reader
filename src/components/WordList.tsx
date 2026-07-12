@@ -1,6 +1,5 @@
 import type { SavedWord, Story } from '../lib/types'
-import { removeWord } from '../lib/storage'
-import { dueLabel, dueWords, isLearned } from '../lib/srs'
+import { removeWord, setLearned } from '../lib/storage'
 
 interface Props {
   words: SavedWord[]
@@ -21,20 +20,20 @@ export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
     )
   }
 
-  const due = dueWords(words).length
-  const learned = words.filter(isLearned).length
+  const learning = words.filter((w) => !w.learned).length
+  const learned = words.length - learning
   const sorted = [...words].sort((a, b) => b.addedAt - a.addedAt)
 
   return (
     <div className="word-list">
       <div className="train-banner">
         <div>
-          <strong>{due > 0 ? `К повторению: ${due}` : 'Всё повторено 🎉'}</strong>
+          <strong>{learning > 0 ? `Учу слов: ${learning}` : 'Все слова знакомы 🎉'}</strong>
           <span className="train-banner-note">
-            {learned > 0 ? `выучено: ${learned} из ${words.length}` : `всего слов: ${words.length}`}
+            {learned > 0 ? `уже знаю: ${learned} из ${words.length}` : 'потренируйся, когда захочешь'}
           </span>
         </div>
-        {due > 0 && (
+        {learning > 0 && (
           <button type="button" className="generate-btn" onClick={onTrain}>
             Тренировка
           </button>
@@ -44,7 +43,6 @@ export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
       <ul>
         {sorted.map((w) => {
           const story = allStories.find((s) => s.id === w.storyId)
-          const learnedWord = isLearned(w)
           return (
             <li key={w.word} className="word-row">
               <div className="word-row-text">
@@ -53,9 +51,14 @@ export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
                 {story && <span className="word-source">из «{story.title}»</span>}
               </div>
               <div className="word-row-side">
-                <span className={`word-status${learnedWord ? ' learned' : ''}`}>
-                  {learnedWord ? '✓ выучено' : dueLabel(w)}
-                </span>
+                <button
+                  type="button"
+                  className={`word-status${w.learned ? ' learned' : ''}`}
+                  onClick={() => onWordsChange(setLearned(w.word, !w.learned))}
+                  title={w.learned ? 'Вернуть в изучение' : 'Отметить знакомым'}
+                >
+                  {w.learned ? '✓ знаю' : 'учу'}
+                </button>
                 <button
                   type="button"
                   className="word-remove"
