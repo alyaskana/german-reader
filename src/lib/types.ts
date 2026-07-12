@@ -4,6 +4,8 @@ export interface Story {
   titleRu: string
   level: string
   paragraphs: string[]
+  /** contextual translations for every word of the text (lowercased keys) */
+  dict?: Record<string, string>
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
 }
@@ -21,5 +23,18 @@ export interface SavedWord {
 
 export type GlossMode = 'always' | 'tap'
 
-/** A piece of a paragraph: plain text or a glossed word. */
-export type Token = { type: 'text'; text: string } | { type: 'gloss'; word: string; gloss: string }
+/**
+ * A piece of a paragraph: plain text or a glossed word/phrase.
+ * Parts of a split unit (separable verb, Perfekt) share a group id;
+ * `unit` is the display form of the whole unit, e.g. "steht … auf".
+ */
+export type Token =
+  | { type: 'text'; text: string }
+  | {
+      type: 'gloss'
+      word: string
+      gloss: string
+      group: number
+      continuation: boolean
+      unit: string
+    }

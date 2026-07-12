@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
-import { parseParagraph, storyWordCount } from '../lib/parse'
+import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
 import { GlossWord } from './GlossWord'
 import { WordPopover } from './WordPopover'
@@ -18,8 +18,10 @@ interface Props {
 
 interface ActiveWord {
   key: string
+  /** paragraph index + gloss group, to highlight both parts of a split unit */
+  groupKey: string | null
   word: string
-  gloss: string
+  gloss: string | null
   anchor: HTMLElement
 }
 
@@ -44,8 +46,19 @@ export function StoryReader({
   const wordCount = useMemo(() => storyWordCount(story), [story])
   const learned = useMemo(() => learnedSet(words), [words])
 
-  function tapWord(key: string, word: string, gloss: string, anchor: HTMLElement) {
-    setActive((cur) => (cur?.key === key ? null : { key, word, gloss, anchor }))
+  function tapGloss(
+    key: string,
+    groupKey: string,
+    unit: string,
+    gloss: string,
+    anchor: HTMLElement,
+  ) {
+    setActive((cur) => (cur?.key === key ? null : { key, groupKey, word: unit, gloss, anchor }))
+  }
+
+  function tapPlain(key: string, word: string, anchor: HTMLElement) {
+    const gloss = story.dict?.[word.toLowerCase()] ?? null
+    setActive((cur) => (cur?.key === key ? null : { key, groupKey: null, word, gloss, anchor }))
   }
 
   return (
@@ -73,18 +86,35 @@ export function StoryReader({
         {paragraphs.map((tokens, pi) => (
           <p key={pi}>
             {tokens.map((t, ti) => {
-              if (t.type === 'text') return <span key={ti}>{t.text}</span>
               const key = `${pi}:${ti}`
+              if (t.type === 'text') {
+                return splitWords(t.text).map((seg, si) =>
+                  seg.isWord ? (
+                    <button
+                      key={`${ti}:${si}`}
+                      type="button"
+                      className={`plain-word${active?.key === `${key}:${si}` ? ' active' : ''}`}
+                      onClick={(e) => tapPlain(`${key}:${si}`, seg.text, e.currentTarget)}
+                    >
+                      {seg.text}
+                    </button>
+                  ) : (
+                    <span key={`${ti}:${si}`}>{seg.text}</span>
+                  ),
+                )
+              }
+              const groupKey = `${pi}:g${t.group}`
               return (
                 <GlossWord
                   key={ti}
                   word={t.word}
                   gloss={t.gloss}
                   showInline={mode === 'always'}
-                  saved={isSaved(words, t.word)}
-                  learned={learned.has(t.word.toLowerCase())}
-                  active={active?.key === key}
-                  onTap={(anchor) => tapWord(key, t.word, t.gloss, anchor)}
+                  saved={isSaved(words, t.unit)}
+                  continuation={t.continuation}
+                  learned={learned.has(t.unit.toLowerCase())}
+                  active={active?.groupKey === groupKey}
+                  onTap={(anchor) => tapGloss(key, groupKey, t.unit, t.gloss, anchor)}
                 />
               )
             })}
@@ -116,7 +146,10 @@ export function StoryReader({
           gloss={active.gloss}
           anchor={active.anchor}
           saved={isSaved(words, active.word)}
-          onToggleSave={() => onWordsChange(toggleWord(active.word, active.gloss, story.id))}
+          onToggleSave={() =>
+            active.gloss !== null &&
+            onWordsChange(toggleWord(active.word, active.gloss, story.id))
+          }
           onClose={() => setActive(null)}
         />
       )}

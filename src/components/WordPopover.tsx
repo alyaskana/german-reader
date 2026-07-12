@@ -2,7 +2,8 @@ import { useLayoutEffect, useRef, useState } from 'react'
 
 interface Props {
   word: string
-  gloss: string
+  /** null → no translation available, offer an external translator link */
+  gloss: string | null
   anchor: HTMLElement
   saved: boolean
   onToggleSave: () => void
@@ -53,11 +54,26 @@ export function WordPopover({ word, gloss, anchor, saved, onToggleSave, onClose 
       >
         <div className="popover-text">
           <strong>{word}</strong>
-          <span>{gloss}</span>
+          <span>{gloss !== null ? gloss : 'перевода нет в этой истории'}</span>
         </div>
-        <button type="button" className={`popover-save${saved ? ' is-saved' : ''}`} onClick={onToggleSave}>
-          {saved ? '✓ в моих словах' : '+ в мои слова'}
-        </button>
+        {gloss !== null ? (
+          <button
+            type="button"
+            className={`popover-save${saved ? ' is-saved' : ''}`}
+            onClick={onToggleSave}
+          >
+            {saved ? '✓ в моих словах' : '+ в мои слова'}
+          </button>
+        ) : (
+          <a
+            className="popover-save"
+            href={`https://translate.google.com/?sl=de&tl=ru&text=${encodeURIComponent(word)}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            перевести ↗
+          </a>
+        )}
       </div>
     </>
   )

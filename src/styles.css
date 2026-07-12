@@ -303,6 +303,23 @@ button {
   text-decoration: none;
 }
 
+/* any other word: looks like plain text, translation from the story dict on tap */
+.plain-word {
+  display: inline;
+  padding: 1px 1px;
+  margin: -1px -1px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  transition: background 0.15s;
+}
+
+.plain-word.active,
+.plain-word:active {
+  background: var(--accent-wash);
+}
+
 /* inline gloss when "always show" mode is on */
 .gloss-inline {
   font-family: var(--sans);

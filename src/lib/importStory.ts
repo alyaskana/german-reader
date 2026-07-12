@@ -26,6 +26,20 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
   )
     return { error: 'Поле "paragraphs" должно быть непустым массивом строк.' }
 
+  let dict: Record<string, string> | undefined
+  if (s.dict !== undefined) {
+    if (
+      typeof s.dict !== 'object' ||
+      s.dict === null ||
+      Array.isArray(s.dict) ||
+      !Object.values(s.dict).every((v) => typeof v === 'string')
+    )
+      return { error: 'Поле "dict" должно быть объектом «слово → перевод».' }
+    dict = Object.fromEntries(
+      Object.entries(s.dict as Record<string, string>).map(([k, v]) => [k.toLowerCase(), v]),
+    )
+  }
+
   const id =
     typeof s.id === 'string' && s.id.trim()
       ? s.id.trim()
@@ -42,6 +56,7 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       titleRu: typeof s.titleRu === 'string' ? s.titleRu.trim() : '',
       level: typeof s.level === 'string' && s.level.trim() ? s.level.trim() : 'A1',
       paragraphs: s.paragraphs as string[],
+      dict,
       custom: true,
     },
   }
