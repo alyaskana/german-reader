@@ -268,26 +268,28 @@ button {
   line-height: 1.4;
 }
 
-.folder-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  flex-shrink: 0;
-  padding-left: 4px;
+.folder-progress {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(45, 42, 36, 0.13);
+  margin-top: 14px;
+  overflow: hidden;
 }
 
-.folder-count {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--ink);
-  line-height: 1;
+.folder-progress-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--good);
+  transition: width 0.3s ease;
 }
 
-.folder-read {
-  font-size: 0.66rem;
-  font-weight: 600;
-  color: rgba(45, 42, 36, 0.5);
+.folder-progress-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(45, 42, 36, 0.55);
+  margin-top: 7px;
 }
 
 .folder-add {
@@ -377,6 +379,25 @@ button {
 
 .story-card:active {
   transform: translateY(0) scale(0.995);
+}
+
+.story-check {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 2px solid rgba(45, 42, 36, 0.22);
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.story-check.done {
+  background: var(--good);
+  border-color: var(--good);
 }
 
 .story-thumb {

@@ -22,6 +22,7 @@ export function CollectionIndex({ stories, feedback, onOpenCollection, onAdd }: 
       <ul>
         {groups.map(({ collection, items }) => {
           const read = items.filter((s) => feedback[s.id]).length
+          const pct = Math.round((read / items.length) * 100)
           return (
             <li key={collection.id}>
               <button
@@ -34,10 +35,14 @@ export function CollectionIndex({ stories, feedback, onOpenCollection, onAdd }: 
                   <span className="folder-title">{collection.titleRu}</span>
                   <span className="folder-de">{collection.title}</span>
                   <span className="folder-sub">{collection.subtitle}</span>
-                </span>
-                <span className="folder-meta">
-                  <span className="folder-count">{items.length}</span>
-                  {read > 0 && <span className="folder-read">прочитано {read}</span>}
+                  <span className="folder-progress" aria-hidden="true">
+                    <span className="folder-progress-fill" style={{ width: `${pct}%` }} />
+                  </span>
+                  <span className="folder-progress-label">
+                    {read > 0
+                      ? `прочитано ${read} из ${items.length}`
+                      : `${items.length} ${plural(items.length)}`}
+                  </span>
                 </span>
               </button>
             </li>
@@ -54,4 +59,12 @@ export function CollectionIndex({ stories, feedback, onOpenCollection, onAdd }: 
       </button>
     </div>
   )
+}
+
+function plural(n: number): string {
+  const mod10 = n % 10
+  const mod100 = n % 100
+  if (mod10 === 1 && mod100 !== 11) return 'история'
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return 'истории'
+  return 'историй'
 }

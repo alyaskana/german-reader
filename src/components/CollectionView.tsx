@@ -51,6 +51,9 @@ export function CollectionView({
             return (
               <li key={s.id}>
                 <button type="button" className="story-card" onClick={() => onOpen(s.id)}>
+                  <span className={`story-check${fb ? ' done' : ''}`} aria-hidden="true">
+                    {fb ? '✓' : ''}
+                  </span>
                   {s.cover && <img className="story-thumb" src={coverSrc(s.cover)} alt="" />}
                   <span className="story-card-main">
                     <span className="story-title">{s.title}</span>
@@ -58,11 +61,7 @@ export function CollectionView({
                   </span>
                   <span className="story-card-meta">
                     <span className="story-words">{storyWordCount(s)} слов</span>
-                    {fb ? (
-                      <span className="story-status read">{FEEDBACK_EMOJI[fb]} прочитано</span>
-                    ) : (
-                      <span className="story-status">не прочитано</span>
-                    )}
+                    {fb && <span className="story-status read">{FEEDBACK_EMOJI[fb]}</span>}
                   </span>
                 </button>
               </li>
