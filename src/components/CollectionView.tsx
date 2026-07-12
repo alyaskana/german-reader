@@ -52,7 +52,18 @@ export function CollectionView({
               <li key={s.id}>
                 <button type="button" className="story-card" onClick={() => onOpen(s.id)}>
                   <span className={`story-check${fb ? ' done' : ''}`} aria-hidden="true">
-                    {fb ? '✓' : ''}
+                    {fb && (
+                      <svg viewBox="0 0 24 24" className="story-check-icon">
+                        <path
+                          d="M5 12.5 L10 17.5 L19 7"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    )}
                   </span>
                   {s.cover && <img className="story-thumb" src={coverSrc(s.cover)} alt="" />}
                   <span className="story-card-main">

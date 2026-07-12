@@ -387,17 +387,22 @@ button {
   height: 26px;
   border-radius: 999px;
   border: 2px solid rgba(45, 42, 36, 0.22);
+  background: transparent;
   display: grid;
   place-items: center;
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1;
+  color: var(--good);
 }
 
 .story-check.done {
-  background: var(--good);
-  border-color: var(--good);
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 1px 3px rgba(60, 50, 30, 0.14);
+}
+
+.story-check-icon {
+  width: 15px;
+  height: 15px;
+  display: block;
 }
 
 .story-thumb {
