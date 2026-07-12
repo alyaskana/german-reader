@@ -8,7 +8,8 @@ import {
   getWords,
   setMode as persistMode,
 } from './lib/storage'
-import { StoryList } from './components/StoryList'
+import { CollectionIndex } from './components/CollectionIndex'
+import { CollectionView } from './components/CollectionView'
 import { StoryReader } from './components/StoryReader'
 import { WordList } from './components/WordList'
 import { Trainer } from './components/Trainer'
@@ -19,6 +20,7 @@ type Route =
   | { screen: 'words' }
   | { screen: 'train' }
   | { screen: 'add' }
+  | { screen: 'collection'; id: string }
   | { screen: 'story'; id: string }
 
 function parseHash(): Route {
@@ -26,6 +28,8 @@ function parseHash(): Route {
   if (hash === 'words') return { screen: 'words' }
   if (hash === 'train') return { screen: 'train' }
   if (hash === 'add') return { screen: 'add' }
+  if (hash.startsWith('collection/'))
+    return { screen: 'collection', id: decodeURIComponent(hash.slice(11)) }
   if (hash.startsWith('story/')) return { screen: 'story', id: decodeURIComponent(hash.slice(6)) }
   return { screen: 'list' }
 }
@@ -89,11 +93,22 @@ export default function App() {
       )}
 
       {route.screen === 'list' && (
-        <StoryList
+        <CollectionIndex
+          stories={allStories}
+          feedback={feedback}
+          onOpenCollection={(id) => go(`collection/${id}`)}
+          onAdd={() => go('add')}
+        />
+      )}
+
+      {route.screen === 'collection' && (
+        <CollectionView
+          collectionId={route.id}
           stories={allStories}
           feedback={feedback}
           onOpen={(id) => go(`story/${id}`)}
           onAdd={() => go('add')}
+          onBack={() => go('')}
         />
       )}
 
@@ -129,7 +144,9 @@ export default function App() {
             onWordsChange={setWords}
             feedback={feedback[story.id]}
             onFeedbackChange={setFeedback}
-            onBack={() => go('')}
+            onBack={() =>
+              go(story.collection ? `collection/${story.collection}` : story.custom ? 'collection/meine' : '')
+            }
           />
         ) : (
           <p className="not-found">История не найдена.</p>

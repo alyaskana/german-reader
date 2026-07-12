@@ -66,7 +66,7 @@ export function StoryReader({
     <article className="reader">
       <header className="reader-header">
         <button type="button" className="back" onClick={onBack}>
-          ← Истории
+          ← Назад
         </button>
         <button
           type="button"

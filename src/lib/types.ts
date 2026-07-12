@@ -19,6 +19,7 @@ export interface Collection {
   title: string
   titleRu: string
   subtitle: string
+  emoji: string
 }
 
 export type Feedback = 'easy' | 'ok' | 'hard'

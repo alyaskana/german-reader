@@ -6,6 +6,7 @@ export const CUSTOM_COLLECTION: Collection = {
   title: 'Meine Geschichten',
   titleRu: 'Мои истории',
   subtitle: 'то, что ты добавила сама',
+  emoji: '✍️',
 }
 
 export const collections: Collection[] = [
@@ -14,12 +15,14 @@ export const collections: Collection[] = [
     title: 'Wie man Deutscher wird',
     titleRu: 'Как стать немцем',
     subtitle: 'истории о немецких привычках — сериал про Тома в Берлине',
+    emoji: '🥨',
   },
   {
     id: 'alltag',
     title: 'Alltag',
     titleRu: 'Повседневное',
     subtitle: 'короткие сценки из обычной жизни',
+    emoji: '☕',
   },
 ]
 

@@ -168,6 +168,178 @@ button {
   border-radius: 999px;
 }
 
+/* ---------- collection index (folder cards) ---------- */
+
+.collection-index ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.folder-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--c1);
+  transition: transform 0.16s, box-shadow 0.16s;
+}
+
+.collection-index li:nth-child(6n + 1) .folder-card { background: var(--c1); }
+.collection-index li:nth-child(6n + 2) .folder-card { background: var(--c2); }
+.collection-index li:nth-child(6n + 3) .folder-card { background: var(--c3); }
+.collection-index li:nth-child(6n + 4) .folder-card { background: var(--c4); }
+.collection-index li:nth-child(6n + 5) .folder-card { background: var(--c5); }
+.collection-index li:nth-child(6n + 6) .folder-card { background: var(--c6); }
+
+/* stacked "pages" peeking out below → looks like a folder/collection */
+.folder-card::before,
+.folder-card::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  height: 16px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: inherit;
+  z-index: -1;
+}
+
+.folder-card::before {
+  bottom: -7px;
+  filter: brightness(0.965);
+}
+
+.folder-card::after {
+  bottom: -13px;
+  filter: brightness(0.93);
+}
+
+.folder-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.folder-card:active {
+  transform: scale(0.995);
+}
+
+.folder-emoji {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  font-size: 1.85rem;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+}
+
+.folder-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.folder-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.folder-de {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: rgba(45, 42, 36, 0.5);
+  margin-top: 1px;
+}
+
+.folder-sub {
+  font-size: 0.82rem;
+  color: rgba(45, 42, 36, 0.62);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.folder-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+  padding-left: 4px;
+}
+
+.folder-count {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.folder-read {
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: rgba(45, 42, 36, 0.5);
+}
+
+.folder-add {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  border: 2px dashed rgba(245, 166, 35, 0.5);
+  background: transparent;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.folder-add:hover {
+  background: var(--accent-wash);
+}
+
+.folder-add-plus {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: var(--accent-strong);
+  background: var(--accent-wash);
+  border-radius: 14px;
+}
+
+.folder-add strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.folder-add-sub {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.collection-head-emoji {
+  font-size: 1.35rem;
+}
+
+.collection-add-more {
+  margin-top: 20px;
+}
+
 /* ---------- story list ---------- */
 
 .story-list ul {
