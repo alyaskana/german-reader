@@ -111,6 +111,47 @@ button {
   gap: 12px;
 }
 
+/* ---------- collection ---------- */
+
+.collection {
+  margin-bottom: 40px;
+}
+
+.collection-head {
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--line);
+}
+
+.collection-head h2 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.collection-de {
+  font-family: var(--serif);
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--accent-soft);
+  margin-top: 1px;
+}
+
+.collection-sub {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+.collection-count {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .story-card {
   width: 100%;
   display: flex;

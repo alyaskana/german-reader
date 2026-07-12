@@ -16,23 +16,31 @@ import derRoteMann from './der-rote-mann.json'
 import apfelsaftschorle from './apfelsaftschorle.json'
 import dieMischung from './die-mischung.json'
 
+function tag(collection: string, list: Story[]): Story[] {
+  return list.map((s) => ({ ...s, collection }))
+}
+
 export const stories: Story[] = [
-  // Wie man Deutscher wird — истории про немецкую культуру (сериал про Тома)
-  hausschuhe,
-  dasLangeFruehstueck,
-  derGrillPlan,
-  versicherung,
-  keinSchlechtesWetter,
-  sprichDeutsch,
-  denglisch,
-  derRoteMann,
-  apfelsaftschorle,
-  dieMischung,
+  // «Wie man Deutscher wird» — истории про немецкую культуру (сериал про Тома)
+  ...tag('deutscher', [
+    hausschuhe,
+    dasLangeFruehstueck,
+    derGrillPlan,
+    versicherung,
+    keinSchlechtesWetter,
+    sprichDeutsch,
+    denglisch,
+    derRoteMann,
+    apfelsaftschorle,
+    dieMischung,
+  ]),
   // повседневные истории
-  imCafe,
-  mitDerUBahn,
-  imSupermarkt,
-  neueNachbarn,
-  einSonntagImPark,
-  beimArzt,
+  ...tag('alltag', [
+    imCafe,
+    mitDerUBahn,
+    imSupermarkt,
+    neueNachbarn,
+    einSonntagImPark,
+    beimArzt,
+  ]),
 ]

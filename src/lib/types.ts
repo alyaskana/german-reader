@@ -8,8 +8,17 @@ export interface Story {
   dict?: Record<string, string>
   /** cover illustration: inline SVG markup, rendered via <img> data URI */
   cover?: string
+  /** id of the collection this story belongs to (see lib/collections) */
+  collection?: string
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
+}
+
+export interface Collection {
+  id: string
+  title: string
+  titleRu: string
+  subtitle: string
 }
 
 export type Feedback = 'easy' | 'ok' | 'hard'
