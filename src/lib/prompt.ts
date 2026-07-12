@@ -1,6 +1,7 @@
-import { stories } from '../stories'
+import { stories as builtinStories } from '../stories'
 import { storyGlosses } from './parse'
-import { getFeedback, getWords } from './storage'
+import { getCustomStories, getFeedback, getWords } from './storage'
+import { isLearned } from './srs'
 import type { Feedback } from './types'
 
 const FEEDBACK_RU: Record<Feedback, string> = {
@@ -26,13 +27,15 @@ function calibration(values: Feedback[]): string {
 export function buildPrompt(): string {
   const feedback = getFeedback()
   const words = getWords()
+  const stories = [...builtinStories, ...getCustomStories()]
 
   const readStories = stories.filter((s) => feedback[s.id])
   const feedbackLines = readStories.map(
     (s) => `- «${s.title}» — ${FEEDBACK_RU[feedback[s.id]]}`,
   )
 
-  const learningWords = words.map((w) => `${w.word} (${w.gloss})`)
+  const learnedWords = words.filter(isLearned).map((w) => w.word)
+  const learningWords = words.filter((w) => !isLearned(w)).map((w) => `${w.word} (${w.gloss})`)
 
   const knownGlosses = new Set<string>()
   for (const s of readStories) {
@@ -62,6 +65,11 @@ ${
     : ''
 }
 ${
+  learnedWords.length
+    ? `\nЭти слова я уже ВЫУЧИЛА — смело используй их без глосс, они закрепляют выученное:\n${learnedWords.join(', ')}`
+    : ''
+}
+${
   knownGlosses.size
     ? `\nЭти слова мне уже встречались и я их не помечала как сложные — можешь использовать их БЕЗ глосс:\n${[...knownGlosses].join(', ')}`
     : ''
@@ -76,5 +84,5 @@ ${
   "paragraphs": ["Абзац 1 с {{маркерами|глоссами}}...", "Абзац 2..."]
 }
 
-Полученный JSON я сохраню как src/stories/<id>.json и добавлю в src/stories/index.ts.`
+Полученный JSON я вставлю в приложение на экране «Добавить историю».`
 }

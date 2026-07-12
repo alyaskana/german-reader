@@ -1,25 +1,45 @@
-import { useEffect, useState } from 'react'
-import { stories } from './stories'
-import type { Feedback, GlossMode, SavedWord } from './lib/types'
-import { getFeedback, getMode, getWords, setMode as persistMode } from './lib/storage'
+import { useEffect, useMemo, useState } from 'react'
+import { stories as builtinStories } from './stories'
+import type { Feedback, GlossMode, SavedWord, Story } from './lib/types'
+import {
+  getCustomStories,
+  getFeedback,
+  getMode,
+  getWords,
+  setMode as persistMode,
+} from './lib/storage'
+import { dueWords } from './lib/srs'
 import { StoryList } from './components/StoryList'
 import { StoryReader } from './components/StoryReader'
 import { WordList } from './components/WordList'
+import { Trainer } from './components/Trainer'
+import { AddStory } from './components/AddStory'
 
-type Route = { screen: 'list' } | { screen: 'words' } | { screen: 'story'; id: string }
+type Route =
+  | { screen: 'list' }
+  | { screen: 'words' }
+  | { screen: 'train' }
+  | { screen: 'add' }
+  | { screen: 'story'; id: string }
 
 function parseHash(): Route {
   const hash = window.location.hash.slice(1)
   if (hash === 'words') return { screen: 'words' }
-  if (hash.startsWith('story/')) return { screen: 'story', id: hash.slice(6) }
+  if (hash === 'train') return { screen: 'train' }
+  if (hash === 'add') return { screen: 'add' }
+  if (hash.startsWith('story/')) return { screen: 'story', id: decodeURIComponent(hash.slice(6)) }
   return { screen: 'list' }
 }
 
 export default function App() {
   const [route, setRoute] = useState<Route>(parseHash)
   const [words, setWords] = useState<SavedWord[]>(getWords)
+  const [customStories, setCustomStories] = useState<Story[]>(getCustomStories)
   const [feedback, setFeedback] = useState<Record<string, Feedback>>(getFeedback)
   const [mode, setMode] = useState<GlossMode>(getMode)
+
+  const allStories = useMemo(() => [...builtinStories, ...customStories], [customStories])
+  const due = dueWords(words).length
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash())
@@ -40,11 +60,11 @@ export default function App() {
     setMode(m)
   }
 
-  const story = route.screen === 'story' ? stories.find((s) => s.id === route.id) : undefined
+  const story = route.screen === 'story' ? allStories.find((s) => s.id === route.id) : undefined
 
   return (
     <div className="app">
-      {route.screen !== 'story' && (
+      {(route.screen === 'list' || route.screen === 'words') && (
         <header className="app-header">
           <div className="brand">
             <h1>Lesezeit</h1>
@@ -63,17 +83,42 @@ export default function App() {
               className={route.screen === 'words' ? 'current' : ''}
               onClick={() => go('words')}
             >
-              Мои слова{words.length > 0 && <span className="badge">{words.length}</span>}
+              Мои слова{due > 0 && <span className="badge">{due}</span>}
             </button>
           </nav>
         </header>
       )}
 
       {route.screen === 'list' && (
-        <StoryList stories={stories} feedback={feedback} onOpen={(id) => go(`story/${id}`)} />
+        <StoryList
+          stories={allStories}
+          feedback={feedback}
+          onOpen={(id) => go(`story/${id}`)}
+          onAdd={() => go('add')}
+        />
       )}
 
-      {route.screen === 'words' && <WordList words={words} onWordsChange={setWords} />}
+      {route.screen === 'words' && (
+        <WordList
+          words={words}
+          allStories={allStories}
+          onWordsChange={setWords}
+          onTrain={() => go('train')}
+        />
+      )}
+
+      {route.screen === 'train' && (
+        <Trainer words={words} onWordsChange={setWords} onBack={() => go('words')} />
+      )}
+
+      {route.screen === 'add' && (
+        <AddStory
+          customStories={customStories}
+          onCustomStoriesChange={setCustomStories}
+          onOpenStory={(id) => go(`story/${id}`)}
+          onBack={() => go('')}
+        />
+      )}
 
       {route.screen === 'story' &&
         (story ? (

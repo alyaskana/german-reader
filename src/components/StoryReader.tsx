@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, storyWordCount } from '../lib/parse'
 import { isSaved, setFeedback, toggleWord } from '../lib/storage'
+import { learnedSet } from '../lib/srs'
 import { GlossWord } from './GlossWord'
 import { WordPopover } from './WordPopover'
 
@@ -42,6 +43,7 @@ export function StoryReader({
   const [active, setActive] = useState<ActiveWord | null>(null)
   const paragraphs = useMemo(() => story.paragraphs.map(parseParagraph), [story])
   const wordCount = useMemo(() => storyWordCount(story), [story])
+  const learned = useMemo(() => learnedSet(words), [words])
 
   function tapWord(key: string, word: string, gloss: string, anchor: HTMLElement) {
     setActive((cur) => (cur?.key === key ? null : { key, word, gloss, anchor }))
@@ -81,6 +83,7 @@ export function StoryReader({
                   gloss={t.gloss}
                   showInline={mode === 'always'}
                   saved={isSaved(words, t.word)}
+                  learned={learned.has(t.word.toLowerCase())}
                   active={active?.key === key}
                   onTap={(anchor) => tapWord(key, t.word, t.gloss, anchor)}
                 />
