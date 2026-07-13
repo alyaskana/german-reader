@@ -61,6 +61,21 @@ export function dailyStory(stories: Story[], today = localDay()): Story | null {
   )
 }
 
+const MONTHS_RU = [
+  'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+  'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря',
+]
+
+/** Human date for a daily story (from its `daily-YYYY-MM-DD` id): "сегодня", "13 июля", "13 июля 2025". */
+export function dailyDate(id: string, today = localDay()): string | null {
+  const m = /^daily-(\d{4})-(\d{2})-(\d{2})$/.exec(id)
+  if (!m) return null
+  const [, y, mo, d] = m
+  if (`${y}-${mo}-${d}` === today) return 'сегодня'
+  const label = `${Number(d)} ${MONTHS_RU[Number(mo) - 1]}`
+  return y === today.slice(0, 4) ? label : `${label} ${y}`
+}
+
 /** Russian plural for "день". */
 export function daysWord(n: number): string {
   const m10 = n % 10

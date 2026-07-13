@@ -3,6 +3,7 @@ import { storyWordCount } from '../lib/parse'
 import { coverSrc } from '../lib/cover'
 import { collectionById, CUSTOM_COLLECTION } from '../lib/collections'
 import { ReactionIcon } from './ReactionIcon'
+import { dailyDate } from '../lib/progress'
 
 interface Props {
   collectionId: string
@@ -58,6 +59,7 @@ export function CollectionView({
                     <span className="story-title-ru">{s.titleRu}</span>
                   </span>
                   <span className="story-card-meta">
+                    {dailyDate(s.id) && <span className="story-date">{dailyDate(s.id)}</span>}
                     <span className="story-words">{storyWordCount(s)} слов</span>
                     {fb && (
                       <span className="story-status read">

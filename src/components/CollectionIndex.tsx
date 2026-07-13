@@ -1,7 +1,7 @@
 import type { Collection, Feedback, Story } from '../lib/types'
 import { collectionById, collections, CUSTOM_COLLECTION } from '../lib/collections'
 import { coverSrc } from '../lib/cover'
-import { daysWord } from '../lib/progress'
+import { dailyDate, daysWord } from '../lib/progress'
 
 interface Props {
   stories: Story[]
@@ -53,7 +53,9 @@ export function CollectionIndex({
             <img className="daily-cover" src={coverSrc(dailyStory.cover)} alt="" />
           )}
           <span className="daily-main">
-            <span className="daily-label">📅 История дня</span>
+            <span className="daily-label">
+              📅 История дня{dailyDate(dailyStory.id) ? ` · ${dailyDate(dailyStory.id)}` : ''}
+            </span>
             <span className="daily-title">{dailyStory.title}</span>
             {dailyStory.wordOfDay && (
               <span className="daily-word">
