@@ -8,7 +8,7 @@
   "paragraphs": [
     "Toms Vater besucht ihn in Berlin. Am ersten Abend gehen sie zusammen in ein Restaurant. Der Vater hat großen {{Durst|жажда (Durst haben — хотеть пить)}} und sagt zum Kellner: „Ich möchte nur ein Glas Wasser, bitte.“ Der Kellner fragt sofort: „{{Still oder Sprudel|без газа или с газом}}?“ Der Vater versteht die Frage nicht. In Spanien bekommt man Wasser einfach so.",
     "Tom lächelt und erklärt: „In Deutschland trinken die meisten Leute gern {{Sprudelwasser|газированная вода}}. Das ist Wasser mit {{Kohlensäure|углекислый газ}}, also mit vielen Blasen.“ Der Vater {{schüttelt|качает (schütteln)}} den Kopf. „Warum? Wasser ist Wasser.“ Tom muss lachen, weil er am Anfang genauso gedacht hat. Für ihn war Wasser immer nur Wasser.",
-    "Der Kellner bringt eine Flasche Sprudelwasser. Der Vater trinkt einen Schluck und macht ein komisches Gesicht. „Das schmeckt wie {{Limonade|лимонад}} ohne Zucker“, sagt er. „Ich wollte doch nur normales Wasser.“ „Dann bestell einfach {{Leitungswasser|водопроводная вода}}“, sagt Tom.",
+    "Der Kellner bringt eine Flasche Sprudelwasser. Der Vater trinkt einen Schluck und macht ein komisches Gesicht. „Das schmeckt wie {{Limonade|лимонад}} ohne Zucker“, sagt er. „Ich wollte doch nur normales Wasser.“ „Dann bestell einfach {{Leitungswasser|водопроводная вода}}“, sagt Tom. Der Vater nickt langsam und wartet.",
     "Der Vater ruft den Kellner und fragt nach Wasser aus dem {{Hahn|кран}}. Der Kellner {{schaut|смотрит (anschauen: schaut … an)}} ihn müde {{+an}}. „Leitungswasser bekommen Sie bei uns leider nicht.“ Der Vater ist überrascht. „In Spanien ist das Wasser aus dem Hahn immer {{kostenlos|бесплатно}}.“",
     "„Hier ist das anders“, sagt Tom. „Viele Restaurants servieren kein Leitungswasser, weil sie mit den Flaschen Geld verdienen.“ Der Vater {{seufzt|вздыхает (seufzen)}}: „Also kostet ein einfaches Glas Wasser hier mehr als in Spanien.“ „Genau“, lacht Tom.",
     "„Und der Sprudel ist teurer als der Saft?“, fragt der Vater. „Manchmal“, antwortet Tom. „Aber viele Deutsche finden {{stilles Wasser|вода без газа}} langweiliger. Sie sagen: Ohne Blasen schmeckt es nach nichts.“ Der Vater trinkt noch einen Schluck Sprudel und denkt nach. Langsam gefällt ihm der Geschmack.",
@@ -103,6 +103,8 @@
     "bestell": "закажи (bestellen)",
     "einfach": "просто",
     "leitungswasser": "водопроводная вода (das Leitungswasser)",
+    "nickt": "кивает (nicken)",
+    "wartet": "ждёт (warten)",
     "ruft": "зовёт (rufen)",
     "nach": "fragt nach = спрашивает про; schmeckt nach = на вкус как; предлог «после»",
     "aus": "из",
