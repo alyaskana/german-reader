@@ -765,7 +765,7 @@ button {
   gap: 9px;
   padding: 6px 4px;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink-soft);
   transition: transform 0.12s, color 0.15s;
 }
@@ -776,6 +776,7 @@ button {
 
 .feedback-btn.chosen {
   color: var(--ink);
+  font-weight: 800;
 }
 
 .feedback-emoji {
@@ -784,13 +785,11 @@ button {
   justify-content: center;
   width: 62px;
   height: 62px;
-  border-radius: 50%;
-  transition: background 0.15s, box-shadow 0.18s;
+  transition: transform 0.15s;
 }
 
 .feedback-btn.chosen .feedback-emoji {
-  background: var(--accent-wash);
-  box-shadow: 0 4px 14px rgba(245, 166, 35, 0.28);
+  transform: scale(1.22);
 }
 
 .feedback-emoji .reaction {
