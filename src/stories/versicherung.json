@@ -103,5 +103,34 @@
     "nicht": "не"
   },
   "collection": "deutscher",
-  "order": 4
+  "order": 4,
+  "quiz": [
+    {
+      "q": "Was fragt Jonas Tom über das neue Fahrrad?",
+      "options": [
+        "Ob er eine Versicherung hat",
+        "Wie teuer es war",
+        "Wo er es gekauft hat"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welche Versicherung ist laut Jonas die wichtigste?",
+      "options": [
+        "Die Haftpflichtversicherung",
+        "Die Versicherung für den Hund",
+        "Die Versicherung für die Möbel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was passiert mit Toms Handy?",
+      "options": [
+        "Es fällt in eine Pfütze und ist kaputt",
+        "Er verliert es im Bus",
+        "Jonas nimmt es mit"
+      ],
+      "answer": 0
+    }
+  ]
 }

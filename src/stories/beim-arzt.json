@@ -102,5 +102,34 @@
     "halb": "наполовину"
   },
   "collection": "alltag",
-  "order": 6
+  "order": 6,
+  "quiz": [
+    {
+      "q": "Was ist mit Jonas los?",
+      "options": [
+        "Er ist krank und hat Fieber",
+        "Er hat sich das Bein gebrochen",
+        "Er ist gesund und munter"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was sagt die Ärztin über Jonas?",
+      "options": [
+        "Er muss ins Krankenhaus",
+        "Er ist erkältet, das ist nicht schlimm",
+        "Er hat nichts, er kann arbeiten"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was soll Jonas zu Hause tun?",
+      "options": [
+        "Viel Sport machen",
+        "Tee trinken und viel schlafen",
+        "Sofort wieder arbeiten"
+      ],
+      "answer": 1
+    }
+  ]
 }

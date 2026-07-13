@@ -168,5 +168,34 @@
     "teuersten": "самый дорогой (teuer)",
     "von": "от, из",
     "bezahlt": "заплатил (bezahlen, Perfekt)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wohin geht Tom zum ersten Mal?",
+      "options": [
+        "Auf einen Weihnachtsmarkt",
+        "In ein Restaurant",
+        "Ins Kino"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was trinken Tom und Mia gegen die Kälte?",
+      "options": [
+        "Kalten Tee",
+        "Glühwein",
+        "Apfelsaftschorle"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Tom am Ende mit dem Becher?",
+      "options": [
+        "Er gibt ihn zurück",
+        "Er behält ihn als Souvenir",
+        "Er verliert ihn"
+      ],
+      "answer": 1
+    }
+  ]
 }

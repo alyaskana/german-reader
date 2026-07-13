@@ -173,5 +173,34 @@
     "als": "чем",
     "kleines": "маленький (klein)",
     "fest": "праздник (das Fest)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was ist der Tatort?",
+      "options": [
+        "Ein Krimi im Fernsehen",
+        "Ein Restaurant",
+        "Ein Fußballspiel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was macht man, wenn der Tatort läuft?",
+      "options": [
+        "Man redet viel",
+        "Man ist ruhig und redet nicht",
+        "Man geht nach Hause"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wer war am Ende der Mörder?",
+      "options": [
+        "Der Nachbar",
+        "Ein Kommissar",
+        "Tom"
+      ],
+      "answer": 0
+    }
+  ]
 }

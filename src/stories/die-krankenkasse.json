@@ -170,5 +170,34 @@
     "fast": "почти",
     "eben": "именно, просто (так уж)",
     "deutsche": "немецкая (deutsch)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was braucht Tom in Deutschland?",
+      "options": [
+        "Eine Krankenkasse",
+        "Ein neues Auto",
+        "Einen Führerschein"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie lange muss Tom auf den Arzttermin warten?",
+      "options": [
+        "Sechs Wochen",
+        "Einen Tag",
+        "Drei Monate"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie viel zahlt Tom am Ende beim Arzt?",
+      "options": [
+        "Nichts",
+        "Sehr viel Geld",
+        "Die Hälfte"
+      ],
+      "answer": 0
+    }
+  ]
 }

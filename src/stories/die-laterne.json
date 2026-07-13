@@ -224,5 +224,34 @@
     "ist": "есть (sein)",
     "teilen": "деление, готовность делиться (teilen)",
     "martin": "Мартин (Святой Мартин, Sankt Martin)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wem soll Tom am Martinstag helfen?",
+      "options": [
+        "Mias Nichte Lena",
+        "Einem alten Mann",
+        "Seinem Kollegen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum weint der kleine Junge?",
+      "options": [
+        "Er hat Hunger",
+        "Seine Laterne ist kaputt",
+        "Er hat sich verlaufen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Lena mit ihrer Laterne?",
+      "options": [
+        "Sie wirft sie weg",
+        "Sie gibt sie dem Jungen",
+        "Sie verliert sie"
+      ],
+      "answer": 1
+    }
+  ]
 }

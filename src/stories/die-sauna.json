@@ -201,5 +201,34 @@
     "seinem": "своему (sein)",
     "neuen": "новом, новому (neu)",
     "hobby": "хобби, увлечение"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was ist die wichtigste Regel in der Sauna?",
+      "options": [
+        "Man muss laut sprechen",
+        "Man legt das Handtuch unter den Körper",
+        "Man trägt viel Kleidung"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie ist es in der Sauna?",
+      "options": [
+        "Es ist sehr still, niemand spricht laut",
+        "Alle reden und lachen",
+        "Es läuft laute Musik"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie findet Tom die Sauna am Ende?",
+      "options": [
+        "Er will nie wieder hin",
+        "Er will jeden Samstag in die Sauna",
+        "Er findet sie langweilig"
+      ],
+      "answer": 1
+    }
+  ]
 }

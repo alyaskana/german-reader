@@ -144,5 +144,34 @@
     "schüsseln": "миски (die Schüssel)"
   },
   "collection": "deutscher",
-  "order": 25
+  "order": 25,
+  "quiz": [
+    {
+      "q": "Worüber streiten die Mutter und die Oma?",
+      "options": [
+        "Wer den besten Kartoffelsalat macht",
+        "Wer kocht heute Abend",
+        "Wer mehr Kartoffeln kauft"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie macht die Mutter aus dem Norden ihren Salat?",
+      "options": [
+        "Mit Brühe und Essig",
+        "Mit Mayonnaise",
+        "Mit Zucker"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was sagt Tom am Ende?",
+      "options": [
+        "Der Salat aus dem Süden ist besser",
+        "Beide Salate sind Sieger",
+        "Kein Salat schmeckt ihm"
+      ],
+      "answer": 1
+    }
+  ]
 }

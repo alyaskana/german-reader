@@ -202,5 +202,34 @@
     "begonnen": "началось (Perfekt от beginnen)",
     "schaut": "смотрит (schauen)",
     "sehr": "очень"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Auf welcher Spur überholt man in Deutschland?",
+      "options": [
+        "Links",
+        "Rechts",
+        "In der Mitte"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was bilden die Autos im Stau?",
+      "options": [
+        "Eine Rettungsgasse",
+        "Eine lange Reihe",
+        "Einen Kreis"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum hat Tom am Ende plötzlich Eile?",
+      "options": [
+        "Das Meeting hat schon begonnen",
+        "Es regnet",
+        "Er hat Hunger"
+      ],
+      "answer": 0
+    }
+  ]
 }

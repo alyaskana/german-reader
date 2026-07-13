@@ -117,5 +117,34 @@
     "mütze": "шапка"
   },
   "collection": "deutscher",
-  "order": 5
+  "order": 5,
+  "quiz": [
+    {
+      "q": "Was sagt man in Deutschland über das Wetter?",
+      "options": [
+        "Es gibt kein schlechtes Wetter, nur falsche Kleidung",
+        "Bei Regen bleibt man zu Hause",
+        "Man wandert nur bei Sonne"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was passiert mit Toms Sneakern im Regen?",
+      "options": [
+        "Sie bleiben trocken",
+        "Sie werden nass",
+        "Sie gehen kaputt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was kauft Tom am Abend online?",
+      "options": [
+        "Wanderschuhe, eine Regenjacke und eine Mütze",
+        "Zwei Sneaker",
+        "Nur einen Rucksack"
+      ],
+      "answer": 0
+    }
+  ]
 }

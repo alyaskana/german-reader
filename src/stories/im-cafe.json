@@ -99,5 +99,34 @@
     "tag": "день"
   },
   "collection": "alltag",
-  "order": 1
+  "order": 1,
+  "quiz": [
+    {
+      "q": "Was bestellt Anna im Café?",
+      "options": [
+        "Einen Cappuccino und Apfelkuchen",
+        "Einen Tee und Brot",
+        "Nur ein Wasser"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was macht das Wetter draußen?",
+      "options": [
+        "Es regnet",
+        "Die Sonne scheint",
+        "Es schneit"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wer kommt mit einem großen Hund ins Café?",
+      "options": [
+        "Ein Mann namens Paul",
+        "Die Kellnerin",
+        "Annas Bruder"
+      ],
+      "answer": 0
+    }
+  ]
 }

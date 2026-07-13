@@ -202,5 +202,34 @@
     "seitdem": "с тех пор",
     "berlin": "Берлин",
     "gefeiert": "праздновал (Perfekt от feiern)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was macht die Familie am Samstag in der Küche?",
+      "options": [
+        "Sie bemalen Eier",
+        "Sie backen Brot",
+        "Sie kochen Suppe"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wer versteckt die Eier im Garten?",
+      "options": [
+        "Mias Vater",
+        "Tom",
+        "Die Kinder"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum roch es drei Wochen später im Garten schlecht?",
+      "options": [
+        "Ein altes Ei lag unter einem Busch",
+        "Der Müll war voll",
+        "Ein Tier war krank"
+      ],
+      "answer": 0
+    }
+  ]
 }

@@ -240,5 +240,34 @@
     "ersten": "первый (erst); zum ersten Mal — впервые",
     "wirklich": "действительно, по-настоящему",
     "angekommen": "прибывший; sich angekommen fühlen — чувствовать, что нашёл своё место (ankommen)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was macht Tom als Erstes am Morgen?",
+      "options": [
+        "Er macht das Fenster weit auf und lüftet",
+        "Er trinkt Kaffee",
+        "Er geht zum Supermarkt"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was macht Tom an der roten Ampel?",
+      "options": [
+        "Er geht einfach über die Straße",
+        "Er wartet ruhig",
+        "Er läuft zurück"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was sagt Mia am Ende über Tom?",
+      "options": [
+        "Er ist noch ein echter Tourist",
+        "Er soll mehr lernen",
+        "Jetzt ist er ein echter Deutscher"
+      ],
+      "answer": 2
+    }
+  ]
 }

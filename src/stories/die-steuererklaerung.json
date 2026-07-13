@@ -180,5 +180,34 @@
     "staat": "государство",
     "auch": "тоже, также",
     "geholfen": "помогла (helfen)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was ist Elster?",
+      "options": [
+        "Ein Vogel im Park",
+        "Das Programm vom Finanzamt",
+        "Ein Kollege von Tom"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wer hilft Tom bei der Steuererklärung?",
+      "options": [
+        "Lukas",
+        "Mia",
+        "Das Finanzamt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was bekommt Tom am Ende vom Finanzamt?",
+      "options": [
+        "Eine Rückerstattung von 800 Euro",
+        "Eine Strafe",
+        "Einen neuen Ordner"
+      ],
+      "answer": 0
+    }
+  ]
 }

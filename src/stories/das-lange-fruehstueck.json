@@ -115,5 +115,34 @@
     "gehen": "уходить, идти"
   },
   "collection": "deutscher",
-  "order": 2
+  "order": 2,
+  "quiz": [
+    {
+      "q": "Wohin lädt Mias Familie Tom ein?",
+      "options": [
+        "Zum Frühstück",
+        "Zum Abendessen",
+        "Ins Kino"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie lange denkt Tom, dass das Frühstück dauert?",
+      "options": [
+        "Zwei Stunden",
+        "Dreißig Minuten",
+        "Den ganzen Tag"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie ist das Frühstück in Deutschland für Tom am Ende?",
+      "options": [
+        "Eine schnelle Mahlzeit",
+        "Ein Fest zum Geburtstag",
+        "Wie ein Hobby, es dauert lange"
+      ],
+      "answer": 2
+    }
+  ]
 }

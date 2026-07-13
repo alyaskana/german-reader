@@ -122,5 +122,34 @@
     "farbe": "цвет (die Farbe)",
     "schwarz": "чёрный",
     "willkommen": "добро пожаловать"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum stehen fünf Eimer in der Küche?",
+      "options": [
+        "Für die Mülltrennung",
+        "Für Wasser",
+        "Für die Wäsche"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wohin kommt das Papier?",
+      "options": [
+        "In den Biomüll",
+        "In die blaue Tonne",
+        "In den gelben Sack"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht man in Deutschland mit dem Glas?",
+      "options": [
+        "Man trennt die Farben",
+        "Alles in einen Eimer",
+        "In den Restmüll"
+      ],
+      "answer": 0
+    }
+  ]
 }

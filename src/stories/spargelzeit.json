@@ -162,5 +162,34 @@
     "jetzt": "сейчас",
     "nächstes": "следующий (nächst); nächstes Jahr — следующий год",
     "jahr": "год (das Jahr)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Worüber sprechen im April alle im Büro?",
+      "options": [
+        "Über Spargel",
+        "Über den Urlaub",
+        "Über das Wetter"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wo kaufen Tom und Mia den frischen Spargel?",
+      "options": [
+        "Im Supermarkt",
+        "Bei einem Bauern auf dem Land",
+        "In Madrid"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie findet Tom den Spargel am Ende?",
+      "options": [
+        "Besser als in jedem Restaurant in Madrid",
+        "Nicht so gut",
+        "Zu teuer"
+      ],
+      "answer": 0
+    }
+  ]
 }

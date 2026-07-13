@@ -90,5 +90,34 @@
     "marienplatz": "Мариенплац (площадь в центре Мюнхена)"
   },
   "collection": "alltag",
-  "order": 2
+  "order": 2,
+  "quiz": [
+    {
+      "q": "Welche Linie fährt zum Marienplatz?",
+      "options": [
+        "Die U3",
+        "Die U1",
+        "Die U6"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum findet Tom keinen Sitzplatz?",
+      "options": [
+        "Die U-Bahn ist sehr voll",
+        "Es gibt keine Sitze",
+        "Er will stehen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie fährt Tom am Marienplatz nach oben?",
+      "options": [
+        "Mit der Rolltreppe",
+        "Mit dem Aufzug",
+        "Mit der Treppe"
+      ],
+      "answer": 0
+    }
+  ]
 }

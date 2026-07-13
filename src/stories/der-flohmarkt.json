@@ -203,5 +203,34 @@
     "wert": "стоящий, ценный; mehr wert als — ценнее чем"
   },
   "collection": "deutscher",
-  "order": 38
+  "order": 38,
+  "quiz": [
+    {
+      "q": "Was kauft Tom auf dem Flohmarkt?",
+      "options": [
+        "Eine alte Lampe aus Messing",
+        "Einen neuen Computer",
+        "Ein altes Fahrrad"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie viel bezahlt Tom am Ende für die Lampe?",
+      "options": [
+        "Fünfzig Euro",
+        "Dreißig Euro",
+        "Zwanzig Euro"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum gibt Tom die Lampe zurück?",
+      "options": [
+        "Sie ist kaputt",
+        "Sie war ein Geschenk für die Mutter des Verkäufers",
+        "Sie ist zu teuer"
+      ],
+      "answer": 1
+    }
+  ]
 }

@@ -106,5 +106,34 @@
     "super": "супер, отлично"
   },
   "collection": "deutscher",
-  "order": 6
+  "order": 6,
+  "quiz": [
+    {
+      "q": "Was ist Toms Plan für den Tag?",
+      "options": [
+        "Den ganzen Tag nur Deutsch sprechen",
+        "Nur Englisch sprechen",
+        "Zu Hause bleiben"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie antwortet die Verkäuferin zuerst?",
+      "options": [
+        "Auf Spanisch",
+        "Auf Englisch",
+        "Gar nicht"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Tom am nächsten Tag anders?",
+      "options": [
+        "Er spricht Englisch",
+        "Er kauft nichts",
+        "Er bittet, auf Deutsch zu antworten"
+      ],
+      "answer": 2
+    }
+  ]
 }

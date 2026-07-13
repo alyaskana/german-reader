@@ -133,5 +133,34 @@
     "nachricht": "сообщение (die Nachricht)",
     "gelesen": "прочитал (lesen)",
     "stunde": "час (die Stunde; eine Stunde zu früh = на час раньше)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum sagt Jonas, dass Tom zu spät ist?",
+      "options": [
+        "Genau um neun ist für die Deutschen fast zu spät",
+        "Tom kommt um zehn Uhr",
+        "Tom hat das Meeting vergessen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was rät Mia Tom am Telefon?",
+      "options": [
+        "Genau um neun zu kommen",
+        "Fünf Minuten früher zu kommen",
+        "Zu Hause zu bleiben"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum kommt am nächsten Tag niemand um neun?",
+      "options": [
+        "Alle sind krank",
+        "Es gibt kein Meeting mehr",
+        "Das Meeting ist erst um zehn Uhr"
+      ],
+      "answer": 2
+    }
+  ]
 }

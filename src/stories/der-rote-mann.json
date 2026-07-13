@@ -98,5 +98,34 @@
     "vorbild": "пример для подражания"
   },
   "collection": "deutscher",
-  "order": 8
+  "order": 8,
+  "quiz": [
+    {
+      "q": "Warum will Mia nicht über die Straße gehen?",
+      "options": [
+        "Die Ampel ist rot",
+        "Ein Auto kommt",
+        "Sie ist müde"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie ist die Straße am Abend?",
+      "options": [
+        "Voll mit Autos",
+        "Leer",
+        "Nass"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Tom am nächsten Tag an der roten Ampel?",
+      "options": [
+        "Er geht bei Rot",
+        "Er wartet auf Grün",
+        "Er fährt mit dem Rad"
+      ],
+      "answer": 1
+    }
+  ]
 }

@@ -139,5 +139,34 @@
     "dankt": "благодарит (danken); dankt ihr — благодарит её",
     "ihr": "ей (sie); dankt ihr — благодарит её",
     "herzlich": "сердечно, тепло"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Um wie viel Uhr gibt es bei Oma Kaffee und Kuchen?",
+      "options": [
+        "Um drei Uhr",
+        "Um neun Uhr",
+        "Um zehn Uhr"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was sagt Mia über Oma?",
+      "options": [
+        "Oma kocht nicht gern",
+        "Bei Oma sagt man nie Nein",
+        "Oma isst keinen Kuchen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was gibt Oma Tom an der Tür mit?",
+      "options": [
+        "Einen Kaffee",
+        "Ein Buch",
+        "Eine große Tüte mit Kuchen"
+      ],
+      "answer": 2
+    }
+  ]
 }

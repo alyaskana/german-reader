@@ -240,5 +240,34 @@
     "weiterging": "продолжался (Präteritum от weitergehen)",
     "gutes": "хороший (gut); ein gutes Jahr — хороший год",
     "werden": "стать; würde werden — стал бы"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Welchen Film schauen viele Deutsche an Silvester?",
+      "options": [
+        "Dinner for One",
+        "Einen spanischen Film",
+        "Einen neuen Film"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was war Mias Vorsatz?",
+      "options": [
+        "Mehr Sport machen",
+        "Mutiger zu sein",
+        "Weniger arbeiten"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Mia am Ende?",
+      "options": [
+        "Sie fährt nach Hause",
+        "Sie gibt Tom einen Kuss",
+        "Sie geht schlafen"
+      ],
+      "answer": 1
+    }
+  ]
 }

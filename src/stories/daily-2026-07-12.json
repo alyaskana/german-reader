@@ -5,7 +5,10 @@
   "level": "A1",
   "collection": "daily",
   "order": 20260712,
-  "wordOfDay": { "term": "Schwein haben", "gloss": "везти, иметь удачу (букв. «иметь свинью»)" },
+  "wordOfDay": {
+    "term": "Schwein haben",
+    "gloss": "везти, иметь удачу (букв. «иметь свинью»)"
+  },
   "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#eef2e3'/><circle cx='166' cy='24' r='14' fill='#e8c07d'/><rect y='78' width='200' height='42' fill='#8fae6f'/><rect x='40' y='70' width='120' height='34' rx='4' fill='#d94f4f'/><rect x='40' y='82' width='120' height='6' fill='#f6efe4'/><rect x='40' y='96' width='120' height='6' fill='#f6efe4'/><ellipse cx='100' cy='60' rx='26' ry='20' fill='#eab3b8'/><circle cx='80' cy='44' r='8' fill='#eab3b8'/><circle cx='120' cy='44' r='8' fill='#eab3b8'/><ellipse cx='100' cy='66' rx='11' ry='8' fill='#e39aa0'/><circle cx='94' cy='65' r='1.6' fill='#8a4b52'/><circle cx='106' cy='65' r='1.6' fill='#8a4b52'/><circle cx='90' cy='52' r='2' fill='#5b3a3a'/><circle cx='110' cy='52' r='2' fill='#5b3a3a'/></svg>",
   "paragraphs": [
     "Am Samstag wollen Lena und ihr Bruder Tim ein {{Picknick|пикник}} im Park machen. Der Himmel ist aber grau, und dunkle {{Wolken|облака}} hängen tief.",
@@ -99,5 +102,34 @@
     "schönsten": "самым прекрасным",
     "des": "артикль (род. п.)",
     "jahres": "года"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was wollen Lena und Tim am Samstag machen?",
+      "options": [
+        "Ein Picknick im Park",
+        "Ins Kino gehen",
+        "Zu Hause bleiben"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie wird das Wetter im Park?",
+      "options": [
+        "Die Sonne scheint wieder",
+        "Es regnet stark",
+        "Es schneit"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welches Tier kommt zu der Decke?",
+      "options": [
+        "Ein kleines Ferkel",
+        "Ein Hund",
+        "Eine Katze"
+      ],
+      "answer": 0
+    }
+  ]
 }

@@ -144,5 +144,34 @@
     "doch": "всё же, ведь",
     "schlechte": "плохая (schlecht)",
     "idee": "идея"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum kann Tom am Sonntag nicht einkaufen?",
+      "options": [
+        "Die Geschäfte sind zu",
+        "Er hat kein Geld",
+        "Er ist müde"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum darf Tom am Sonntag nicht waschen?",
+      "options": [
+        "Man darf keinen Lärm machen",
+        "Die Waschmaschine ist kaputt",
+        "Es gibt kein Wasser"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was machen Tom und Mia zusammen?",
+      "options": [
+        "Sie backen Brot",
+        "Sie gehen einkaufen",
+        "Sie waschen Kleidung"
+      ],
+      "answer": 0
+    }
+  ]
 }

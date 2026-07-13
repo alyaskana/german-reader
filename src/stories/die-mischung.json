@@ -116,5 +116,34 @@
     "logik": "логика"
   },
   "collection": "deutscher",
-  "order": 10
+  "order": 10,
+  "quiz": [
+    {
+      "q": "Was ist ein Radler?",
+      "options": [
+        "Bier mit Zitronenlimo",
+        "Wein mit Wasser",
+        "Cola mit Weizenbier"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was trinken die Deutschen laut Emma im Winter?",
+      "options": [
+        "Radler",
+        "Glühwein",
+        "Weinschorle"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was mischt Tom am Ende selbst?",
+      "options": [
+        "Bier und Limo",
+        "Cola und Weizenbier",
+        "Apfelsaft, Wasser und Zitrone"
+      ],
+      "answer": 2
+    }
+  ]
 }

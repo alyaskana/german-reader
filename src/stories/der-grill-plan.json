@@ -102,5 +102,34 @@
     "deutschland": "Германия"
   },
   "collection": "deutscher",
-  "order": 3
+  "order": 3,
+  "quiz": [
+    {
+      "q": "Wann wollen sie grillen?",
+      "options": [
+        "Morgen",
+        "Samstag in zwei Wochen",
+        "Heute Abend"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was soll Tom kaufen?",
+      "options": [
+        "Fleisch und Salat",
+        "Den Grill und Kohle",
+        "Brot und Getränke"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Was sagt Mia am Ende über den Plan?",
+      "options": [
+        "Mit einem Plan klappt alles",
+        "Ein Plan ist nicht nötig",
+        "Der Plan war falsch"
+      ],
+      "answer": 0
+    }
+  ]
 }

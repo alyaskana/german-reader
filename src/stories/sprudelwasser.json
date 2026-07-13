@@ -193,5 +193,34 @@
     "langsam": "постепенно, медленно",
     "echte": "настоящие (echt)",
     "hebt": "поднимает (heben); hebt sein Glas = поднимает бокал"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was fragt der Kellner, als der Vater Wasser bestellt?",
+      "options": [
+        "Still oder Sprudel?",
+        "Groß oder klein?",
+        "Warm oder kalt?"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum servieren viele Restaurants kein Leitungswasser?",
+      "options": [
+        "Weil sie mit den Flaschen Geld verdienen",
+        "Weil das Wasser schlecht ist",
+        "Weil es verboten ist"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was kauft der Vater am nächsten Tag im Supermarkt?",
+      "options": [
+        "Stilles Wasser",
+        "Sprudelwasser mit Kohlensäure",
+        "Nur Saft"
+      ],
+      "answer": 1
+    }
+  ]
 }

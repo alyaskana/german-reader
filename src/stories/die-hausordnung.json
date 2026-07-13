@@ -217,5 +217,34 @@
     "zusammen": "вместе",
     "teilt": "делит, делится (teilen)",
     "mit": "с (кем-то); teilt mit = делится с"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum klopft die Nachbarin am Abend an Toms Tür?",
+      "options": [
+        "Die Musik ist nach 22 Uhr zu laut",
+        "Sie will einen Kuchen bringen",
+        "Sie sucht ihre Schuhe"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "An welchem Tag darf Tom seine Wäsche waschen?",
+      "options": [
+        "Am Samstag",
+        "Am Donnerstag",
+        "Am Sonntag"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was gibt die strenge Nachbarin Tom am Ende?",
+      "options": [
+        "Einen Zettel",
+        "Eine neue Hausordnung",
+        "Einen selbst gebackenen Kuchen"
+      ],
+      "answer": 2
+    }
+  ]
 }

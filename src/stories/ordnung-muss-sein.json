@@ -220,5 +220,34 @@
     "man": "man tun darf = разрешается делать (неопр.-личное «man»)",
     "schild": "табличка, вывеска",
     "u-bahn": "метро (U-Bahn)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Welchen Spruch kennen die Deutschen laut Emma?",
+      "options": [
+        "Ordnung muss sein",
+        "Zeit ist Geld",
+        "Alles ist erlaubt"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was passiert nach zehn Uhr abends?",
+      "options": [
+        "Es ist Ruhezeit und Lärm ist verboten",
+        "Alle hören laut Musik",
+        "Der Bus fährt nicht mehr"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was passiert mit Toms Geldbörse?",
+      "options": [
+        "Sie ist für immer weg",
+        "Ein Mann gibt sie im Fundbüro ab",
+        "Ein Dieb nimmt das Geld"
+      ],
+      "answer": 1
+    }
+  ]
 }

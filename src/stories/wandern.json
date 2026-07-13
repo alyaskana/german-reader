@@ -196,5 +196,34 @@
     "vielleicht": "может быть",
     "mein": "мой",
     "dabei": "при этом, с собой"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wohin will Tom am Sonntag?",
+      "options": [
+        "In die Berge wandern",
+        "Ans Meer fahren",
+        "Ins Kino gehen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was machen Tom und Mia, als es regnet?",
+      "options": [
+        "Sie ziehen ihre Regenjacken an und gehen weiter",
+        "Sie gehen nach Hause",
+        "Sie warten in einer Hütte"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum kann Tom kein Foto machen?",
+      "options": [
+        "Sein Handy liegt unten im Auto",
+        "Die Kamera ist kaputt",
+        "Es ist zu dunkel"
+      ],
+      "answer": 0
+    }
+  ]
 }

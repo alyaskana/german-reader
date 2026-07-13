@@ -119,5 +119,34 @@
     "flasche": "бутылка"
   },
   "collection": "deutscher",
-  "order": 9
+  "order": 9,
+  "quiz": [
+    {
+      "q": "Was will Tom zuerst bestellen?",
+      "options": [
+        "Eine Cola",
+        "Eine Apfelsaftschorle",
+        "Ein Bier"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was ist eine Apfelsaftschorle?",
+      "options": [
+        "Apfelsaft mit Milch",
+        "Apfelsaft mit Mineralwasser",
+        "Apfelsaft mit Cola"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Toms Bruder im Restaurant?",
+      "options": [
+        "Er trinkt nur Wasser",
+        "Er bestellt auch eine Schorle",
+        "Er geht nach Hause"
+      ],
+      "answer": 1
+    }
+  ]
 }

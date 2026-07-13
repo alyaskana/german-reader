@@ -239,5 +239,34 @@
     "vor": "vor allem = прежде всего",
     "allem": "vor allem = прежде всего",
     "gastfreundschaft": "гостеприимство (die Gastfreundschaft)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wohin fährt Tom zum ersten Mal?",
+      "options": [
+        "Nach Berlin",
+        "Nach München zum Oktoberfest",
+        "Nach Spanien"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum ist Tom im Zelt plötzlich allein?",
+      "options": [
+        "Er hat die Gruppe verloren",
+        "Seine Freunde sind nach Hause gegangen",
+        "Er wollte allein sein"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wer hilft Tom, als er verloren ist?",
+      "options": [
+        "Der Kellner",
+        "Ein älterer Mann und seine Familie",
+        "Ein Polizist"
+      ],
+      "answer": 1
+    }
+  ]
 }

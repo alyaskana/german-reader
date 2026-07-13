@@ -241,5 +241,34 @@
     "ersten": "первый (erst); zum ersten Mal — в первый раз",
     "mal": "раз; zum ersten Mal — в первый раз",
     "schaffe": "справлюсь (schaffen); ich schaffe das — я справлюсь"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum ist Tom heute so nervös?",
+      "options": [
+        "Es gibt eine Prüfung",
+        "Er hat verschlafen",
+        "Er hat kein Buch"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie lange haben die Schüler für die Prüfung Zeit?",
+      "options": [
+        "Dreißig Minuten",
+        "Sechzig Minuten",
+        "Zwei Stunden"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie ist Toms Note am Ende?",
+      "options": [
+        "Sehr gut",
+        "Schlecht",
+        "Er ist durchgefallen"
+      ],
+      "answer": 0
+    }
+  ]
 }

@@ -93,5 +93,34 @@
     "ohne": "без"
   },
   "collection": "alltag",
-  "order": 3
+  "order": 3,
+  "quiz": [
+    {
+      "q": "Warum geht Lena in den Supermarkt?",
+      "options": [
+        "Sie kocht heute für Freunde",
+        "Sie sucht Arbeit",
+        "Sie trifft eine Freundin"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wo findet Lena die Zwiebeln?",
+      "options": [
+        "Im Kühlregal",
+        "In Gang drei beim Gemüse",
+        "An der Kasse"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was hat Lena zu Hause vergessen zu kaufen?",
+      "options": [
+        "Das Brot",
+        "Den Käse",
+        "Die Milch"
+      ],
+      "answer": 1
+    }
+  ]
 }

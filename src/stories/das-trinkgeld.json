@@ -172,5 +172,34 @@
     "nun": "ну; nun … nicht — уж не настолько",
     "auch": "тоже, также",
     "sein": "быть (sein)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was bedeutet in Deutschland: „Stimmt so“?",
+      "options": [
+        "Der Rest ist für die Kellnerin",
+        "Die Rechnung ist falsch",
+        "Ich möchte zahlen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie viel Trinkgeld gibt man ungefähr, wenn der Service gut war?",
+      "options": [
+        "Fünfzig Prozent",
+        "Zehn Prozent",
+        "Gar nichts"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Tom in der Bar falsch?",
+      "options": [
+        "Er gibt kein Trinkgeld",
+        "Er will zwanzig Euro Trinkgeld geben",
+        "Er trinkt keinen Kaffee"
+      ],
+      "answer": 1
+    }
+  ]
 }

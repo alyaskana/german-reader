@@ -88,5 +88,34 @@
     "ohne": "без"
   },
   "collection": "alltag",
-  "order": 5
+  "order": 5,
+  "quiz": [
+    {
+      "q": "Was machen Nina und Max im Park?",
+      "options": [
+        "Ein Picknick",
+        "Sie schwimmen im See",
+        "Sie spielen Fußball"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wohin fliegt das Frisbee?",
+      "options": [
+        "Auf einen Baum",
+        "In den See",
+        "Auf die Straße"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wer bringt das Frisbee zurück?",
+      "options": [
+        "Max",
+        "Ein Hund",
+        "Nina"
+      ],
+      "answer": 1
+    }
+  ]
 }

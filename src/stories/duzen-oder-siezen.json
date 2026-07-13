@@ -152,5 +152,34 @@
     "mir": "мне (ich); zu mir — ко мне",
     "chefin": "начальница (die Chefin)",
     "wieder": "снова, опять"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wie sagt man in Deutschland zum Chef?",
+      "options": [
+        "Sie",
+        "Du",
+        "Herr"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was bietet der Chef Tom an?",
+      "options": [
+        "Das Du",
+        "Mehr Geld",
+        "Einen freien Tag"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wer ist die neue Frau im Büro?",
+      "options": [
+        "Die neue Chefin",
+        "Eine Kundin",
+        "Toms Schwester"
+      ],
+      "answer": 0
+    }
+  ]
 }

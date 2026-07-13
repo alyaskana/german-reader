@@ -151,5 +151,34 @@
     "wichtigsten": "самое важное (wichtig); am wichtigsten — важнее всего",
     "keinen": "никакой, не (kein, вин. падеж)",
     "dialekt": "диалект"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum geht Tom zur Bäckerei?",
+      "options": [
+        "Er will Brötchen für das Frühstück kaufen",
+        "Er will Mia treffen",
+        "Er will Deutsch lernen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welches Wort für Brötchen benutzt Tom in der Bäckerei?",
+      "options": [
+        "Semmel",
+        "Schrippen",
+        "Weck"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie heißt das Brötchen in München?",
+      "options": [
+        "Schrippe",
+        "Weck",
+        "Semmel"
+      ],
+      "answer": 2
+    }
+  ]
 }

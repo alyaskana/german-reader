@@ -164,5 +164,34 @@
     "sicher": "безопасно, уверенно"
   },
   "collection": "deutscher",
-  "order": 20
+  "order": 20,
+  "quiz": [
+    {
+      "q": "Was hat Tom gekauft?",
+      "options": [
+        "Ein altes Fahrrad",
+        "Ein neues Auto",
+        "Einen Helm"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wer läuft plötzlich auf den Radweg?",
+      "options": [
+        "Ein Kind",
+        "Ein Hund",
+        "Ein Mann mit Handy"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wer ist der Mann auf dem Radweg?",
+      "options": [
+        "Mia",
+        "Jonas, sein Kollege",
+        "Ein Polizist"
+      ],
+      "answer": 1
+    }
+  ]
 }

@@ -208,5 +208,34 @@
     "warst": "был (sein): du warst — ты был",
     "nah": "близко; zu nah — слишком близко",
     "schuld": "виноват"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum steht das Fenster im Büro offen?",
+      "options": [
+        "Weil Mia lüften will",
+        "Weil es draußen warm ist",
+        "Weil das Fenster kaputt ist"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was glaubt Tom über die Zugluft?",
+      "options": [
+        "Sie ist gesund",
+        "Sie macht krank",
+        "Sie ist warm"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum ist Tom am nächsten Morgen wirklich krank?",
+      "options": [
+        "Wegen der Zugluft vom Fenster",
+        "Weil Mia ihn angeniest hat",
+        "Weil er keinen Tee getrunken hat"
+      ],
+      "answer": 1
+    }
+  ]
 }

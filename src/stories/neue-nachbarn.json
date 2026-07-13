@@ -94,5 +94,34 @@
     "spanien": "Испания"
   },
   "collection": "alltag",
-  "order": 4
+  "order": 4,
+  "quiz": [
+    {
+      "q": "Was bringt Frau Meier den neuen Nachbarn?",
+      "options": [
+        "Einen Kuchen",
+        "Kartons",
+        "Tee"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was ist David von Beruf?",
+      "options": [
+        "Lehrer",
+        "Koch",
+        "Verkäufer"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was machen die Meiers am Sonntag?",
+      "options": [
+        "Sie fahren weg",
+        "Sie waschen Wäsche",
+        "Sie machen ein Grillfest im Garten"
+      ],
+      "answer": 2
+    }
+  ]
 }

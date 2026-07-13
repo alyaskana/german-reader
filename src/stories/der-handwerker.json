@@ -158,5 +158,34 @@
     "sagt": "говорит (sagen)",
     "sind": "находятся, есть (sein)",
     "bin": "(я) есть (sein); ich bin — я"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum bleibt Tom den ganzen Tag zu Hause?",
+      "options": [
+        "Er wartet auf den Handwerker",
+        "Er ist krank",
+        "Er hat frei"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was ist bei Tom kaputt?",
+      "options": [
+        "Die Waschmaschine",
+        "Der Kühlschrank",
+        "Das Auto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wann kommt der Handwerker endlich?",
+      "options": [
+        "Um 15:58 Uhr",
+        "Am Morgen",
+        "Am nächsten Tag"
+      ],
+      "answer": 0
+    }
+  ]
 }

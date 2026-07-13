@@ -202,5 +202,34 @@
     "wieder": "снова; nie wieder — никогда больше"
   },
   "collection": "deutscher",
-  "order": 37
+  "order": 37,
+  "quiz": [
+    {
+      "q": "Was ist die Kehrwoche?",
+      "options": [
+        "Jede Familie putzt eine Woche das Treppenhaus",
+        "Eine Woche Urlaub",
+        "Eine Woche ohne Arbeit"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum putzte Tom zuerst nichts?",
+      "options": [
+        "Er hatte viel Arbeit und vergaß den Plan",
+        "Er war krank",
+        "Er mochte Frau Weber nicht"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was macht Frau Weber am Abend?",
+      "options": [
+        "Sie schimpft mit Tom",
+        "Sie bringt einen Kuchen",
+        "Sie putzt selbst die Treppe"
+      ],
+      "answer": 1
+    }
+  ]
 }

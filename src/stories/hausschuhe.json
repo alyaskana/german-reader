@@ -127,5 +127,34 @@
     "deutscher": "немец"
   },
   "collection": "deutscher",
-  "order": 1
+  "order": 1,
+  "quiz": [
+    {
+      "q": "Was soll Tom bei Mia zuerst machen?",
+      "options": [
+        "Die Blumen weglegen",
+        "Die Schuhe ausziehen",
+        "Tee kochen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum trägt man in Deutschland zu Hause keine Straßenschuhe?",
+      "options": [
+        "So bleibt der Boden sauber",
+        "Weil es verboten ist",
+        "Weil Schuhe zu teuer sind"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was passiert im Bus am Ende?",
+      "options": [
+        "Tom trägt noch die Hausschuhe",
+        "Tom verliert seine Blumen",
+        "Tom trifft Mia wieder"
+      ],
+      "answer": 0
+    }
+  ]
 }

@@ -182,5 +182,34 @@
     "bisschen": "немного (ein bisschen)"
   },
   "collection": "deutscher",
-  "order": 26
+  "order": 26,
+  "quiz": [
+    {
+      "q": "Was ist an diesem Montag im Februar los?",
+      "options": [
+        "Es ist Karneval",
+        "Es ist ein normaler Arbeitstag",
+        "Es ist Weihnachten"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was machen die Leute beim Umzug?",
+      "options": [
+        "Sie werfen Kamelle in die Menge",
+        "Sie verkaufen Bier",
+        "Sie tanzen im Büro"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie findet Tom den Tag am Ende?",
+      "options": [
+        "Er hatte den besten Tag in Deutschland",
+        "Er war die ganze Zeit traurig",
+        "Er ist früh nach Hause gegangen"
+      ],
+      "answer": 0
+    }
+  ]
 }

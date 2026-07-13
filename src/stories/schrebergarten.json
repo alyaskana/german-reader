@@ -187,5 +187,34 @@
     "zurück": "назад (einen Schritt zurück — шаг назад)",
     "zwanzig": "двадцать",
     "über": "через (über die Schulter — через плечо)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was ist ein Schrebergarten?",
+      "options": [
+        "Ein kleiner Garten in der Stadt",
+        "Ein großer Bauernhof",
+        "Ein Park im Wald"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was macht Tom aus Versehen im Garten?",
+      "options": [
+        "Er tritt in Opas Erdbeerbeet",
+        "Er zerbricht den Gartenzwerg",
+        "Er schneidet die Hecke"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie ist der Nachbar Herr Schmidt am Ende?",
+      "options": [
+        "Er ist böse und schickt Tom weg",
+        "Er ist eigentlich sehr nett",
+        "Er redet nicht mehr mit Tom"
+      ],
+      "answer": 1
+    }
+  ]
 }

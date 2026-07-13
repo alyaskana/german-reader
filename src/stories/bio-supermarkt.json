@@ -162,5 +162,34 @@
     "zu": "слишком (zu teuer — слишком дорого); также к (zu Hause — дома)",
     "zurück": "назад (kommt … zurück — возвращается)",
     "überrascht": "удивлённо, удивлённый"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum kauft Mia Bio-Produkte?",
+      "options": [
+        "Weil sie billiger sind",
+        "Weil es besser für die Natur ist",
+        "Weil sie aus Spanien kommen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Tom am nächsten Tag?",
+      "options": [
+        "Er kauft selbst Bio-Produkte",
+        "Er fährt nach Spanien",
+        "Er kauft im Discounter ein"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie schmeckt die Bio-Tomate?",
+      "options": [
+        "Sehr schlecht",
+        "Genau wie im Discounter",
+        "Süß, frisch und aromatisch"
+      ],
+      "answer": 2
+    }
+  ]
 }

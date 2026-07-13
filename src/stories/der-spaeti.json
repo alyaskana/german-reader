@@ -166,5 +166,34 @@
     "heimat": "родина, родные места (die Heimat)",
     "mitten": "посреди (mitten in — посреди)",
     "stadt": "город (die Stadt)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was hat Tom für das Abendessen vergessen?",
+      "options": [
+        "Die Butter",
+        "Das Bier",
+        "Das Brot"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum kann Tom im Späti nicht bezahlen?",
+      "options": [
+        "Der Späti ist geschlossen",
+        "Er hat sein Geld zu Hause vergessen",
+        "Herr Yilmaz will kein Geld"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Herr Yilmaz, als Tom das Geld zurückbringt?",
+      "options": [
+        "Er ist böse",
+        "Er will mehr Geld",
+        "Er schenkt Tom einen Kaffee"
+      ],
+      "answer": 2
+    }
+  ]
 }

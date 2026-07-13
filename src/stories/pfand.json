@@ -129,5 +129,34 @@
     "teurer": "дороже (teuer)",
     "als": "чем (при сравнении)",
     "ganze": "весь, целый (ganz)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was steht überall in Toms Küche?",
+      "options": [
+        "Viele leere Flaschen",
+        "Schmutzige Teller",
+        "Alte Zeitungen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was bekommt Tom für die leeren Flaschen?",
+      "options": [
+        "Nichts",
+        "Geld (Pfand)",
+        "Neue Flaschen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was hat Tom im Supermarkt vergessen?",
+      "options": [
+        "Seinen Bon",
+        "Die Tasche",
+        "Sein Fahrrad"
+      ],
+      "answer": 1
+    }
+  ]
 }

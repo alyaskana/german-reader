@@ -159,5 +159,34 @@
     "eben": "именно, просто (частица)",
     "viel": "много",
     "geduld": "терпение (die Geduld)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Warum möchte Jonas in einem Verein sein?",
+      "options": [
+        "Weil er einen kleinen Garten haben möchte",
+        "Weil er neue Freunde sucht",
+        "Weil er gern liest"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was muss Tom tun, um Mitglied zu werden?",
+      "options": [
+        "Einen Zaun bauen",
+        "Ein Formular ausfüllen und den Beitrag bezahlen",
+        "Dreißig Paragrafen schreiben"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum kann Tom nicht sofort anfangen?",
+      "options": [
+        "Er hat kein Geld",
+        "Es gibt keinen freien Garten",
+        "Er ist kein Mitglied"
+      ],
+      "answer": 1
+    }
+  ]
 }

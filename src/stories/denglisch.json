@@ -123,5 +123,34 @@
     "schlafzimmer": "спальня"
   },
   "collection": "deutscher",
-  "order": 7
+  "order": 7,
+  "quiz": [
+    {
+      "q": "Wo arbeitet Tom jetzt?",
+      "options": [
+        "In einem Büro in Berlin",
+        "In einem Café in München",
+        "In einer Schule"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welche Sprache spricht man im Büro?",
+      "options": [
+        "Denglisch",
+        "Nur Englisch",
+        "Nur Spanisch"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was ist Toms Lieblingswort?",
+      "options": [
+        "Das Homeoffice",
+        "Das Meeting",
+        "Der Beamer"
+      ],
+      "answer": 0
+    }
+  ]
 }

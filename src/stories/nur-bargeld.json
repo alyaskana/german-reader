@@ -151,5 +151,34 @@
     "auch": "тоже, также"
   },
   "collection": "deutscher",
-  "order": 19
+  "order": 19,
+  "quiz": [
+    {
+      "q": "Warum kann Tom in der Bäckerei nicht mit Karte bezahlen?",
+      "options": [
+        "Die Bäckerei nimmt nur Bargeld",
+        "Seine Karte ist kaputt",
+        "Er hat kein Konto"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was macht Tom, weil er nur zwei Euro hat?",
+      "options": [
+        "Er geht zum Geldautomaten",
+        "Er geht ohne Brötchen nach Hause",
+        "Er leiht sich Geld von Emma"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was steht am nächsten Tag an der Bäckerei?",
+      "options": [
+        "Sie ist geschlossen",
+        "Sie nehmen jetzt auch Karten",
+        "Es gibt kein Brot mehr"
+      ],
+      "answer": 1
+    }
+  ]
 }

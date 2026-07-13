@@ -238,5 +238,34 @@
     "ohne": "без",
     "hätten": "имели бы (haben — Konjunktiv II; hätten kennengelernt = познакомились бы)",
     "kennengelernt": "познакомились (kennenlernen)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wohin will Tom fahren?",
+      "options": [
+        "Nach Berlin",
+        "Nach Hamburg",
+        "Nach Madrid"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was steht auf der Anzeige?",
+      "options": [
+        "Verspätung",
+        "Der Zug ist pünktlich",
+        "Der Zug fährt nicht"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wer ist die junge Frau im Bus?",
+      "options": [
+        "Mias Schwester Lena",
+        "Eine Kollegin von Tom",
+        "Toms Freundin"
+      ],
+      "answer": 0
+    }
+  ]
 }

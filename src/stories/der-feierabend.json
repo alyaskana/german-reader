@@ -162,5 +162,34 @@
     "anstrengender": "утомительнее (anstrengend)",
     "als": "чем (при сравнении)",
     "lachen": "смеются, смеяться (lachen)"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Was machen Toms Kollegen um 17 Uhr?",
+      "options": [
+        "Sie gehen nach Hause",
+        "Sie arbeiten weiter",
+        "Sie kochen im Büro"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Warum bleibt Tom am ersten Tag länger im Büro?",
+      "options": [
+        "Der Chef sagt es ihm",
+        "Er will fleißig sein",
+        "Er hat viel zu tun mit den Kollegen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was sagt der Chef über den Feierabend?",
+      "options": [
+        "Man soll lange arbeiten",
+        "Man muss am Abend zurückkommen",
+        "Nach der Arbeit soll man sich erholen"
+      ],
+      "answer": 2
+    }
+  ]
 }

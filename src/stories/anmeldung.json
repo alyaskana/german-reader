@@ -161,5 +161,34 @@
     "seufzt": "вздыхает (seufzen)",
     "liebt": "любит (lieben)",
     "bürokratie": "бюрократия"
-  }
+  },
+  "quiz": [
+    {
+      "q": "Wohin geht Tom, um sich anzumelden?",
+      "options": [
+        "Zum Bürgeramt",
+        "Zur Bank",
+        "Zum Handyladen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie lange muss Tom auf den Termin warten?",
+      "options": [
+        "Sechs Wochen",
+        "Zwei Tage",
+        "Sechs Monate"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was hat Tom auf dem Formular vergessen?",
+      "options": [
+        "Die Unterschrift",
+        "Seinen Namen",
+        "Das Datum"
+      ],
+      "answer": 0
+    }
+  ]
 }
