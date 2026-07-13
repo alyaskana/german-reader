@@ -3,6 +3,7 @@
   "title": "Ein Sonntag im Park",
   "titleRu": "Воскресенье в парке",
   "level": "A1",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><circle cx='36' cy='28' r='14' fill='#e8c07d'/><rect y='84' width='200' height='36' fill='#a8b894'/><rect x='142' y='58' width='8' height='30' rx='3' fill='#8a827a'/><circle cx='146' cy='44' r='20' fill='#7f9573'/><circle cx='131' cy='54' r='13' fill='#7f9573'/><circle cx='161' cy='54' r='13' fill='#7f9573'/><path d='M56 96 84 86l32 10-28 12z' fill='#d9534f'/><path d='M70 102l28-11' stroke='#f6efe4' stroke-width='3'/><ellipse cx='96' cy='36' rx='13' ry='5' fill='#d9534f'/><path d='M66 32h14' stroke='#8a827a' stroke-width='3' stroke-linecap='round'/><path d='M70 40h10' stroke='#8a827a' stroke-width='3' stroke-linecap='round'/></svg>",
   "paragraphs": [
     "Es ist Sonntag, und die Sonne {{scheint|светит}}. Der {{Himmel|небо}} ist blau, keine Wolke. Nina und ihr Bruder Max machen ein {{Picknick|пикник}} im Park.",
     "Sie haben eine {{Decke|плед, покрывало}}, Brötchen, Obst und kalten Tee. Nina liegt in der Sonne. Max spielt mit einem {{Frisbee|фрисби}}.",

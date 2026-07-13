@@ -801,3 +801,52 @@ button {
     font-size: 1.12rem;
   }
 }
+
+/* ---------- covers ---------- */
+
+.cover svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.story-card-cover {
+  width: 84px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.story-card-main {
+  flex: 1;
+}
+
+.reader-cover {
+  height: 150px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+
+.reader-cover svg {
+  height: 150px;
+  object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .story-card-cover {
+    width: 64px;
+    height: 46px;
+  }
+
+  .reader-cover {
+    height: 120px;
+  }
+
+  .reader-cover svg {
+    height: 120px;
+  }
+}

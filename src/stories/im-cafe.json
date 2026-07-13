@@ -3,6 +3,7 @@
   "title": "Im Café",
   "titleRu": "В кафе",
   "level": "A1",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><circle cx='166' cy='24' r='14' fill='#e8c07d'/><rect y='88' width='200' height='32' fill='#eaddc6'/><path d='M60 44c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M76 44c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><ellipse cx='68' cy='88' rx='32' ry='5' fill='#dccbae'/><path d='M46 52h44v16a16 16 0 0 1-16 16H62a16 16 0 0 1-16-16z' fill='#d9534f'/><path d='M90 56h7a9 9 0 0 1 0 18h-7v-7h6a2.5 2.5 0 0 0 0-5h-6z' fill='#d9534f'/><ellipse cx='146' cy='88' rx='26' ry='5' fill='#ffffff'/><path d='M130 86l16-30 16 30z' fill='#e8c07d'/><path d='M136 78h20' stroke='#d9534f' stroke-width='4'/><circle cx='146' cy='52' r='4' fill='#d9534f'/></svg>",
   "paragraphs": [
     "Anna hat heute {{frei|выходной}}. Sie geht in ein kleines Café in der Stadt. Das Café heißt „Sonne“. Es ist warm, und es {{riecht|пахнет}} nach Kaffee und Kuchen.",
     "Anna {{bestellt|заказывает}} einen Cappuccino und ein Stück {{Apfelkuchen|яблочный пирог}}. Die {{Kellnerin|официантка}} ist freundlich. „Möchten Sie noch etwas?“, fragt sie. „Nein, danke“, sagt Anna und {{lächelt|улыбается}}.",

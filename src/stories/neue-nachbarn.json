@@ -3,6 +3,7 @@
   "title": "Neue Nachbarn",
   "titleRu": "Новые соседи",
   "level": "A1",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><rect x='34' y='48' width='60' height='44' fill='#ffffff'/><path d='M28 50 64 22l36 28z' fill='#d9534f'/><rect x='56' y='66' width='16' height='26' rx='2' fill='#8a827a'/><rect x='42' y='56' width='13' height='13' fill='#e8c07d'/><rect x='74' y='56' width='13' height='13' fill='#e8c07d'/><rect x='122' y='64' width='30' height='28' rx='2' fill='#e8c07d'/><path d='M137 64v28' stroke='#8a827a' stroke-width='4'/><rect x='128' y='38' width='26' height='24' rx='2' fill='#a8b894'/><path d='M141 38v24' stroke='#8a827a' stroke-width='4'/><path d='M172 48c-5-4-11-8-11-13 0-7 9-8 11-3 2-5 11-4 11 3 0 5-6 9-11 13z' fill='#d9534f'/></svg>",
   "paragraphs": [
     "Familie Meier hat neue {{Nachbarn|соседи}}. Ein junges Paar {{zieht ein|въезжает (в квартиру)}}: Sara und David. Vor dem Haus steht ein großer {{Umzugswagen|фургон для переезда}} mit vielen {{Kartons|коробки}}.",
     "Frau Meier {{klingelt|звонит в дверь}} am Abend. Sie hat einen Kuchen in der Hand. „Hallo! Ich bin Ihre Nachbarin. {{Herzlich willkommen|добро пожаловать}}!“",

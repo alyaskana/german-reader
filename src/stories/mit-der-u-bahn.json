@@ -3,6 +3,7 @@
   "title": "Mit der U-Bahn",
   "titleRu": "На метро",
   "level": "A1",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><path d='M30 120V74a70 62 0 0 1 140 0v46z' fill='#eaddc6'/><rect x='150' y='12' width='30' height='30' rx='6' fill='#7d95a8'/><path d='M157 19h5v10a4.5 4.5 0 0 0 9 0V19h5v10a9.5 9.5 0 0 1-19 0z' fill='#f6efe4'/><rect x='62' y='38' width='76' height='62' rx='12' fill='#7d95a8'/><rect x='70' y='46' width='60' height='24' rx='6' fill='#f6efe4'/><rect x='62' y='76' width='76' height='6' fill='#d9534f'/><circle cx='76' cy='90' r='4' fill='#e8c07d'/><circle cx='124' cy='90' r='4' fill='#e8c07d'/><rect x='40' y='106' width='120' height='4' rx='2' fill='#8a827a'/></svg>",
   "paragraphs": [
     "Tom ist neu in München. Heute fährt er zum ersten Mal mit der {{U-Bahn|метро}}. Er steht auf dem {{Bahnsteig|платформа}} und schaut auf den Plan. So viele Linien! So viele {{Stationen|станции}}!",
     "„{{Entschuldigung|извините}}, welche Linie fährt zum Marienplatz?“, fragt Tom eine Frau. „Die U3. Sie kommt in zwei Minuten“, sagt die Frau. „Danke!“",

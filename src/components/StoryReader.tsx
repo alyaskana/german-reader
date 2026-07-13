@@ -3,6 +3,7 @@ import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
 import { GlossWord } from './GlossWord'
+import { StoryCover } from './StoryCover'
 import { WordPopover } from './WordPopover'
 
 interface Props {
@@ -76,6 +77,8 @@ export function StoryReader({
           {mode === 'always' ? 'Переводы: видны' : 'Переводы: по тапу'}
         </button>
       </header>
+
+      <StoryCover story={story} className="reader-cover" />
 
       <h1>{story.title}</h1>
       <p className="subtitle">

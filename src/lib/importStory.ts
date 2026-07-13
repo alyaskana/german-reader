@@ -1,4 +1,5 @@
 import type { Story } from './types'
+import { sanitizeCover } from './cover'
 
 /** Parse and validate pasted story JSON. Returns an error message (Russian) or the story. */
 export function parseStoryJson(raw: string): { story: Story } | { error: string } {
@@ -57,6 +58,8 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       level: typeof s.level === 'string' && s.level.trim() ? s.level.trim() : 'A1',
       paragraphs: s.paragraphs as string[],
       dict,
+      // a broken/unsafe cover shouldn't fail the import — the story just gets the fallback
+      cover: sanitizeCover(s.cover),
       custom: true,
     },
   }
