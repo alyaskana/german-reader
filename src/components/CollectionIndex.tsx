@@ -12,6 +12,7 @@ interface Props {
   syncEnabled: boolean
   streak: number
   continueStory: Story | null
+  dailyStory: Story | null
 }
 
 export function CollectionIndex({
@@ -23,6 +24,7 @@ export function CollectionIndex({
   syncEnabled,
   streak,
   continueStory,
+  dailyStory,
 }: Props) {
   const groups: { collection: Collection; items: Story[] }[] = []
   for (const c of collections) {
@@ -39,6 +41,27 @@ export function CollectionIndex({
         <div className="streak-chip">
           🔥 <strong>{streak}</strong> {daysWord(streak)} подряд
         </div>
+      )}
+
+      {dailyStory && (
+        <button
+          type="button"
+          className="daily-card"
+          onClick={() => onOpenStory(dailyStory.id)}
+        >
+          {dailyStory.cover && (
+            <img className="daily-cover" src={coverSrc(dailyStory.cover)} alt="" />
+          )}
+          <span className="daily-main">
+            <span className="daily-label">📅 История дня</span>
+            <span className="daily-title">{dailyStory.title}</span>
+            {dailyStory.wordOfDay && (
+              <span className="daily-word">
+                {dailyStory.wordOfDay.term} — {dailyStory.wordOfDay.gloss}
+              </span>
+            )}
+          </span>
+        </button>
       )}
 
       {continueStory && (

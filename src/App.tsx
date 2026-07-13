@@ -12,7 +12,7 @@ import {
   setLastStoryId,
   setMode as persistMode,
 } from './lib/storage'
-import { computeStreak, nextStory } from './lib/progress'
+import { computeStreak, dailyStory, nextStory } from './lib/progress'
 import { CollectionIndex } from './components/CollectionIndex'
 import { CollectionView } from './components/CollectionView'
 import { StoryReader } from './components/StoryReader'
@@ -56,6 +56,7 @@ export default function App() {
   const learning = words.filter((w) => !w.learned).length
 
   const streak = useMemo(() => computeStreak(activity), [activity])
+  const daily = useMemo(() => dailyStory(allStories), [allStories])
   const continueStory = useMemo(
     () => nextStory(allStories, feedback, lastStoryId),
     [allStories, feedback, lastStoryId],
@@ -170,6 +171,7 @@ export default function App() {
           syncEnabled={Boolean(getSyncToken())}
           streak={streak}
           continueStory={continueStory}
+          dailyStory={daily}
         />
       )}
 

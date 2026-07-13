@@ -35,10 +35,11 @@ export function nextStory(
   feedback: Record<string, Feedback>,
   lastStoryId: string,
 ): Story | null {
+  // "continue reading" is about the curated learning collections, not the daily feed
   const last = stories.find((s) => s.id === lastStoryId)
   const order: string[] = []
-  if (last?.collection) order.push(last.collection)
-  for (const c of collections) if (!order.includes(c.id)) order.push(c.id)
+  if (last?.collection && last.collection !== 'daily') order.push(last.collection)
+  for (const c of collections) if (c.id !== 'daily' && !order.includes(c.id)) order.push(c.id)
 
   for (const cid of order) {
     const next = stories
@@ -48,6 +49,16 @@ export function nextStory(
     if (next) return next
   }
   return null
+}
+
+/** Today's daily story: exact match by date, else the most recent one. */
+export function dailyStory(stories: Story[], today = localDay()): Story | null {
+  const daily = stories.filter((s) => s.collection === 'daily')
+  if (!daily.length) return null
+  return (
+    daily.find((s) => s.id === `daily-${today}`) ??
+    daily.sort((a, b) => (b.order ?? 0) - (a.order ?? 0))[0]
+  )
 }
 
 /** Russian plural for "день". */

@@ -11,6 +11,13 @@ export const CUSTOM_COLLECTION: Collection = {
 
 export const collections: Collection[] = [
   {
+    id: 'daily',
+    title: 'Geschichte des Tages',
+    titleRu: 'История дня',
+    subtitle: 'каждый день новое слово или идиома в маленьком сюжете',
+    emoji: '📅',
+  },
+  {
     id: 'deutscher',
     title: 'Wie man Deutscher wird',
     titleRu: 'Как стать немцем',

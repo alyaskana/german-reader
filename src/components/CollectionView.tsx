@@ -26,6 +26,8 @@ export function CollectionView({
   const items = isCustom
     ? stories.filter((s) => s.custom)
     : stories.filter((s) => s.collection === collectionId)
+  // daily stories read newest-first; other collections keep their curated order
+  if (collectionId === 'daily') items.sort((a, b) => (b.order ?? 0) - (a.order ?? 0))
 
   return (
     <div className="collection-view">

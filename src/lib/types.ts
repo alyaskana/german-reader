@@ -12,6 +12,8 @@ export interface Story {
   collection?: string
   /** sort order within its collection (ascending) */
   order?: number
+  /** for daily stories: the word or idiom the story is built around */
+  wordOfDay?: { term: string; gloss: string }
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
 }

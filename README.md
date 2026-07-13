@@ -25,6 +25,16 @@ npm run dev
 
 При пуше в `main` workflow `.github/workflows/deploy.yml` собирает и публикует приложение. В настройках репозитория включи **Settings → Pages → Source: GitHub Actions** (один раз).
 
+## История дня (автогенерация)
+
+Каждый день GitHub Actions генерирует новую короткую историю, построенную вокруг слова или идиомы дня (с учётом сезона и праздников), и коммитит её в `src/stories/`. Пуш запускает деплой — история сама появляется на сайте, в сборнике «История дня» и карточкой на главной.
+
+- Workflow: `.github/workflows/daily-story.yml` (cron, плюс кнопка **Run workflow**).
+- Скрипт: `scripts/generate-daily.mjs` — зовёт Claude API, валидирует JSON, пишет `src/stories/daily-YYYY-MM-DD.json`.
+- Нужен один секрет: **Settings → Secrets and variables → Actions → `ANTHROPIC_API_KEY`**.
+
+Истории общие для всех (персонализация под твои слова/оценки остаётся в браузере). Стоимость — центы в день.
+
 ## Перенос в отдельный репозиторий
 
 Этот код лежит в ветке профильного репо. Чтобы вынести в свой репо `german-reader`:
