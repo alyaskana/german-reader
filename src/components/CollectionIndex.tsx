@@ -32,8 +32,8 @@ export function CollectionIndex({ stories, feedback, onOpenCollection, onAdd }: 
               >
                 <span className="folder-emoji">{collection.emoji}</span>
                 <span className="folder-main">
-                  <span className="folder-title">{collection.titleRu}</span>
-                  <span className="folder-de">{collection.title}</span>
+                  <span className="folder-title">{collection.title}</span>
+                  <span className="folder-de">{collection.titleRu}</span>
                   <span className="folder-sub">{collection.subtitle}</span>
                   <span className="folder-progress" aria-hidden="true">
                     <span className="folder-progress-fill" style={{ width: `${pct}%` }} />

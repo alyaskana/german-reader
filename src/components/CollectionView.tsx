@@ -38,9 +38,9 @@ export function CollectionView({
 
       <div className="collection-head">
         <h2>
-          <span className="collection-head-emoji">{collection.emoji}</span> {collection.titleRu}
+          <span className="collection-head-emoji">{collection.emoji}</span> {collection.title}
         </h2>
-        <p className="collection-de">{collection.title}</p>
+        <p className="collection-de">{collection.titleRu}</p>
         <p className="collection-sub">{collection.subtitle}</p>
       </div>
 
