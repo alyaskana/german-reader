@@ -4,6 +4,7 @@ import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
 import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
+import { Quiz } from './Quiz'
 import { ReactionIcon } from './ReactionIcon'
 import { WordPopover } from './WordPopover'
 
@@ -125,6 +126,8 @@ export function StoryReader({
           </p>
         ))}
       </div>
+
+      {story.quiz && story.quiz.length > 0 && <Quiz questions={story.quiz} />}
 
       <footer className="feedback">
         <p className="feedback-title">

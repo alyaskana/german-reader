@@ -1,4 +1,22 @@
-import type { Story } from './types'
+import type { QuizQuestion, Story } from './types'
+
+/** Keep only well-formed quiz questions; a malformed quiz is dropped, not fatal. */
+function parseQuiz(raw: unknown): QuizQuestion[] | undefined {
+  if (!Array.isArray(raw)) return undefined
+  const quiz = raw.filter(
+    (q): q is QuizQuestion =>
+      q &&
+      typeof q.q === 'string' &&
+      q.q.trim() !== '' &&
+      Array.isArray(q.options) &&
+      q.options.length >= 2 &&
+      q.options.every((o: unknown) => typeof o === 'string') &&
+      typeof q.answer === 'number' &&
+      q.answer >= 0 &&
+      q.answer < q.options.length,
+  )
+  return quiz.length ? quiz : undefined
+}
 
 /** Parse and validate pasted story JSON. Returns an error message (Russian) or the story. */
 export function parseStoryJson(raw: string): { story: Story } | { error: string } {
@@ -65,6 +83,7 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       paragraphs: s.paragraphs as string[],
       dict,
       cover,
+      quiz: parseQuiz(s.quiz),
       custom: true,
     },
   }

@@ -14,6 +14,8 @@ export interface Story {
   order?: number
   /** for daily stories: the word or idiom the story is built around */
   wordOfDay?: { term: string; gloss: string }
+  /** short comprehension quiz shown after the story */
+  quiz?: QuizQuestion[]
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
 }
@@ -24,6 +26,15 @@ export interface Collection {
   titleRu: string
   subtitle: string
   emoji: string
+}
+
+export interface QuizQuestion {
+  /** question in German */
+  q: string
+  /** answer options in German */
+  options: string[]
+  /** index of the correct option */
+  answer: number
 }
 
 export type Feedback = 'easy' | 'ok' | 'hard'
