@@ -11,7 +11,7 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       .replace(/```\s*$/, '')
     data = JSON.parse(cleaned)
   } catch {
-    return { error: 'Не получилось разобрать JSON. Вставь ответ Claude целиком, без лишнего текста вокруг.' }
+    return { error: 'Не получилось разобрать JSON. Вставь ответ ИИ целиком, без лишнего текста вокруг.' }
   }
 
   if (typeof data !== 'object' || data === null || Array.isArray(data))

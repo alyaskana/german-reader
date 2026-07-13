@@ -160,7 +160,7 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
       {showImport && (
         <section className="manual-flow">
           <p className="add-intro">
-            Есть интересный текст на немецком? Вставь его сюда — он останется дословным, Claude
+            Есть интересный текст на немецком? Вставь его сюда — он останется дословным, ИИ
             только добавит подсказки к сложным словам и словарь под твой уровень.
           </p>
           <textarea
@@ -200,18 +200,15 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
           </div>
           {!apiKey && (
             <p className="add-intro import-hint">
-              Без API-ключа: скопируй промпт, вставь его в{' '}
-              <a href="https://claude.ai" target="_blank" rel="noreferrer">
-                Claude
-              </a>
-              , а полученный JSON — в раздел «Или вручную» ниже.
+              Без API-ключа: скопируй промпт, вставь его в любой ИИ-чат (Claude, ChatGPT, Gemini…),
+              а полученный JSON — в раздел «Или вручную» ниже.
             </p>
           )}
         </section>
       )}
 
       <button type="button" className="manual-toggle" onClick={() => setShowManual(!showManual)}>
-        {showManual ? '▾' : '▸'} Или вручную через claude.ai
+        {showManual ? '▾' : '▸'} Или вручную через любой ИИ-чат
       </button>
 
       {showManual && (
@@ -219,11 +216,19 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
           <ol className="add-steps">
             <li>Скопируй промпт.</li>
             <li>
-              Вставь его в{' '}
+              Вставь его в любой привычный ИИ-чат —{' '}
               <a href="https://claude.ai" target="_blank" rel="noreferrer">
                 Claude
+              </a>
+              ,{' '}
+              <a href="https://chatgpt.com" target="_blank" rel="noreferrer">
+                ChatGPT
+              </a>
+              ,{' '}
+              <a href="https://gemini.google.com" target="_blank" rel="noreferrer">
+                Gemini
               </a>{' '}
-              и получи в ответ JSON.
+              и т.п. — и получи в ответ JSON.
             </li>
             <li>Вставь ответ сюда — история сразу появится в списке.</li>
           </ol>
