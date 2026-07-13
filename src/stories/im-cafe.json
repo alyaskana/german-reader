@@ -97,5 +97,7 @@
     "lange": "долго",
     "guter": "хороший (gut)",
     "tag": "день"
-  }
+  },
+  "collection": "alltag",
+  "order": 1
 }
