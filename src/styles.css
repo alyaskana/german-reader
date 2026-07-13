@@ -1425,3 +1425,51 @@ button {
   font-weight: 700;
   color: var(--accent-ink);
 }
+
+/* ---------- word export ---------- */
+
+.word-export {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.word-export-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.word-export-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.word-export-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  transition: border-color 0.15s, transform 0.1s;
+}
+
+.word-export-btn:hover {
+  border-color: var(--accent-soft, var(--accent));
+}
+
+.word-export-btn:active {
+  transform: scale(0.98);
+}
+
+.word-export-note {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}

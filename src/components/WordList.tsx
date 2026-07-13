@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import type { SavedWord, Story } from '../lib/types'
 import { removeWord, setLearned } from '../lib/storage'
+import { downloadCsv, wordsToTsv } from '../lib/exportWords'
 
 interface Props {
   words: SavedWord[]
@@ -9,6 +11,14 @@ interface Props {
 }
 
 export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
+  const [copied, setCopied] = useState(false)
+
+  async function copyTsv() {
+    await navigator.clipboard.writeText(wordsToTsv(words))
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2500)
+  }
+
   if (words.length === 0) {
     return (
       <div className="word-list empty">
@@ -72,6 +82,22 @@ export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
           )
         })}
       </ul>
+
+      <div className="word-export">
+        <p className="word-export-title">Забрать слова в свою колоду</p>
+        <div className="word-export-actions">
+          <button type="button" className="word-export-btn" onClick={() => downloadCsv(words)}>
+            Скачать .csv
+          </button>
+          <button type="button" className="word-export-btn" onClick={copyTsv}>
+            {copied ? '✓ Скопировано' : 'Скопировать для Quizlet'}
+          </button>
+        </div>
+        <p className="word-export-note">
+          CSV открывается в Anki и Excel; «скопировать» кладёт слова с табом между словом и
+          переводом — вставь в поле импорта Quizlet.
+        </p>
+      </div>
     </div>
   )
 }
