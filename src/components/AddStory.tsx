@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import type { Story } from '../lib/types'
-import { buildPrompt } from '../lib/prompt'
+import { buildPrompt, buildImportPrompt } from '../lib/prompt'
 import { parseStoryJson } from '../lib/importStory'
-import { generateStory, getApiKey, setApiKey } from '../lib/generate'
+import { generateStory, importTextAsStory, getApiKey, setApiKey } from '../lib/generate'
 import { addCustomStory, removeCustomStory } from '../lib/storage'
 
 interface Props {
@@ -24,6 +24,13 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
   const [progress, setProgress] = useState(0)
   const [genError, setGenError] = useState<string | null>(null)
   const [showManual, setShowManual] = useState(false)
+
+  const [showImport, setShowImport] = useState(false)
+  const [sourceText, setSourceText] = useState('')
+  const [importing, setImporting] = useState(false)
+  const [importProgress, setImportProgress] = useState(0)
+  const [importError, setImportError] = useState<string | null>(null)
+  const [importCopied, setImportCopied] = useState(false)
 
   function saveKey() {
     const key = keyInput.trim()
@@ -47,6 +54,27 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
     }
     onCustomStoriesChange(addCustomStory(result.story))
     onOpenStory(result.story.id)
+  }
+
+  async function importText() {
+    setImporting(true)
+    setImportError(null)
+    setImportProgress(0)
+    const result = await importTextAsStory(apiKey, sourceText, setImportProgress)
+    setImporting(false)
+    if ('error' in result) {
+      setImportError(result.error)
+      return
+    }
+    onCustomStoriesChange(addCustomStory(result.story))
+    setSourceText('')
+    onOpenStory(result.story.id)
+  }
+
+  async function copyImportPrompt() {
+    await navigator.clipboard.writeText(buildImportPrompt(sourceText))
+    setImportCopied(true)
+    setTimeout(() => setImportCopied(false), 2500)
   }
 
   async function copyPrompt() {
@@ -123,6 +151,63 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
             Сменить API-ключ
           </button>
         </>
+      )}
+
+      <button type="button" className="manual-toggle" onClick={() => setShowImport(!showImport)}>
+        {showImport ? '▾' : '▸'} Загрузить готовый текст
+      </button>
+
+      {showImport && (
+        <section className="manual-flow">
+          <p className="add-intro">
+            Нашла интересный текст на немецком? Вставь его сюда — он останется дословным, Claude
+            только добавит подсказки к сложным словам и словарь под твой уровень.
+          </p>
+          <textarea
+            className="json-input"
+            placeholder="Вставь немецкий текст…"
+            value={sourceText}
+            onChange={(e) => {
+              setSourceText(e.target.value)
+              setImportError(null)
+            }}
+            rows={8}
+          />
+          {importError && <p className="add-error">{importError}</p>}
+          <div className="api-key-actions">
+            {apiKey && !showKeyForm && (
+              <button
+                type="button"
+                className="generate-btn"
+                onClick={importText}
+                disabled={importing || !sourceText.trim()}
+              >
+                {importing
+                  ? importProgress > 0
+                    ? 'Размечаю текст…'
+                    : 'Читаю текст…'
+                  : 'Разметить и добавить'}
+              </button>
+            )}
+            <button
+              type="button"
+              className="generate-btn"
+              onClick={copyImportPrompt}
+              disabled={!sourceText.trim()}
+            >
+              {importCopied ? '✓ Скопировано' : 'Скопировать промпт'}
+            </button>
+          </div>
+          {!apiKey && (
+            <p className="add-intro import-hint">
+              Без API-ключа: скопируй промпт, вставь его в{' '}
+              <a href="https://claude.ai" target="_blank" rel="noreferrer">
+                Claude
+              </a>
+              , а полученный JSON — в раздел «Или вручную» ниже.
+            </p>
+          )}
+        </section>
       )}
 
       <button type="button" className="manual-toggle" onClick={() => setShowManual(!showManual)}>

@@ -1203,3 +1203,4 @@ button {
     padding: 11px 16px;
   }
 }
+.import-hint { margin-top: 12px; margin-bottom: 0; font-size: 0.85rem; }

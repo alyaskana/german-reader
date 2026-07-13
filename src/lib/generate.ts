@@ -1,5 +1,5 @@
 import type AnthropicType from '@anthropic-ai/sdk'
-import { buildPrompt } from './prompt'
+import { buildPrompt, buildImportPrompt } from './prompt'
 import { parseStoryJson } from './importStory'
 import type { Story } from './types'
 
@@ -17,13 +17,10 @@ export function setApiKey(key: string) {
   localStorage.setItem(KEY, key.trim())
 }
 
-/**
- * Generate a personalized story by calling Claude directly from the browser.
- * Reuses the same prompt as the copy-paste flow, so the story is calibrated
- * to the reader's feedback and vocabulary.
- */
-export async function generateStory(
+/** Call Claude with a prompt and parse the story JSON out of the answer. */
+async function runPrompt(
   apiKey: string,
+  prompt: string,
   onProgress?: (chars: number) => void,
 ): Promise<{ story: Story } | { error: string }> {
   // the SDK is loaded lazily so it doesn't weigh down the initial bundle
@@ -34,9 +31,9 @@ export async function generateStory(
   try {
     const stream = client.messages.stream({
       model: 'claude-opus-4-8',
-      max_tokens: 16000,
+      max_tokens: 32000,
       thinking: { type: 'adaptive' },
-      messages: [{ role: 'user', content: buildPrompt() }],
+      messages: [{ role: 'user', content: prompt }],
     })
     let chars = 0
     stream.on('text', (delta) => {
@@ -45,7 +42,7 @@ export async function generateStory(
     })
     const message = await stream.finalMessage()
     if (message.stop_reason === 'max_tokens')
-      return { error: 'Ответ оборвался на лимите токенов. Попробуй ещё раз.' }
+      return { error: 'Ответ оборвался на лимите токенов. Попробуй текст покороче.' }
     if (message.stop_reason === 'refusal')
       return { error: 'Claude отказался отвечать на этот запрос. Попробуй ещё раз.' }
     text = message.content
@@ -65,4 +62,28 @@ export async function generateStory(
   }
 
   return parseStoryJson(text)
+}
+
+/**
+ * Generate a personalized story by calling Claude directly from the browser.
+ * Reuses the same prompt as the copy-paste flow, so the story is calibrated
+ * to the reader's feedback and vocabulary.
+ */
+export function generateStory(
+  apiKey: string,
+  onProgress?: (chars: number) => void,
+): Promise<{ story: Story } | { error: string }> {
+  return runPrompt(apiKey, buildPrompt(), onProgress)
+}
+
+/**
+ * Mark up an existing German text the reader found elsewhere: Claude keeps
+ * the text verbatim and only adds glosses, the dict, and metadata.
+ */
+export function importTextAsStory(
+  apiKey: string,
+  sourceText: string,
+  onProgress?: (chars: number) => void,
+): Promise<{ story: Story } | { error: string }> {
+  return runPrompt(apiKey, buildImportPrompt(sourceText), onProgress)
 }

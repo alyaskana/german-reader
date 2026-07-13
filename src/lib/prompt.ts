@@ -23,15 +23,13 @@ function calibration(values: Feedback[]): string {
   return 'Уровень подобран хорошо — держи такой же.'
 }
 
-export function buildPrompt(): string {
+/** The reader's vocabulary, shared by the generate and import prompts. */
+function vocabulary() {
   const feedback = getFeedback()
   const words = getWords()
   const stories = [...builtinStories, ...getCustomStories()]
 
   const readStories = stories.filter((s) => feedback[s.id])
-  const feedbackLines = readStories.map(
-    (s) => `- «${s.title}» — ${FEEDBACK_RU[feedback[s.id]]}`,
-  )
 
   const learnedWords = words.filter((w) => w.learned).map((w) => w.word)
   const learningWords = words.filter((w) => !w.learned).map((w) => `${w.word} (${w.gloss})`)
@@ -43,6 +41,51 @@ export function buildPrompt(): string {
         knownGlosses.add(g.word)
     }
   }
+
+  return { feedback, stories, readStories, learnedWords, learningWords, knownGlosses }
+}
+
+const MARKUP_RULES = `- Выдели сложные для A1 слова или ВЫРАЖЕНИЯ маркером {{Wort|перевод}} — перевод на русский, коротко, в той же грамматической форме. Глоссируй осмысленные единицы целиком, как в книгах для изучающих: {{läuft dunkelrot an|багровеет}}, {{zu Hause vergessen|забыл дома}}. Каждую единицу глоссируй только при первом появлении.
+- Если единица разорвана в предложении (отделяемая приставка, Perfekt), пометь позднюю часть маркером {{+...}}: «Er {{steht|встаёт (aufstehen)}} früh {{+auf}}.» — перевод пиши только у первой части и указывай в нём инфинитив. ВАЖНО: между частями разорванной пары не ставь других маркеров {{...}} — часть {{+...}} привязывается к ближайшей предыдущей глоссе.
+- Добавь поле "dict": объект «слово → перевод» для ВСЕХ остальных слов текста (ключи в нижнем регистре, без имён собственных). Переводи по роли слова в этом тексте: «die Bank» в парке — «скамейка». Части составных форм объясняй с отсылкой к целому: для «hat … gekauft» → "hat": "вспомогательный глагол (hat gekauft = купила)", "gekauft": "купила (Perfekt от kaufen)".
+- Добавь поле "cover": обложка-иллюстрация к сюжету — простой плоский SVG одной строкой, viewBox="0 0 640 360", крупные геометрические формы, 4–6 цветов из тёплой палитры (#faf7f2 фон, #d9534f акцент, #2c2825, приглушённые зелёный/голубой/жёлтый), без текста и без <script>. В атрибутах SVG используй одинарные кавычки.`
+
+const JSON_FORMAT = `Ответь ТОЛЬКО валидным JSON в этом формате (без markdown-обёртки):
+{
+  "id": "kebab-case-id",
+  "title": "Заголовок на немецком",
+  "titleRu": "Перевод заголовка",
+  "level": "A1",
+  "paragraphs": ["Абзац 1 с {{маркерами|глоссами}}...", "Абзац 2..."],
+  "dict": {"слово": "перевод в контексте", "...": "..."},
+  "cover": "<svg viewBox='0 0 640 360' xmlns='http://www.w3.org/2000/svg'>...</svg>"
+}`
+
+function vocabularySections(v: ReturnType<typeof vocabulary>): string {
+  return `${
+    v.learningWords.length
+      ? `\nЭти слова я сейчас учу — обязательно глоссируй их, если они встречаются:\n${v.learningWords.join(', ')}`
+      : ''
+  }
+${
+  v.learnedWords.length
+    ? `\nЭти слова я уже знаю твёрдо — не глоссируй их (но включай в dict):\n${v.learnedWords.join(', ')}`
+    : ''
+}
+${
+  v.knownGlosses.size
+    ? `\nЭти слова мне уже встречались и не показались сложными — можешь оставить их БЕЗ глосс:\n${[...v.knownGlosses].join(', ')}`
+    : ''
+}`
+}
+
+export function buildPrompt(): string {
+  const { feedback, stories, readStories, learnedWords, learningWords, knownGlosses } =
+    vocabulary()
+
+  const feedbackLines = readStories.map(
+    (s) => `- «${s.title}» — ${FEEDBACK_RU[feedback[s.id]]}`,
+  )
 
   const existingTitles = stories.map((s) => `«${s.title}»`).join(', ')
 
@@ -87,6 +130,34 @@ ${
   "dict": {"слово": "перевод в контексте", "...": "..."},
   "cover": "<svg viewBox='0 0 640 360' xmlns='http://www.w3.org/2000/svg'>...</svg>"
 }
+
+Полученный JSON я вставлю в приложение на экране «Добавить историю».`
+}
+
+/**
+ * Prompt that marks up a ready-made German text the reader found elsewhere:
+ * the text is kept verbatim, Claude only adds glosses, the dict, and metadata.
+ */
+export function buildImportPrompt(sourceText: string): string {
+  const v = vocabulary()
+
+  return `Ты помогаешь мне учить немецкий (родной язык — русский). Я нашла готовый немецкий текст и хочу читать его в своём приложении. Подготовь его.
+
+Требования:
+- НЕ переписывай и НЕ упрощай текст — сохрани его дословно, включая пунктуацию. Можно только разбить его на абзацы (4–8 предложений в абзаце), если исходное разбиение потерялось при копировании.
+- Определи уровень текста (A1–C1) и запиши его в поле "level".
+- Придумай короткий заголовок на немецком (если в тексте нет своего) и его перевод "titleRu".
+${MARKUP_RULES}
+- Глоссируй слова и выражения, которые могут быть сложными для моего уровня — ориентируйся на списки моих слов ниже. Не больше ~15 глосс на историю: выбирай самые полезные, остальное уйдёт в dict.
+${vocabularySections(v)}
+
+${JSON_FORMAT}
+
+Вот текст:
+
+"""
+${sourceText.trim()}
+"""
 
 Полученный JSON я вставлю в приложение на экране «Добавить историю».`
 }
