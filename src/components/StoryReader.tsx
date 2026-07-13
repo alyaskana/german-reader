@@ -4,6 +4,7 @@ import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
 import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
+import { ReactionIcon } from './ReactionIcon'
 import { WordPopover } from './WordPopover'
 
 interface Props {
@@ -26,10 +27,10 @@ interface ActiveWord {
   anchor: HTMLElement
 }
 
-const FEEDBACK_OPTIONS: { value: Feedback; label: string; emoji: string }[] = [
-  { value: 'easy', label: 'Легко', emoji: '😌' },
-  { value: 'ok', label: 'Норм', emoji: '👍' },
-  { value: 'hard', label: 'Сложно', emoji: '😵' },
+const FEEDBACK_OPTIONS: { value: Feedback; label: string }[] = [
+  { value: 'easy', label: 'Легко' },
+  { value: 'ok', label: 'Норм' },
+  { value: 'hard', label: 'Сложно' },
 ]
 
 export function StoryReader({
@@ -137,7 +138,10 @@ export function StoryReader({
               className={`feedback-btn${feedback === opt.value ? ' chosen' : ''}`}
               onClick={() => onFeedbackChange(setFeedback(story.id, opt.value))}
             >
-              <span className="feedback-emoji">{opt.emoji}</span> {opt.label}
+              <span className="feedback-emoji">
+                <ReactionIcon value={opt.value} />
+              </span>{' '}
+              {opt.label}
             </button>
           ))}
         </div>

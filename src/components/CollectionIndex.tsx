@@ -1,15 +1,29 @@
 import type { Collection, Feedback, Story } from '../lib/types'
-import { collections, CUSTOM_COLLECTION } from '../lib/collections'
+import { collectionById, collections, CUSTOM_COLLECTION } from '../lib/collections'
+import { coverSrc } from '../lib/cover'
+import { daysWord } from '../lib/progress'
 
 interface Props {
   stories: Story[]
   feedback: Record<string, Feedback>
   onOpenCollection: (id: string) => void
+  onOpenStory: (id: string) => void
   onSync: () => void
   syncEnabled: boolean
+  streak: number
+  continueStory: Story | null
 }
 
-export function CollectionIndex({ stories, feedback, onOpenCollection, onSync, syncEnabled }: Props) {
+export function CollectionIndex({
+  stories,
+  feedback,
+  onOpenCollection,
+  onOpenStory,
+  onSync,
+  syncEnabled,
+  streak,
+  continueStory,
+}: Props) {
   const groups: { collection: Collection; items: Story[] }[] = []
   for (const c of collections) {
     const items = stories.filter((s) => s.collection === c.id)
@@ -21,6 +35,34 @@ export function CollectionIndex({ stories, feedback, onOpenCollection, onSync, s
 
   return (
     <div className="collection-index">
+      {streak > 0 && (
+        <div className="streak-chip">
+          🔥 <strong>{streak}</strong> {daysWord(streak)} подряд
+        </div>
+      )}
+
+      {continueStory && (
+        <button
+          type="button"
+          className="continue-card"
+          onClick={() => onOpenStory(continueStory.id)}
+        >
+          {continueStory.cover && (
+            <img className="continue-cover" src={coverSrc(continueStory.cover)} alt="" />
+          )}
+          <span className="continue-main">
+            <span className="continue-label">Продолжить чтение</span>
+            <span className="continue-title">{continueStory.title}</span>
+            <span className="continue-coll">
+              {collectionById(continueStory.collection).title}
+            </span>
+          </span>
+          <span className="continue-arrow" aria-hidden="true">
+            →
+          </span>
+        </button>
+      )}
+
       <ul>
         {groups.map(({ collection, items }) => {
           const read = items.filter((s) => feedback[s.id]).length

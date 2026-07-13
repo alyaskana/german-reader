@@ -2,6 +2,7 @@ import type { Feedback, Story } from '../lib/types'
 import { storyWordCount } from '../lib/parse'
 import { coverSrc } from '../lib/cover'
 import { collectionById, CUSTOM_COLLECTION } from '../lib/collections'
+import { ReactionIcon } from './ReactionIcon'
 
 interface Props {
   collectionId: string
@@ -11,8 +12,6 @@ interface Props {
   onAdd: () => void
   onBack: () => void
 }
-
-const FEEDBACK_EMOJI: Record<Feedback, string> = { easy: '😌', ok: '👍', hard: '😵' }
 
 export function CollectionView({
   collectionId,
@@ -72,7 +71,11 @@ export function CollectionView({
                   </span>
                   <span className="story-card-meta">
                     <span className="story-words">{storyWordCount(s)} слов</span>
-                    {fb && <span className="story-status read">{FEEDBACK_EMOJI[fb]}</span>}
+                    {fb && (
+                      <span className="story-status read">
+                        <ReactionIcon value={fb} />
+                      </span>
+                    )}
                   </span>
                 </button>
               </li>

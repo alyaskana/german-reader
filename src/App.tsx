@@ -2,12 +2,17 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { stories as builtinStories } from './stories'
 import type { Feedback, GlossMode, SavedWord, Story } from './lib/types'
 import {
+  getActivity,
   getCustomStories,
   getFeedback,
+  getLastStoryId,
   getMode,
   getWords,
+  recordActivity,
+  setLastStoryId,
   setMode as persistMode,
 } from './lib/storage'
+import { computeStreak, nextStory } from './lib/progress'
 import { CollectionIndex } from './components/CollectionIndex'
 import { CollectionView } from './components/CollectionView'
 import { StoryReader } from './components/StoryReader'
@@ -44,9 +49,27 @@ export default function App() {
   const [customStories, setCustomStories] = useState<Story[]>(getCustomStories)
   const [feedback, setFeedback] = useState<Record<string, Feedback>>(getFeedback)
   const [mode, setMode] = useState<GlossMode>(getMode)
+  const [activity, setActivity] = useState<string[]>(getActivity)
+  const [lastStoryId, setLastStoryIdState] = useState<string>(getLastStoryId)
 
   const allStories = useMemo(() => [...builtinStories, ...customStories], [customStories])
   const learning = words.filter((w) => !w.learned).length
+
+  const streak = useMemo(() => computeStreak(activity), [activity])
+  const continueStory = useMemo(
+    () => nextStory(allStories, feedback, lastStoryId),
+    [allStories, feedback, lastStoryId],
+  )
+
+  // Opening a story counts toward the reading streak and sets the resume point.
+  useEffect(() => {
+    if (route.screen !== 'story') return
+    const opened = allStories.find((s) => s.id === route.id)
+    if (!opened) return
+    setActivity(recordActivity())
+    setLastStoryId(opened.id)
+    setLastStoryIdState(opened.id)
+  }, [route, allStories])
 
   // Cross-device sync: merge remote state on load and (debounced) after changes.
   function applySync(data: SyncData) {
@@ -56,6 +79,9 @@ export default function App() {
     )
     setCustomStories((cur) =>
       JSON.stringify(cur) === JSON.stringify(data.customStories) ? cur : data.customStories,
+    )
+    setActivity((cur) =>
+      JSON.stringify(cur) === JSON.stringify(data.activity) ? cur : data.activity,
     )
   }
 
@@ -134,8 +160,11 @@ export default function App() {
           stories={allStories}
           feedback={feedback}
           onOpenCollection={(id) => go(`collection/${id}`)}
+          onOpenStory={(id) => go(`story/${id}`)}
           onSync={() => go('sync')}
           syncEnabled={Boolean(getSyncToken())}
+          streak={streak}
+          continueStory={continueStory}
         />
       )}
 

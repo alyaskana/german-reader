@@ -1236,3 +1236,111 @@ button {
 .sync-disconnect:hover {
   color: var(--accent);
 }
+
+/* ---------- streak + continue reading ---------- */
+
+.streak-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--accent-wash);
+  border: 1px solid var(--accent);
+  padding: 6px 13px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.streak-chip strong {
+  font-weight: 800;
+}
+
+.continue-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 22px;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+
+.continue-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.continue-card:active {
+  transform: scale(0.99);
+}
+
+.continue-cover {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.continue-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.continue-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+.continue-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.continue-coll {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.continue-arrow {
+  font-size: 1.4rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  padding-right: 4px;
+}
+
+/* ---------- reaction icons ---------- */
+
+.reaction {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback-emoji .reaction {
+  width: 34px;
+  height: 34px;
+}
+
+.story-status.read .reaction {
+  width: 26px;
+  height: 26px;
+}

@@ -5,7 +5,17 @@ const KEYS = {
   feedback: 'gr.feedback',
   mode: 'gr.mode',
   customStories: 'gr.customStories',
+  activity: 'gr.activity',
+  lastStory: 'gr.lastStory',
 } as const
+
+/** Local calendar day as YYYY-MM-DD (used for the reading streak). */
+export function localDay(date = new Date()): string {
+  const y = date.getFullYear()
+  const m = String(date.getMonth() + 1).padStart(2, '0')
+  const d = String(date.getDate()).padStart(2, '0')
+  return `${y}-${m}-${d}`
+}
 
 function read<T>(key: string, fallback: T): T {
   try {
@@ -114,6 +124,45 @@ export function replaceCustomStories(list: Story[]): Story[] {
   const next = list.map((s) => ({ ...s, custom: true }))
   write(KEYS.customStories, next)
   return next
+}
+
+/* Reading streak: unique local days on which a story was opened. */
+
+export function getActivity(): string[] {
+  return read<string[]>(KEYS.activity, [])
+}
+
+export function recordActivity(): string[] {
+  const today = localDay()
+  const list = getActivity()
+  if (!list.includes(today)) {
+    list.push(today)
+    write(KEYS.activity, list)
+  }
+  return list
+}
+
+export function replaceActivity(list: string[]): string[] {
+  write(KEYS.activity, list)
+  return list
+}
+
+/* Last opened story, to resume "continue reading" from its collection. */
+
+export function getLastStoryId(): string {
+  try {
+    return localStorage.getItem(KEYS.lastStory) ?? ''
+  } catch {
+    return ''
+  }
+}
+
+export function setLastStoryId(id: string) {
+  try {
+    localStorage.setItem(KEYS.lastStory, id)
+  } catch {
+    /* ignore */
+  }
 }
 
 export function removeCustomStory(id: string): Story[] {

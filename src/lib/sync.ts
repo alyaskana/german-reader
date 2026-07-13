@@ -1,8 +1,10 @@
 import type { Feedback, SavedWord, Story } from './types'
 import {
+  getActivity,
   getCustomStories,
   getFeedback,
   getWords,
+  replaceActivity,
   replaceCustomStories,
   replaceFeedback,
   replaceWords,
@@ -28,6 +30,8 @@ export interface SyncData {
   words: SavedWord[]
   feedback: Record<string, Feedback>
   customStories: Story[]
+  /** reading-streak days (YYYY-MM-DD), unioned across devices */
+  activity: string[]
 }
 
 export type SyncResult = { data: SyncData; gistUrl: string } | { error: string }
@@ -61,13 +65,19 @@ export function getGistUrl(): string {
 }
 
 function snapshot(): SyncData {
-  return { words: getWords(), feedback: getFeedback(), customStories: getCustomStories() }
+  return {
+    words: getWords(),
+    feedback: getFeedback(),
+    customStories: getCustomStories(),
+    activity: getActivity(),
+  }
 }
 
 function applyToStorage(data: SyncData) {
   replaceWords(data.words)
   replaceFeedback(data.feedback)
   replaceCustomStories(data.customStories)
+  replaceActivity(data.activity)
 }
 
 /** Union merge: no deletions propagate, which keeps the logic simple and safe. */
@@ -94,6 +104,7 @@ export function mergeData(local: SyncData, remote: SyncData): SyncData {
     words: [...words.values()].sort((a, b) => a.addedAt - b.addedAt),
     feedback: { ...remote.feedback, ...local.feedback },
     customStories: [...stories.values()],
+    activity: [...new Set([...(remote.activity ?? []), ...(local.activity ?? [])])].sort(),
   }
 }
 
@@ -149,6 +160,7 @@ async function readGist(token: string, id: string): Promise<{ gist: GistInfo; da
         words: Array.isArray(parsed.words) ? parsed.words : [],
         feedback: parsed.feedback && typeof parsed.feedback === 'object' ? parsed.feedback : {},
         customStories: Array.isArray(parsed.customStories) ? parsed.customStories : [],
+        activity: Array.isArray(parsed.activity) ? parsed.activity : [],
       },
     }
   } catch {
@@ -186,6 +198,7 @@ export function importData(raw: string): { data: SyncData } | { error: string } 
     words: parsed.words,
     feedback: parsed.feedback && typeof parsed.feedback === 'object' ? parsed.feedback : {},
     customStories: Array.isArray(parsed.customStories) ? parsed.customStories : [],
+    activity: Array.isArray(parsed.activity) ? parsed.activity : [],
   })
   applyToStorage(merged)
   return { data: merged }
