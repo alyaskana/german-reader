@@ -5,33 +5,26 @@ interface Props {
   stories: Story[]
   feedback: Record<string, Feedback>
   onOpenCollection: (id: string) => void
-  onAdd: () => void
   onSync: () => void
   syncEnabled: boolean
 }
 
-export function CollectionIndex({
-  stories,
-  feedback,
-  onOpenCollection,
-  onAdd,
-  onSync,
-  syncEnabled,
-}: Props) {
+export function CollectionIndex({ stories, feedback, onOpenCollection, onSync, syncEnabled }: Props) {
   const groups: { collection: Collection; items: Story[] }[] = []
   for (const c of collections) {
     const items = stories.filter((s) => s.collection === c.id)
     if (items.length) groups.push({ collection: c, items })
   }
+  // the custom folder is always there — it hosts the "add a story" flow
   const custom = stories.filter((s) => !collections.some((c) => c.id === s.collection))
-  if (custom.length) groups.push({ collection: CUSTOM_COLLECTION, items: custom })
+  groups.push({ collection: CUSTOM_COLLECTION, items: custom })
 
   return (
     <div className="collection-index">
       <ul>
         {groups.map(({ collection, items }) => {
           const read = items.filter((s) => feedback[s.id]).length
-          const pct = Math.round((read / items.length) * 100)
+          const pct = items.length ? Math.round((read / items.length) * 100) : 0
           return (
             <li key={collection.id}>
               <button
@@ -50,7 +43,9 @@ export function CollectionIndex({
                   <span className="folder-progress-label">
                     {read > 0
                       ? `прочитано ${read} из ${items.length}`
-                      : `${items.length} ${plural(items.length)}`}
+                      : items.length > 0
+                        ? `${items.length} ${plural(items.length)}`
+                        : 'добавь первую →'}
                   </span>
                 </span>
               </button>
@@ -58,14 +53,6 @@ export function CollectionIndex({
           )
         })}
       </ul>
-
-      <button type="button" className="folder-add" onClick={onAdd}>
-        <span className="folder-add-plus">＋</span>
-        <span>
-          <strong>Своя история</strong>
-          <span className="folder-add-sub">сгенерируй в Claude и добавь</span>
-        </span>
-      </button>
 
       <button type="button" className="sync-link" onClick={onSync}>
         ⟳ Синхронизация между устройствами{syncEnabled ? ' · включена' : ''}

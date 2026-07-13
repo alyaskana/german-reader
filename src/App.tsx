@@ -134,7 +134,6 @@ export default function App() {
           stories={allStories}
           feedback={feedback}
           onOpenCollection={(id) => go(`collection/${id}`)}
-          onAdd={() => go('add')}
           onSync={() => go('sync')}
           syncEnabled={Boolean(getSyncToken())}
         />

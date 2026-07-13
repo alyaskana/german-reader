@@ -160,7 +160,7 @@ export function AddStory({ customStories, onCustomStoriesChange, onOpenStory, on
       {showImport && (
         <section className="manual-flow">
           <p className="add-intro">
-            Нашла интересный текст на немецком? Вставь его сюда — он останется дословным, Claude
+            Есть интересный текст на немецком? Вставь его сюда — он останется дословным, Claude
             только добавит подсказки к сложным словам и словарь под твой уровень.
           </p>
           <textarea

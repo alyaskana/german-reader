@@ -5,7 +5,7 @@ export const CUSTOM_COLLECTION: Collection = {
   id: 'meine',
   title: 'Meine Geschichten',
   titleRu: 'Мои истории',
-  subtitle: 'то, что ты добавила сама',
+  subtitle: 'добавлено тобой',
   emoji: '✍️',
 }
 
