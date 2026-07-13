@@ -2,9 +2,11 @@ import { useState } from 'react'
 import type { SyncData } from '../lib/sync'
 import {
   disableSync,
+  exportData,
   getGistUrl,
   getLastSync,
   getSyncToken,
+  importData,
   setSyncToken,
   syncNow,
 } from '../lib/sync'
@@ -30,6 +32,11 @@ export function SyncSettings({ onSynced, onBack }: Props) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [lastSync, setLastSync] = useState(getLastSync())
+  const [showManual, setShowManual] = useState(false)
+  const [exportCopied, setExportCopied] = useState(false)
+  const [pasted, setPasted] = useState('')
+  const [manualError, setManualError] = useState<string | null>(null)
+  const [manualDone, setManualDone] = useState(false)
 
   async function runSync() {
     setBusy(true)
@@ -58,6 +65,25 @@ export function SyncSettings({ onSynced, onBack }: Props) {
     setTokenState('')
     setLastSync(null)
     setError(null)
+  }
+
+  async function copyExport() {
+    await navigator.clipboard.writeText(exportData())
+    setExportCopied(true)
+    setTimeout(() => setExportCopied(false), 2500)
+  }
+
+  function applyImport() {
+    setManualError(null)
+    setManualDone(false)
+    const result = importData(pasted)
+    if ('error' in result) {
+      setManualError(result.error)
+      return
+    }
+    onSynced(result.data)
+    setPasted('')
+    setManualDone(true)
   }
 
   return (
@@ -136,6 +162,45 @@ export function SyncSettings({ onSynced, onBack }: Props) {
             </button>
           </p>
         </>
+      )}
+
+      <button type="button" className="manual-toggle" onClick={() => setShowManual(!showManual)}>
+        {showManual ? '▾' : '▸'} Без GitHub — перенести вручную
+      </button>
+
+      {showManual && (
+        <section className="manual-flow">
+          <p className="add-intro">
+            Скопируй данные на одном устройстве, отправь себе (мессенджером, почтой) и вставь на
+            другом — слова и оценки объединятся, ничего не затрётся.
+          </p>
+          <div className="api-key-actions">
+            <button type="button" className="generate-btn" onClick={copyExport}>
+              {exportCopied ? '✓ Скопировано' : 'Скопировать мои данные'}
+            </button>
+          </div>
+          <textarea
+            className="json-input"
+            placeholder="Вставь сюда данные с другого устройства…"
+            value={pasted}
+            onChange={(e) => {
+              setPasted(e.target.value)
+              setManualError(null)
+              setManualDone(false)
+            }}
+            rows={4}
+          />
+          {manualError && <p className="add-error">{manualError}</p>}
+          {manualDone && <p className="add-intro">✓ Данные объединены.</p>}
+          <button
+            type="button"
+            className="generate-btn"
+            onClick={applyImport}
+            disabled={!pasted.trim()}
+          >
+            Вставить и объединить
+          </button>
+        </section>
       )}
     </div>
   )

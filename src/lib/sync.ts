@@ -165,6 +165,32 @@ async function writeGist(token: string, id: string, data: SyncData): Promise<voi
   if (!res.ok) throw new Error(`gist write: ${res.status}`)
 }
 
+/* Manual transfer for people without a GitHub account: copy a JSON blob on
+   one device, paste it on another; the pasted data merges the same way a
+   gist pull does. */
+
+export function exportData(): string {
+  return JSON.stringify(snapshot())
+}
+
+export function importData(raw: string): { data: SyncData } | { error: string } {
+  let parsed: Partial<SyncData>
+  try {
+    parsed = JSON.parse(raw.trim()) as Partial<SyncData>
+  } catch {
+    return { error: 'Не получилось разобрать данные. Вставь скопированный текст целиком.' }
+  }
+  if (typeof parsed !== 'object' || parsed === null || !Array.isArray(parsed.words))
+    return { error: 'Это не похоже на данные Lesezeit.' }
+  const merged = mergeData(snapshot(), {
+    words: parsed.words,
+    feedback: parsed.feedback && typeof parsed.feedback === 'object' ? parsed.feedback : {},
+    customStories: Array.isArray(parsed.customStories) ? parsed.customStories : [],
+  })
+  applyToStorage(merged)
+  return { data: merged }
+}
+
 let inFlight: Promise<SyncResult> | null = null
 
 /** Pull remote state, merge with local, save locally and push back. */
