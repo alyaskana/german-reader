@@ -3,6 +3,7 @@
   "title": "Die Sonntagsruhe",
   "titleRu": "Воскресный покой",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><rect x='50' y='42' width='100' height='50' fill='#ffffff'/><rect x='46' y='32' width='108' height='14' fill='#d9534f'/><rect x='58' y='32' width='11' height='14' fill='#ffffff'/><rect x='82' y='32' width='11' height='14' fill='#ffffff'/><rect x='106' y='32' width='11' height='14' fill='#ffffff'/><rect x='130' y='32' width='11' height='14' fill='#ffffff'/><rect x='62' y='54' width='30' height='26' fill='#7d95a8'/><path d='M77 54v26M62 67h30' stroke='#ffffff' stroke-width='3'/><rect x='104' y='54' width='30' height='38' fill='#8a827a'/><circle cx='129' cy='74' r='2.5' fill='#2c2825'/><path d='M114 54l2 7M124 54l-2 7' stroke='#2c2825' stroke-width='1.5'/><rect x='111' y='60' width='16' height='11' rx='2' fill='#d9534f'/></svg>",
   "collection": "deutscher",
   "order": 12,
   "paragraphs": [

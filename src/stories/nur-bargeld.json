@@ -3,6 +3,7 @@
   "title": "Nur Bargeld",
   "titleRu": "Только наличные",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='92' cy='90' rx='40' ry='5' fill='#dccbae'/><rect x='54' y='48' width='72' height='38' rx='3' fill='#a8b894'/><rect x='59' y='53' width='62' height='28' rx='2' fill='none' stroke='#ffffff' stroke-width='2'/><circle cx='90' cy='67' r='10' fill='#7f9573'/><circle cx='140' cy='82' r='11' fill='#e8c07d'/><circle cx='140' cy='82' r='7' fill='none' stroke='#8a827a' stroke-width='2'/><circle cx='154' cy='94' r='9' fill='#e8c07d'/><circle cx='154' cy='94' r='5' fill='none' stroke='#8a827a' stroke-width='2'/><rect x='120' y='26' width='34' height='22' rx='3' fill='#ffffff'/><rect x='120' y='31' width='34' height='6' fill='#8a827a'/><path d='M116 52 L158 22' stroke='#d9534f' stroke-width='5' stroke-linecap='round'/></svg>",
   "paragraphs": [
     "Tom hat großen {{Hunger|голод (Hunger haben — быть голодным)}}. Nach der Arbeit geht er in eine kleine {{Bäckerei|пекарня}} in Berlin. Es riecht wunderbar nach frischem Brot. Er kauft zwei Brötchen und ein Stück Kuchen. „Das macht vier Euro“, sagt die {{Verkäuferin|продавщица}}.",
     "Tom nimmt seine Karte und will bezahlen. Aber die Verkäuferin schüttelt den Kopf. „Tut mir leid, wir nehmen keine Karten. Hier gilt: nur {{Bargeld|наличные}}.“",

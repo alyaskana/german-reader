@@ -3,6 +3,7 @@
   "title": "Die Hausordnung",
   "titleRu": "Домовой устав",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><rect x='60' y='26' width='56' height='56' fill='#ffffff'/><rect x='60' y='26' width='56' height='10' fill='#d9534f'/><circle cx='88' cy='23' r='3' fill='#2c2825'/><path d='M68 46h40M68 54h40M68 62h40M68 70h28' stroke='#8a827a' stroke-width='3' stroke-linecap='round'/><ellipse cx='140' cy='92' rx='22' ry='4' fill='#dccbae'/><path d='M124 92v-9c0-3 2-5 5-5h5c3 0 4 3 6 6s9 3 12 5c2 1 2 3-1 3z' transform='translate(-5,-6)' fill='#a8b894'/><path d='M124 92v-9c0-3 2-5 5-5h5c3 0 4 3 6 6s9 3 12 5c2 1 2 3-1 3z' fill='#7d95a8'/></svg>",
   "collection": "deutscher",
   "order": 48,
   "paragraphs": [

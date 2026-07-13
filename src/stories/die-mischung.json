@@ -3,6 +3,7 @@
   "title": "Die Mischung",
   "titleRu": "Смесь",
   "level": "A1–A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='100' cy='92' rx='48' ry='5' fill='#dccbae'/><path d='M60 90V60c0-6 4-7 4-12v-10h8v10c0 5 4 6 4 12v30z' fill='#7f9573'/><rect x='62' y='66' width='12' height='10' fill='#ffffff'/><path d='M60 90V60c0-6 4-7 4-12v-10h8v10c0 5 4 6 4 12v30z' transform='translate(26,4)' fill='#7d95a8'/><rect x='88' y='70' width='12' height='10' fill='#ffffff'/><path d='M114 50h28l-3 38h-22z' fill='#e8c07d'/><ellipse cx='128' cy='50' rx='14' ry='4' fill='#ffffff'/><circle cx='140' cy='45' r='4' fill='#d9534f'/></svg>",
   "paragraphs": [
     "Freitagabend. Mia macht eine kleine Party. Auf dem Tisch stehen viele {{Flaschen|бутылки}}: Bier, Limo, Cola, Saft, Mineralwasser, Wein.",
     "Tom will ein Bier. Lukas sagt: „Warte! Probier ein {{Radler|радлер: пиво с лимонадом}}: Bier plus {{Zitronenlimo|лимонад}}. Perfekt für den Abend.“",

@@ -3,6 +3,7 @@
   "title": "Alles Bio",
   "titleRu": "Всё эко",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='64' cy='90' rx='22' ry='4' fill='#dccbae'/><path d='M64 88c-6-24 6-40 26-46 2 20-6 40-26 46z' fill='#a8b894'/><path d='M64 86c4-16 12-28 20-36' stroke='#7f9573' stroke-width='3' fill='none' stroke-linecap='round'/><ellipse cx='116' cy='90' rx='32' ry='5' fill='#dccbae'/><rect x='122' y='40' width='13' height='20' fill='#ffffff'/><circle cx='106' cy='54' r='9' fill='#d9534f'/><path d='M102 47c2-3 6-3 8 0' stroke='#7f9573' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M92 58h48l-7 30h-34z' fill='#7f9573'/><path d='M104 58c0-12 24-12 24 0' stroke='#2c2825' stroke-width='4' fill='none'/><path d='M104 66l3 14M116 66v14M128 66l-3 14' stroke='#a8b894' stroke-width='3' stroke-linecap='round'/></svg>",
   "collection": "deutscher",
   "order": 21,
   "paragraphs": [

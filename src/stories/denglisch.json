@@ -3,6 +3,7 @@
   "title": "Denglisch im Büro",
   "titleRu": "Денглиш в офисе",
   "level": "A1–A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='100' cy='92' rx='38' ry='5' fill='#dccbae'/><rect x='80' y='46' width='40' height='28' rx='2' fill='#2c2825'/><rect x='84' y='50' width='32' height='20' fill='#7d95a8'/><path d='M72 74h56l8 12H64z' fill='#8a827a'/><rect x='52' y='18' width='36' height='21' rx='9' fill='#d9534f'/><path d='M64 39l-4 9 11-9z' fill='#d9534f'/><circle cx='63' cy='28.5' r='2.5' fill='#ffffff'/><circle cx='70' cy='28.5' r='2.5' fill='#ffffff'/><circle cx='77' cy='28.5' r='2.5' fill='#ffffff'/><rect x='112' y='22' width='36' height='21' rx='9' fill='#7d95a8'/><path d='M136 43l4 9-11-9z' fill='#7d95a8'/><circle cx='123' cy='32.5' r='2.5' fill='#ffffff'/><circle cx='130' cy='32.5' r='2.5' fill='#ffffff'/><circle cx='137' cy='32.5' r='2.5' fill='#ffffff'/></svg>",
   "paragraphs": [
     "Tom arbeitet jetzt in einem Büro in Berlin. Heute hat er sein erstes {{Meeting|встреча, совещание (англ.)}}. Er hat ein bisschen {{Angst|страх (Angst haben — бояться)}}: Sein Deutsch ist noch nicht perfekt.",
     "Der Chef beginnt: „Okay, Leute, wir müssen das Projekt {{canceln|отменить (англ.)}} oder die {{Deadline|дедлайн, срок (англ.)}} {{verschieben|перенести}}. Das Feedback vom {{Kunden|клиент (der Kunde)}} war nicht gut.“",

@@ -3,6 +3,7 @@
   "title": "Die Deutsche Bahn",
   "titleRu": "Немецкие железные дороги",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='95' cy='92' rx='44' ry='5' fill='#dccbae'/><rect x='58' y='26' width='74' height='64' rx='10' fill='#d9534f'/><rect x='66' y='34' width='58' height='20' rx='5' fill='#7d95a8'/><rect x='58' y='62' width='74' height='7' fill='#ffffff'/><circle cx='73' cy='79' r='4' fill='#e8c07d'/><circle cx='117' cy='79' r='4' fill='#e8c07d'/><circle cx='157' cy='28' r='13' fill='#ffffff'/><circle cx='157' cy='28' r='13' fill='none' stroke='#2c2825' stroke-width='3'/><path d='M157 28v-9' stroke='#2c2825' stroke-width='2.5' stroke-linecap='round'/><path d='M157 28l7 4' stroke='#d9534f' stroke-width='2.5' stroke-linecap='round'/></svg>",
   "collection": "deutscher",
   "order": 47,
   "paragraphs": [

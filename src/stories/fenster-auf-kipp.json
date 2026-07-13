@@ -3,6 +3,7 @@
   "title": "Das Fenster auf Kipp",
   "titleRu": "Окно на проветривании",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><ellipse cx='100' cy='92' rx='46' ry='5' fill='#dccbae'/><rect x='58' y='20' width='84' height='70' fill='#d9534f'/><rect x='64' y='26' width='72' height='58' fill='#ffffff'/><rect x='68' y='30' width='64' height='50' fill='#7d95a8'/><path d='M68 80 L76 38 L124 38 L132 80 Z' fill='#ffffff' stroke='#8a827a' stroke-width='2'/><path d='M34 34v20M25 39l18 10M43 39l-18 10' stroke='#8a827a' stroke-width='2' stroke-linecap='round'/><path d='M168 50v14M162 53l12 8M174 53l-12 8' stroke='#8a827a' stroke-width='2' stroke-linecap='round'/></svg>",
   "collection": "deutscher",
   "order": 36,
   "paragraphs": [

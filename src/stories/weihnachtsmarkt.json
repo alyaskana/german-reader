@@ -3,6 +3,7 @@
   "title": "Der erste Glühwein",
   "titleRu": "Первый глинтвейн",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='140' cy='90' rx='24' ry='4' fill='#dccbae'/><rect x='136' y='76' width='8' height='12' fill='#8a827a'/><path d='M140 22l16 24h-32z' fill='#7f9573'/><path d='M140 34l20 28h-40z' fill='#7f9573'/><path d='M140 48l24 34h-48z' fill='#7f9573'/><circle cx='140' cy='20' r='4' fill='#d9534f'/><circle cx='133' cy='57' r='2.5' fill='#e8c07d'/><circle cx='148' cy='68' r='2.5' fill='#e8c07d'/><circle cx='137' cy='77' r='2.5' fill='#e8c07d'/><ellipse cx='74' cy='90' rx='27' ry='4' fill='#dccbae'/><path d='M64 44c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M80 44c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='52' y='52' width='40' height='36' rx='4' fill='#d9534f'/><path d='M92 60c14 0 14 20 0 20' stroke='#d9534f' stroke-width='5' fill='none'/><rect x='52' y='58' width='40' height='6' fill='#ffffff'/></svg>",
   "collection": "deutscher",
   "order": 23,
   "paragraphs": [

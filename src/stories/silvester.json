@@ -3,6 +3,7 @@
   "title": "Silvester in Berlin",
   "titleRu": "Новый год в Берлине",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='100' cy='102' rx='26' ry='4' fill='#dccbae'/><rect x='98' y='78' width='4' height='24' fill='#8a827a'/><path d='M92 80l-9 12 9-4z' fill='#d9534f'/><path d='M108 80l9 12-9-4z' fill='#d9534f'/><rect x='92' y='46' width='16' height='34' rx='3' fill='#d9534f'/><path d='M90 47l10-20 10 20z' fill='#e8c07d'/><circle cx='100' cy='60' r='4' fill='#ffffff'/><path d='M142 20v20M132 24l20 12M152 24l-20 12' stroke='#e8c07d' stroke-width='3' stroke-linecap='round' fill='none'/><path d='M60 30v14M53 33l14 8M67 33l-14 8' stroke='#d9534f' stroke-width='2.5' stroke-linecap='round' fill='none'/><circle cx='126' cy='50' r='3' fill='#d9534f'/><circle cx='72' cy='56' r='2.5' fill='#e8c07d'/></svg>",
   "collection": "deutscher",
   "order": 44,
   "paragraphs": [

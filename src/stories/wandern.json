@@ -3,6 +3,7 @@
   "title": "Wandern in den Bergen",
   "titleRu": "Поход в горы",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><circle cx='156' cy='27' r='11' fill='#e8c07d'/><rect y='88' width='200' height='32' fill='#eaddc6'/><path d='M84 88l40-56 40 56z' fill='#8a827a'/><path d='M115 45l9-13 9 13-5 3-4-3-4 3z' fill='#ffffff'/><path d='M40 88l36-52 36 52z' fill='#7d95a8'/><path d='M68 47l8-11 8 11-4 3-4-3-4 3z' fill='#ffffff'/><path d='M76 38V20' stroke='#2c2825' stroke-width='2.5'/><path d='M76 20l15 4-15 6z' fill='#d9534f'/><path d='M138 88l8-16 8 16z' fill='#7f9573'/><path d='M52 88l6-12 6 12z' fill='#7f9573'/></svg>",
   "collection": "deutscher",
   "order": 31,
   "paragraphs": [

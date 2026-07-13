@@ -3,6 +3,7 @@
   "title": "Die Anmeldung",
   "titleRu": "Регистрация по месту жительства",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='86' cy='92' rx='32' ry='5' fill='#dccbae'/><rect x='62' y='26' width='48' height='66' fill='#ffffff'/><path d='M70 40h32M70 50h32M70 60h24' stroke='#8a827a' stroke-width='3' stroke-linecap='round' fill='none'/><path d='M70 82h18' stroke='#2c2825' stroke-width='3' stroke-linecap='round'/><circle cx='97' cy='77' r='8' fill='none' stroke='#d9534f' stroke-width='3'/><ellipse cx='132' cy='91' rx='20' ry='4' fill='#dccbae'/><rect x='118' y='80' width='28' height='8' rx='2' fill='#2c2825'/><rect x='127' y='58' width='10' height='22' rx='3' fill='#d9534f'/><ellipse cx='132' cy='56' rx='9' ry='4' fill='#d9534f'/></svg>",
   "collection": "deutscher",
   "order": 15,
   "paragraphs": [

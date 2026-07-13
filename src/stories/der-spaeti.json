@@ -3,6 +3,7 @@
   "title": "Der Späti",
   "titleRu": "Ночной магазинчик",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><circle cx='164' cy='22' r='11' fill='#e8c07d'/><circle cx='169' cy='19' r='9' fill='#f6efe4'/><rect x='52' y='44' width='84' height='46' fill='#ffffff'/><rect x='48' y='34' width='92' height='12' rx='2' fill='#d9534f'/><rect x='60' y='34' width='12' height='12' fill='#ffffff'/><rect x='84' y='34' width='12' height='12' fill='#ffffff'/><rect x='108' y='34' width='12' height='12' fill='#ffffff'/><rect x='60' y='52' width='38' height='26' fill='#e8c07d'/><rect x='64' y='60' width='30' height='3' fill='#8a827a'/><rect x='64' y='69' width='30' height='3' fill='#8a827a'/><rect x='108' y='54' width='20' height='36' rx='2' fill='#8a827a'/><circle cx='124' cy='72' r='2' fill='#2c2825'/></svg>",
   "collection": "deutscher",
   "order": 28,
   "paragraphs": [

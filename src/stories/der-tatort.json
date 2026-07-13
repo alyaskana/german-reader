@@ -3,6 +3,7 @@
   "title": "Der Tatort",
   "titleRu": "Место преступления",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='100' cy='92' rx='40' ry='5' fill='#dccbae'/><path d='M90 28L78 14' stroke='#2c2825' stroke-width='3' stroke-linecap='round'/><path d='M110 28l12-14' stroke='#2c2825' stroke-width='3' stroke-linecap='round'/><rect x='72' y='82' width='7' height='9' fill='#2c2825'/><rect x='121' y='82' width='7' height='9' fill='#2c2825'/><rect x='56' y='28' width='88' height='56' rx='6' fill='#2c2825'/><rect x='63' y='35' width='74' height='42' rx='3' fill='#7d95a8'/><circle cx='100' cy='56' r='12' fill='none' stroke='#d9534f' stroke-width='4'/><path d='M100 40v8M100 64v8M84 56h8M108 56h8' stroke='#d9534f' stroke-width='4' stroke-linecap='round'/></svg>",
   "collection": "deutscher",
   "order": 27,
   "paragraphs": [

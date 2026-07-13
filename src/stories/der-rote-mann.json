@@ -3,6 +3,7 @@
   "title": "Der rote Mann",
   "titleRu": "Красный человечек",
   "level": "A1–A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><circle cx='160' cy='24' r='10' fill='#e8c07d'/><circle cx='165' cy='21' r='9' fill='#f6efe4'/><ellipse cx='100' cy='92' rx='18' ry='4' fill='#dccbae'/><rect x='96' y='68' width='8' height='24' fill='#8a827a'/><rect x='76' y='14' width='48' height='58' rx='7' fill='#2c2825'/><circle cx='100' cy='31' r='11' fill='#d9534f'/><circle cx='100' cy='26' r='2.8' fill='#2c2825'/><path d='M94 31h12l2 8H92z' fill='#2c2825'/><circle cx='100' cy='57' r='11' fill='#8a827a'/></svg>",
   "paragraphs": [
     "Es ist 23 Uhr. Tom und Mia gehen nach Hause. Die Straße ist leer — kein Auto, {{nirgendwo|нигде}}. An der {{Ampel|светофор}} steht der rote Mann.",
     "Tom geht los. Mia {{hält|держит (festhalten: hält … fest)}} seinen Arm {{+fest}}. „Rot!“, sagt sie.",

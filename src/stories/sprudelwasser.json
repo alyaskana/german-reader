@@ -3,6 +3,7 @@
   "title": "Sprudelwasser",
   "titleRu": "Газированная вода",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='88' cy='91' rx='20' ry='4' fill='#dccbae'/><ellipse cx='131' cy='91' rx='21' ry='4' fill='#dccbae'/><rect x='82' y='30' width='12' height='16' fill='#7d95a8'/><rect x='74' y='42' width='28' height='48' rx='7' fill='#7d95a8'/><rect x='80' y='23' width='16' height='8' rx='2' fill='#d9534f'/><rect x='74' y='58' width='28' height='14' fill='#ffffff'/><circle cx='88' cy='65' r='4' fill='#d9534f'/><path d='M114 46h34l-4 44h-26z' fill='#ffffff' stroke='#8a827a' stroke-width='2'/><circle cx='124' cy='80' r='2.5' fill='#7d95a8'/><circle cx='133' cy='70' r='3' fill='#7d95a8'/><circle cx='126' cy='60' r='2' fill='#7d95a8'/><circle cx='137' cy='55' r='2.5' fill='#7d95a8'/><circle cx='131' cy='38' r='2' fill='#7d95a8'/></svg>",
   "collection": "deutscher",
   "order": 46,
   "paragraphs": [

@@ -3,6 +3,7 @@
   "title": "Das Pfand",
   "titleRu": "Залог за тару",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><ellipse cx='104' cy='92' rx='48' ry='5' fill='#dccbae'/><path d='M68 92V62c0-6 6-8 6-12v-8h8v8c0 4 6 6 6 12v30z' fill='#a8b894'/><rect x='73' y='37' width='10' height='6' rx='1' fill='#d9534f'/><rect x='70' y='68' width='18' height='12' fill='#ffffff'/><path d='M96 92V54c0-6 6-8 6-12v-8h8v8c0 4 6 6 6 12v38z' fill='#7d95a8'/><rect x='101' y='29' width='10' height='6' rx='1' fill='#d9534f'/><rect x='98' y='62' width='16' height='14' fill='#ffffff'/><path d='M124 92V66c0-5 5-7 5-11v-7h8v7c0 4 5 6 5 11v26z' fill='#a8b894'/><rect x='128' y='43' width='10' height='6' rx='1' fill='#d9534f'/><circle cx='156' cy='84' r='9' fill='#e8c07d'/><circle cx='156' cy='84' r='5' fill='none' stroke='#8a827a' stroke-width='2'/><circle cx='166' cy='96' r='9' fill='#e8c07d'/><circle cx='166' cy='96' r='5' fill='none' stroke='#8a827a' stroke-width='2'/></svg>",
   "collection": "deutscher",
   "order": 11,
   "paragraphs": [

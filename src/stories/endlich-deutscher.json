@@ -3,6 +3,7 @@
   "title": "Endlich ein Deutscher",
   "titleRu": "Наконец-то немец",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><ellipse cx='100' cy='92' rx='42' ry='6' fill='#dccbae'/><rect x='64' y='26' width='72' height='64' rx='6' fill='#d9534f'/><circle cx='100' cy='52' r='14' fill='none' stroke='#e8c07d' stroke-width='3'/><path d='M92 52l5 5 11-11' stroke='#e8c07d' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M82 74h36' stroke='#e8c07d' stroke-width='3' stroke-linecap='round'/><path d='M88 80h24' stroke='#e8c07d' stroke-width='3' stroke-linecap='round'/><circle cx='152' cy='30' r='10' fill='#e8c07d'/><path d='M44 40c4-6 10-6 12-2M40 52c5-7 12-7 15-2' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
   "collection": "deutscher",
   "order": 50,
   "paragraphs": [

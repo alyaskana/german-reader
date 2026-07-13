@@ -3,6 +3,7 @@
   "title": "Kaffee und Kuchen",
   "titleRu": "Кофе с пирогом",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='78' cy='90' rx='32' ry='5' fill='#ffffff'/><rect x='52' y='62' width='52' height='28' fill='#e8c07d'/><rect x='52' y='72' width='52' height='6' fill='#d9534f'/><rect x='50' y='56' width='56' height='8' rx='4' fill='#ffffff'/><circle cx='78' cy='50' r='5' fill='#d9534f'/><ellipse cx='138' cy='90' rx='24' ry='5' fill='#dccbae'/><rect x='120' y='54' width='36' height='34' rx='6' fill='#7d95a8'/><path d='M120 62l-10 6 10 6z' fill='#7d95a8'/><path d='M156 62h6a8 8 0 0 1 0 16h-6' stroke='#7d95a8' stroke-width='4' fill='none'/><rect x='124' y='48' width='28' height='6' rx='3' fill='#2c2825'/><circle cx='138' cy='45' r='3' fill='#2c2825'/><path d='M132 40c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M146 40c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
   "collection": "deutscher",
   "order": 17,
   "paragraphs": [

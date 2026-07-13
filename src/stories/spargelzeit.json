@@ -3,6 +3,7 @@
   "title": "Die Spargelzeit",
   "titleRu": "Сезон спаржи",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='98' cy='92' rx='40' ry='5' fill='#dccbae'/><ellipse cx='98' cy='88' rx='36' ry='7' fill='#ffffff'/><rect x='80' y='34' width='11' height='52' rx='5' fill='#ffffff' stroke='#8a827a' stroke-width='1.5'/><rect x='106' y='34' width='11' height='52' rx='5' fill='#ffffff' stroke='#8a827a' stroke-width='1.5'/><rect x='93' y='28' width='11' height='58' rx='5' fill='#ffffff' stroke='#8a827a' stroke-width='1.5'/><ellipse cx='85.5' cy='39' rx='5' ry='8' fill='#e8c07d'/><ellipse cx='111.5' cy='39' rx='5' ry='8' fill='#e8c07d'/><ellipse cx='98.5' cy='33' rx='5' ry='8' fill='#e8c07d'/><rect x='74' y='58' width='48' height='11' rx='3' fill='#d9534f'/><circle cx='98' cy='63.5' r='3' fill='#ffffff'/></svg>",
   "collection": "deutscher",
   "order": 24,
   "paragraphs": [

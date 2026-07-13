@@ -3,6 +3,7 @@
   "title": "Das Oktoberfest",
   "titleRu": "Октоберфест",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><path d='M28 18c50 14 94 14 144 0' stroke='#8a827a' stroke-width='2.5' fill='none'/><path d='M56 25l7 13 7-13z' fill='#d9534f'/><path d='M92 28l7 13 7-13z' fill='#7d95a8'/><path d='M128 25l7 13 7-13z' fill='#a8b894'/><ellipse cx='100' cy='90' rx='26' ry='5' fill='#dccbae'/><rect x='82' y='48' width='34' height='40' rx='3' fill='#e8c07d'/><path d='M116 56h8a10 10 0 0 1 0 20h-8v-6h7a4 4 0 0 0 0-8h-7z' fill='#e8c07d'/><ellipse cx='99' cy='48' rx='19' ry='6' fill='#ffffff'/><circle cx='89' cy='44' r='5' fill='#ffffff'/><circle cx='108' cy='44' r='5' fill='#ffffff'/><circle cx='99' cy='42' r='6' fill='#ffffff'/><path d='M99 76c-5-4-10-7-10-12 0-6 8-7 10-2 2-5 10-4 10 2 0 5-5 8-10 12z' fill='#d9534f'/></svg>",
   "collection": "deutscher",
   "order": 41,
   "paragraphs": [

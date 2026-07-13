@@ -3,6 +3,7 @@
   "title": "Der Osterhase im Garten",
   "titleRu": "Пасхальный заяц в саду",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><ellipse cx='96' cy='94' rx='56' ry='7' fill='#a8b894'/><path d='M70 68a26 26 0 0 1 52 0' stroke='#e8c07d' stroke-width='5' fill='none'/><ellipse cx='80' cy='62' rx='9' ry='12' fill='#d9534f'/><ellipse cx='96' cy='58' rx='9' ry='12' fill='#ffffff'/><circle cx='93' cy='55' r='2' fill='#d9534f'/><circle cx='99' cy='61' r='2' fill='#d9534f'/><ellipse cx='112' cy='62' rx='9' ry='12' fill='#7d95a8'/><path d='M60 68h72l-8 30H68z' fill='#e8c07d'/><path d='M64 78h64M67 88h58' stroke='#8a827a' stroke-width='2'/><ellipse cx='148' cy='90' rx='8' ry='10' fill='#a8b894'/></svg>",
   "collection": "deutscher",
   "order": 43,
   "paragraphs": [

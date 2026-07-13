@@ -3,6 +3,7 @@
   "title": "Brot ist nicht gleich Brot",
   "titleRu": "Хлеб хлебу рознь",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='80' cy='90' rx='34' ry='5' fill='#dccbae'/><path d='M50 88c0-20 12-32 30-32s30 12 30 32z' fill='#e8c07d'/><path d='M64 72l10-8M78 66l10-8' stroke='#2c2825' stroke-width='3' stroke-linecap='round'/><ellipse cx='138' cy='90' rx='20' ry='4' fill='#dccbae'/><circle cx='138' cy='72' r='16' fill='none' stroke='#d9534f' stroke-width='6'/><path d='M128 80c6-16 14 4 20-16' stroke='#d9534f' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='128' cy='63' r='1.6' fill='#ffffff'/><circle cx='144' cy='60' r='1.6' fill='#ffffff'/><circle cx='149' cy='78' r='1.6' fill='#ffffff'/></svg>",
   "collection": "deutscher",
   "order": 16,
   "paragraphs": [

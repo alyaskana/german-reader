@@ -3,6 +3,7 @@
   "title": "Der Handwerker",
   "titleRu": "Мастер",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='100' cy='90' rx='44' ry='5' fill='#dccbae'/><circle cx='50' cy='30' r='12' fill='#ffffff'/><circle cx='50' cy='30' r='12' fill='none' stroke='#2c2825' stroke-width='3'/><path d='M50 30V21' stroke='#d9534f' stroke-width='2.5' stroke-linecap='round'/><path d='M50 30l6 4' stroke='#2c2825' stroke-width='2.5' stroke-linecap='round'/><rect x='138' y='50' width='7' height='36' rx='3' transform='rotate(18 141 68)' fill='#8a827a'/><circle cx='147' cy='47' r='9' fill='#8a827a'/><circle cx='152' cy='41' r='5.5' fill='#f6efe4'/><rect x='60' y='54' width='68' height='34' rx='4' fill='#d9534f'/><path d='M84 54v-5a10 10 0 0 1 20 0v5' stroke='#2c2825' stroke-width='4' fill='none'/><rect x='60' y='64' width='68' height='4' fill='#2c2825'/><rect x='89' y='60' width='10' height='11' rx='2' fill='#2c2825'/></svg>",
   "collection": "deutscher",
   "order": 33,
   "paragraphs": [

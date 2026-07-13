@@ -3,6 +3,7 @@
   "title": "Im Schrebergarten",
   "titleRu": "В садовом товариществе",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><rect x='46' y='54' width='8' height='32' fill='#ffffff'/><rect x='62' y='54' width='8' height='32' fill='#ffffff'/><rect x='78' y='54' width='8' height='32' fill='#ffffff'/><rect x='42' y='62' width='48' height='5' fill='#8a827a'/><circle cx='56' cy='80' r='9' fill='#a8b894'/><circle cx='76' cy='82' r='8' fill='#7f9573'/><ellipse cx='128' cy='91' rx='30' ry='5' fill='#dccbae'/><path d='M108 64L90 76l-4-7 18-11z' fill='#d9534f'/><rect x='108' y='58' width='36' height='30' rx='3' fill='#d9534f'/><rect x='118' y='51' width='14' height='9' rx='2' fill='#d9534f'/><path d='M144 66c14 0 14 16 0 16' stroke='#d9534f' stroke-width='5' fill='none'/><circle cx='84' cy='86' r='2.5' fill='#7d95a8'/><circle cx='78' cy='92' r='2' fill='#7d95a8'/></svg>",
   "collection": "deutscher",
   "order": 22,
   "paragraphs": [

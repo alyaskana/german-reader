@@ -3,6 +3,7 @@
   "title": "Die Autobahn",
   "titleRu": "Автобан",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='84' width='200' height='36' fill='#8a827a'/><path d='M8 101h18M46 101h18M84 101h18M122 101h18M160 101h18' stroke='#f6efe4' stroke-width='4'/><rect x='143' y='50' width='5' height='34' fill='#8a827a'/><rect x='128' y='18' width='36' height='36' rx='4' fill='#7d95a8'/><rect x='134' y='31' width='24' height='4' fill='#ffffff'/><path d='M140 48l4-13h3l-2 13zM152 48l-4-13h-3l2 13z' fill='#ffffff'/><path d='M52 88v-7c0-4 3-7 8-7h9l7-10h24l7 10h9c5 0 8 3 8 7v7z' fill='#d9534f'/><path d='M80 72l4-6h14l4 6z' fill='#ffffff'/><circle cx='70' cy='88' r='8' fill='#2c2825'/><circle cx='70' cy='88' r='3' fill='#ffffff'/><circle cx='108' cy='88' r='8' fill='#2c2825'/><circle cx='108' cy='88' r='3' fill='#ffffff'/></svg>",
   "collection": "deutscher",
   "order": 45,
   "paragraphs": [

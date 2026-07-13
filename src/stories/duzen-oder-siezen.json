@@ -3,6 +3,7 @@
   "title": "Duzen oder Siezen?",
   "titleRu": "На «ты» или на «Вы»?",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><path d='M48 40a8 8 0 0 1 8-8h40a8 8 0 0 1 8 8v18a8 8 0 0 1-8 8H70L58 78V66h-2a8 8 0 0 1-8-8z' fill='#d9534f'/><circle cx='66' cy='49' r='3.5' fill='#ffffff'/><circle cx='76' cy='49' r='3.5' fill='#ffffff'/><circle cx='86' cy='49' r='3.5' fill='#ffffff'/><path d='M96 66a8 8 0 0 1 8-8h40a8 8 0 0 1 8 8v16a8 8 0 0 1-8 8h-2v12l-12-12h-26a8 8 0 0 1-8-8z' fill='#7d95a8'/><circle cx='114' cy='74' r='3.5' fill='#ffffff'/><circle cx='124' cy='74' r='3.5' fill='#ffffff'/><circle cx='134' cy='74' r='3.5' fill='#ffffff'/></svg>",
   "collection": "deutscher",
   "order": 29,
   "paragraphs": [

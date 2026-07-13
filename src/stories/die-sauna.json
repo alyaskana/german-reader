@@ -3,6 +3,7 @@
   "title": "Die Sauna",
   "titleRu": "Сауна",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='88' cy='92' rx='26' ry='4' fill='#dccbae'/><ellipse cx='138' cy='92' rx='24' ry='4' fill='#dccbae'/><path d='M82 34c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M96 34c-3-6 3-9 0-15' stroke='#8a827a' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M68 56h40l-4 34H72z' fill='#e8c07d'/><path d='M72 56a16 16 0 0 1 32 0' stroke='#8a827a' stroke-width='3' fill='none'/><path d='M71 68h34' stroke='#8a827a' stroke-width='3'/><rect x='120' y='72' width='36' height='16' rx='8' fill='#d9534f'/><circle cx='148' cy='80' r='5' fill='#ffffff'/></svg>",
   "collection": "deutscher",
   "order": 39,
   "paragraphs": [

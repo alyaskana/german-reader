@@ -3,6 +3,7 @@
   "title": "Die Laterne",
   "titleRu": "Фонарик",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='100' cy='92' rx='26' ry='5' fill='#dccbae'/><circle cx='52' cy='28' r='3' fill='#e8c07d'/><circle cx='150' cy='24' r='3' fill='#e8c07d'/><circle cx='160' cy='44' r='2' fill='#e8c07d'/><path d='M84 36a16 16 0 0 1 32 0' stroke='#2c2825' stroke-width='3' fill='none'/><rect x='84' y='34' width='32' height='6' fill='#2c2825'/><rect x='76' y='40' width='48' height='46' rx='8' fill='#d9534f'/><circle cx='97' cy='63' r='13' fill='#e8c07d'/><circle cx='104' cy='59' r='11' fill='#d9534f'/></svg>",
   "collection": "deutscher",
   "order": 42,
   "paragraphs": [

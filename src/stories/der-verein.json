@@ -3,6 +3,7 @@
   "title": "Der Verein",
   "titleRu": "Клуб",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><rect x='100' y='64' width='58' height='5' fill='#ffffff'/><rect x='100' y='78' width='58' height='5' fill='#ffffff'/><rect x='104' y='54' width='9' height='38' rx='2' fill='#ffffff'/><rect x='122' y='54' width='9' height='38' rx='2' fill='#ffffff'/><rect x='140' y='54' width='9' height='38' rx='2' fill='#ffffff'/><ellipse cx='72' cy='90' rx='20' ry='4' fill='#dccbae'/><path d='M58 90c0-17 6-28 14-28s14 11 14 28z' fill='#7d95a8'/><circle cx='72' cy='54' r='6.5' fill='#e8c07d'/><ellipse cx='72' cy='63' rx='8' ry='6' fill='#ffffff'/><path d='M61 52l11-30 11 30z' fill='#d9534f'/><path d='M48 92v-8' stroke='#7f9573' stroke-width='2.5' fill='none'/><circle cx='48' cy='81' r='4.5' fill='#d9534f'/><circle cx='48' cy='81' r='1.8' fill='#e8c07d'/></svg>",
   "collection": "deutscher",
   "order": 18,
   "paragraphs": [

@@ -3,6 +3,7 @@
   "title": "Die Steuererklärung",
   "titleRu": "Налоговая декларация",
   "level": "A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><ellipse cx='76' cy='93' rx='26' ry='4' fill='#dccbae'/><ellipse cx='130' cy='90' rx='26' ry='4' fill='#dccbae'/><rect x='54' y='40' width='44' height='52' rx='3' fill='#d9534f'/><circle cx='61' cy='54' r='3' fill='#ffffff'/><circle cx='61' cy='76' r='3' fill='#ffffff'/><rect x='70' y='52' width='20' height='14' fill='#ffffff'/><path d='M73 57h14M73 62h10' stroke='#8a827a' stroke-width='2' stroke-linecap='round'/><rect x='108' y='80' width='44' height='7' fill='#ffffff'/><rect x='110' y='72' width='40' height='7' fill='#ffffff'/><rect x='112' y='64' width='36' height='7' fill='#ffffff'/><ellipse cx='128' cy='57' rx='11' ry='6.5' fill='#2c2825'/><ellipse cx='126' cy='60' rx='6' ry='3' fill='#ffffff'/><path d='M137 55l16-7-12 11z' fill='#2c2825'/><path d='M117 55l-7 2 7 3z' fill='#2c2825'/></svg>",
   "collection": "deutscher",
   "order": 32,
   "paragraphs": [
@@ -16,6 +17,7 @@
     "Sechs Wochen später kommt ein Brief vom Finanzamt. Tom bekommt eine {{Rückerstattung|возврат денег}}: 800 Euro! Er ist glücklich. Er hat nicht gedacht, dass das Finanzamt ihm Geld gibt. „Vielleicht mache ich das nächstes Jahr wieder“, sagt er. Mia lacht: „Siehst du? Manchmal gibt der Staat auch Geld zurück — aber nur, weil Mia geholfen hat.“"
   ],
   "dict": {
+    "800": "800 (число)",
     "es": "оно; es ist Mai — сейчас май",
     "ist": "есть, является (sein)",
     "mai": "май",
@@ -167,7 +169,6 @@
     "später": "позже, спустя",
     "eine": "неопределённый артикль (ж. род); одна",
     "rückerstattung": "возврат денег",
-    "800": "800 (число)",
     "euro": "евро",
     "glücklich": "счастливый",
     "ihm": "ему (er)",

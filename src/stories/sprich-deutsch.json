@@ -3,6 +3,7 @@
   "title": "Sprich Deutsch!",
   "titleRu": "Говори по-немецки!",
   "level": "A1–A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='88' width='200' height='32' fill='#eaddc6'/><rect x='46' y='24' width='68' height='38' rx='12' fill='#d9534f'/><path d='M66 60l-5 15 17-13z' fill='#d9534f'/><circle cx='66' cy='43' r='4' fill='#ffffff'/><circle cx='80' cy='43' r='4' fill='#ffffff'/><circle cx='94' cy='43' r='4' fill='#ffffff'/><rect x='100' y='54' width='58' height='32' rx='11' fill='#7d95a8'/><path d='M136 84l6 13 7-13z' fill='#7d95a8'/><circle cx='117' cy='70' r='3.5' fill='#ffffff'/><circle cx='129' cy='70' r='3.5' fill='#ffffff'/><circle cx='141' cy='70' r='3.5' fill='#ffffff'/></svg>",
   "paragraphs": [
     "Tom lernt jeden Tag Deutsch. Heute hat er einen Plan: den ganzen Tag nur Deutsch sprechen — kein Englisch, kein Spanisch.",
     "In der {{Bäckerei|пекарня, булочная}} sagt er langsam: „Guten Morgen, ich {{hätte gern|хотел бы}} zwei Brötchen.“ Die {{Verkäuferin|продавщица}} lächelt und antwortet auf Englisch: „Sure! Anything else?“ Tom {{seufzt|вздыхает}}.",

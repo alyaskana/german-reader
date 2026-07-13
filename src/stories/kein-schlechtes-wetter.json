@@ -3,6 +3,7 @@
   "title": "Kein schlechtes Wetter",
   "titleRu": "Плохой погоды не бывает",
   "level": "A1–A2",
+  "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#f6efe4'/><rect y='90' width='200' height='30' fill='#eaddc6'/><ellipse cx='100' cy='97' rx='36' ry='6' fill='#7d95a8'/><path d='M58 64a42 36 0 0 1 84 0z' fill='#d9534f'/><path d='M79 33c-6 8-9 19-9 31M121 33c6 8 9 19 9 31' stroke='#ffffff' stroke-width='2' fill='none'/><path d='M100 22v6' stroke='#2c2825' stroke-width='3' stroke-linecap='round'/><path d='M100 64v26a7 7 0 0 1-14 0' stroke='#2c2825' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M36 26l-5 12M52 44l-5 12M160 30l-5 12M172 52l-5 12M32 62l-5 12' stroke='#7d95a8' stroke-width='3' stroke-linecap='round'/></svg>",
   "paragraphs": [
     "Im Oktober will Tom mit Mia {{wandern|ходить в поход}} gehen. Er trägt Sneaker und eine dünne Jacke. Mia trägt {{Wanderschuhe|треккинговые ботинки}}, eine {{Regenjacke|куртка от дождя}} und einen {{Rucksack|рюкзак}}.",
     "„Es sind nur zwei Stunden“, sagt Tom. Mia packt eine zweite Jacke ein. „Es gibt kein schlechtes Wetter, es gibt nur falsche {{Kleidung|одежда}}. Das sagt man in Deutschland.“",
