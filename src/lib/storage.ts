@@ -52,7 +52,7 @@ export function removeWord(word: string): SavedWord[] {
 
 export function setLearned(word: string, learned: boolean): SavedWord[] {
   const words = getWords().map((w) =>
-    w.word.toLowerCase() === word.toLowerCase() ? { ...w, learned } : w,
+    w.word.toLowerCase() === word.toLowerCase() ? { ...w, learned, updatedAt: Date.now() } : w,
   )
   write(KEYS.words, words)
   return words
@@ -94,6 +94,24 @@ export function getCustomStories(): Story[] {
 export function addCustomStory(story: Story): Story[] {
   const list = getCustomStories()
   const next = [...list.filter((s) => s.id !== story.id), { ...story, custom: true }]
+  write(KEYS.customStories, next)
+  return next
+}
+
+/* Bulk setters used by cross-device sync (lib/sync.ts). */
+
+export function replaceWords(words: SavedWord[]): SavedWord[] {
+  write(KEYS.words, words)
+  return words
+}
+
+export function replaceFeedback(fb: Record<string, Feedback>): Record<string, Feedback> {
+  write(KEYS.feedback, fb)
+  return fb
+}
+
+export function replaceCustomStories(list: Story[]): Story[] {
+  const next = list.map((s) => ({ ...s, custom: true }))
   write(KEYS.customStories, next)
   return next
 }

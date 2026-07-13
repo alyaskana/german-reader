@@ -33,6 +33,8 @@ export interface SavedWord {
   addedAt: number
   /** marked "уже знаю" in the trainer: rendered without gloss in stories */
   learned: boolean
+  /** last change (learned toggled): the newer entry wins on cross-device merge */
+  updatedAt?: number
 }
 
 export type GlossMode = 'always' | 'tap'

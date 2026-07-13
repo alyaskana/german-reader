@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { stories as builtinStories } from './stories'
 import type { Feedback, GlossMode, SavedWord, Story } from './lib/types'
 import {
@@ -14,12 +14,15 @@ import { StoryReader } from './components/StoryReader'
 import { WordList } from './components/WordList'
 import { Trainer } from './components/Trainer'
 import { AddStory } from './components/AddStory'
+import { SyncSettings } from './components/SyncSettings'
+import { getSyncToken, syncNow, type SyncData } from './lib/sync'
 
 type Route =
   | { screen: 'list' }
   | { screen: 'words' }
   | { screen: 'train' }
   | { screen: 'add' }
+  | { screen: 'sync' }
   | { screen: 'collection'; id: string }
   | { screen: 'story'; id: string }
 
@@ -28,6 +31,7 @@ function parseHash(): Route {
   if (hash === 'words') return { screen: 'words' }
   if (hash === 'train') return { screen: 'train' }
   if (hash === 'add') return { screen: 'add' }
+  if (hash === 'sync') return { screen: 'sync' }
   if (hash.startsWith('collection/'))
     return { screen: 'collection', id: decodeURIComponent(hash.slice(11)) }
   if (hash.startsWith('story/')) return { screen: 'story', id: decodeURIComponent(hash.slice(6)) }
@@ -43,6 +47,39 @@ export default function App() {
 
   const allStories = useMemo(() => [...builtinStories, ...customStories], [customStories])
   const learning = words.filter((w) => !w.learned).length
+
+  // Cross-device sync: merge remote state on load and (debounced) after changes.
+  function applySync(data: SyncData) {
+    setWords((cur) => (JSON.stringify(cur) === JSON.stringify(data.words) ? cur : data.words))
+    setFeedback((cur) =>
+      JSON.stringify(cur) === JSON.stringify(data.feedback) ? cur : data.feedback,
+    )
+    setCustomStories((cur) =>
+      JSON.stringify(cur) === JSON.stringify(data.customStories) ? cur : data.customStories,
+    )
+  }
+
+  useEffect(() => {
+    if (!getSyncToken()) return
+    let cancelled = false
+    syncNow().then((r) => !cancelled && 'data' in r && applySync(r.data))
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const firstRender = useRef(true)
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false
+      return
+    }
+    if (!getSyncToken()) return
+    const t = setTimeout(() => syncNow().then((r) => 'data' in r && applySync(r.data)), 2500)
+    return () => clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [words, feedback, customStories])
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash())
@@ -98,8 +135,12 @@ export default function App() {
           feedback={feedback}
           onOpenCollection={(id) => go(`collection/${id}`)}
           onAdd={() => go('add')}
+          onSync={() => go('sync')}
+          syncEnabled={Boolean(getSyncToken())}
         />
       )}
+
+      {route.screen === 'sync' && <SyncSettings onSynced={applySync} onBack={() => go('')} />}
 
       {route.screen === 'collection' && (
         <CollectionView

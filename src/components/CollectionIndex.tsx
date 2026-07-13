@@ -6,9 +6,18 @@ interface Props {
   feedback: Record<string, Feedback>
   onOpenCollection: (id: string) => void
   onAdd: () => void
+  onSync: () => void
+  syncEnabled: boolean
 }
 
-export function CollectionIndex({ stories, feedback, onOpenCollection, onAdd }: Props) {
+export function CollectionIndex({
+  stories,
+  feedback,
+  onOpenCollection,
+  onAdd,
+  onSync,
+  syncEnabled,
+}: Props) {
   const groups: { collection: Collection; items: Story[] }[] = []
   for (const c of collections) {
     const items = stories.filter((s) => s.collection === c.id)
@@ -56,6 +65,10 @@ export function CollectionIndex({ stories, feedback, onOpenCollection, onAdd }: 
           <strong>Своя история</strong>
           <span className="folder-add-sub">сгенерируй в Claude и добавь</span>
         </span>
+      </button>
+
+      <button type="button" className="sync-link" onClick={onSync}>
+        ⟳ Синхронизация между устройствами{syncEnabled ? ' · включена' : ''}
       </button>
     </div>
   )
