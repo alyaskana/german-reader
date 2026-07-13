@@ -167,31 +167,31 @@
   "order": 20,
   "quiz": [
     {
-      "q": "Was hat Tom gekauft?",
+      "q": "Was rät Mia Tom vor der Fahrt?",
       "options": [
-        "Ein altes Fahrrad",
-        "Ein neues Auto",
-        "Einen Helm"
+        "Das Licht anmachen und auf dem Radweg bleiben",
+        "Schneller als die Autos zu fahren",
+        "Einen neuen Helm zu kaufen"
       ],
       "answer": 0
     },
     {
-      "q": "Wer läuft plötzlich auf den Radweg?",
+      "q": "Warum sieht der Mann Tom auf dem Radweg nicht?",
       "options": [
-        "Ein Kind",
-        "Ein Hund",
-        "Ein Mann mit Handy"
-      ],
-      "answer": 2
-    },
-    {
-      "q": "Wer ist der Mann auf dem Radweg?",
-      "options": [
-        "Mia",
-        "Jonas, sein Kollege",
-        "Ein Polizist"
+        "Es ist schon dunkel",
+        "Er schaut auf sein Handy",
+        "Er schläft im Gehen"
       ],
       "answer": 1
+    },
+    {
+      "q": "Wer ist der Mann auf dem Radweg wirklich?",
+      "options": [
+        "Ein Polizist",
+        "Toms Nachbar",
+        "Jonas, sein Kollege"
+      ],
+      "answer": 2
     }
   ]
 }

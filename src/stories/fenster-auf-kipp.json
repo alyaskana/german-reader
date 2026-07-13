@@ -211,31 +211,31 @@
   },
   "quiz": [
     {
-      "q": "Warum steht das Fenster im Büro offen?",
+      "q": "Warum will Mia das Fenster öffnen?",
       "options": [
-        "Weil Mia lüften will",
-        "Weil es draußen warm ist",
-        "Weil das Fenster kaputt ist"
+        "Damit keine schlechte Luft und kein Schimmel entsteht",
+        "Weil ihr im Büro zu warm ist",
+        "Weil sie das Fenster putzen möchte"
       ],
       "answer": 0
     },
     {
-      "q": "Was glaubt Tom über die Zugluft?",
+      "q": "Was ist Stoßlüften?",
       "options": [
-        "Sie ist gesund",
-        "Sie macht krank",
-        "Sie ist warm"
+        "Das Fenster nur einen Spalt offen lassen",
+        "Das Fenster kurz ganz weit öffnen",
+        "Das Fenster den ganzen Tag zulassen"
       ],
       "answer": 1
     },
     {
-      "q": "Warum ist Tom am nächsten Morgen wirklich krank?",
+      "q": "Warum ist Tom wirklich krank geworden?",
       "options": [
-        "Wegen der Zugluft vom Fenster",
-        "Weil Mia ihn angeniest hat",
-        "Weil er keinen Tee getrunken hat"
+        "Wegen der kalten Zugluft am Fenster",
+        "Weil er keinen Tee getrunken hat",
+        "Mia hat ihn angeniest, als sie krank war"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

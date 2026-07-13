@@ -101,29 +101,29 @@
   "order": 8,
   "quiz": [
     {
-      "q": "Warum will Mia nicht über die Straße gehen?",
+      "q": "Warum bleibt Mia an der roten Ampel stehen?",
       "options": [
-        "Die Ampel ist rot",
-        "Ein Auto kommt",
-        "Sie ist müde"
+        "Sie will ein gutes Vorbild sein",
+        "Ein Auto kommt näher",
+        "Sie ist zu müde zum Gehen"
       ],
       "answer": 0
     },
     {
-      "q": "Wie ist die Straße am Abend?",
+      "q": "Was sagt Mia über den roten Mann an der Ampel?",
       "options": [
-        "Voll mit Autos",
-        "Leer",
-        "Nass"
+        "Er ist kaputt",
+        "Er arbeitet Tag und Nacht und verdient Respekt",
+        "Er ist viel zu langsam"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht Tom am nächsten Tag an der roten Ampel?",
+      "q": "Was passiert am nächsten Tag an der roten Ampel?",
       "options": [
-        "Er geht bei Rot",
-        "Er wartet auf Grün",
-        "Er fährt mit dem Rad"
+        "Tom geht bei Rot über die Straße",
+        "Ein kleines Mädchen wartet neben Tom",
+        "Mia holt Tom mit dem Auto ab"
       ],
       "answer": 1
     }

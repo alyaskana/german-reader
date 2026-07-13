@@ -167,29 +167,29 @@
     {
       "q": "Worüber sprechen im April alle im Büro?",
       "options": [
-        "Über Spargel",
-        "Über den Urlaub",
-        "Über das Wetter"
+        "Über den Spargel",
+        "Über den Sommerurlaub",
+        "Über das schlechte Wetter"
       ],
       "answer": 0
     },
     {
-      "q": "Wo kaufen Tom und Mia den frischen Spargel?",
+      "q": "Was sehen Tom und Mia vor dem Hof des Bauern?",
       "options": [
-        "Im Supermarkt",
-        "Bei einem Bauern auf dem Land",
-        "In Madrid"
+        "Einen geschlossenen Laden",
+        "Eine sehr lange Schlange",
+        "Ein großes Feuer"
       ],
       "answer": 1
     },
     {
-      "q": "Wie findet Tom den Spargel am Ende?",
+      "q": "Wie schmeckt Tom der Spargel am Ende?",
       "options": [
+        "Er mag ihn überhaupt nicht",
         "Besser als in jedem Restaurant in Madrid",
-        "Nicht so gut",
-        "Zu teuer"
+        "Er findet ihn viel zu bitter"
       ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }

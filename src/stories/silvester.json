@@ -243,31 +243,31 @@
   },
   "quiz": [
     {
-      "q": "Welchen Film schauen viele Deutsche an Silvester?",
+      "q": "Was schauen die Deutschen an Silvester im Fernsehen?",
       "options": [
-        "Dinner for One",
-        "Einen spanischen Film",
-        "Einen neuen Film"
+        "Den kurzen Film „Dinner for One“",
+        "Ein großes Fußballspiel",
+        "Die Nachrichten aus Spanien"
       ],
       "answer": 0
     },
     {
-      "q": "Was war Mias Vorsatz?",
+      "q": "Was bedeutet beim Bleigießen ein Schiff?",
       "options": [
-        "Mehr Sport machen",
-        "Mutiger zu sein",
-        "Weniger arbeiten"
+        "Viel Geld",
+        "Eine Reise",
+        "Eine Hochzeit"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht Mia am Ende?",
+      "q": "Warum bekommt Tom am Ende einen Kuss von Mia?",
       "options": [
-        "Sie fährt nach Hause",
-        "Sie gibt Tom einen Kuss",
-        "Sie geht schlafen"
+        "Weil er ihr ein Geschenk gemacht hat",
+        "Weil er endlich gut Deutsch spricht",
+        "Weil ihr Vorsatz war, mutiger zu sein"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

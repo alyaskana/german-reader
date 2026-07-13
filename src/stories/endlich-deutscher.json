@@ -243,29 +243,29 @@
   },
   "quiz": [
     {
-      "q": "Was macht Tom als Erstes am Morgen?",
+      "q": "Was macht Tom morgens als Erstes?",
       "options": [
-        "Er macht das Fenster weit auf und lüftet",
-        "Er trinkt Kaffee",
-        "Er geht zum Supermarkt"
+        "Er öffnet das Fenster und lüftet",
+        "Er trennt den Müll in die Tonnen",
+        "Er bringt das Pfand zum Supermarkt"
       ],
       "answer": 0
     },
     {
-      "q": "Was macht Tom an der roten Ampel?",
+      "q": "Was macht Tom an der roten Ampel, obwohl die Straße leer ist?",
       "options": [
-        "Er geht einfach über die Straße",
-        "Er wartet ruhig",
-        "Er läuft zurück"
+        "Er geht wie der Tourist einfach hinüber",
+        "Er wartet ruhig, bis es grün wird",
+        "Er läuft schnell wieder zurück"
       ],
       "answer": 1
     },
     {
-      "q": "Was sagt Mia am Ende über Tom?",
+      "q": "Was antwortet Tom, als Mia ihn einen echten Deutschen nennt?",
       "options": [
-        "Er ist noch ein echter Tourist",
-        "Er soll mehr lernen",
-        "Jetzt ist er ein echter Deutscher"
+        "Dass er zurück nach Spanien will",
+        "Dass Mia sich täuscht",
+        "Dass er auch noch ein echter Spanier ist"
       ],
       "answer": 2
     }

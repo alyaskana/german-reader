@@ -142,29 +142,29 @@
   },
   "quiz": [
     {
-      "q": "Um wie viel Uhr gibt es bei Oma Kaffee und Kuchen?",
+      "q": "Was ist bei Oma am Sonntag um drei Uhr üblich?",
       "options": [
-        "Um drei Uhr",
-        "Um neun Uhr",
-        "Um zehn Uhr"
+        "Kaffee und Kuchen mit der Familie",
+        "Ein großes warmes Mittagessen",
+        "Ein Spaziergang im Garten"
       ],
       "answer": 0
     },
     {
-      "q": "Was sagt Mia über Oma?",
+      "q": "Warum isst Tom immer weiter, obwohl er satt ist?",
       "options": [
-        "Oma kocht nicht gern",
-        "Bei Oma sagt man nie Nein",
-        "Oma isst keinen Kuchen"
+        "Der Kuchen schmeckt einfach zu gut",
+        "Er will nicht unhöflich sein",
+        "Oma gibt ihm sonst keinen Kaffee"
       ],
       "answer": 1
     },
     {
-      "q": "Was gibt Oma Tom an der Tür mit?",
+      "q": "Was gibt Oma Tom an der Tür mit nach Hause?",
       "options": [
-        "Einen Kaffee",
-        "Ein Buch",
-        "Eine große Tüte mit Kuchen"
+        "Ein Rezept für den Apfelkuchen",
+        "Eine warme Tasse Kaffee",
+        "Eine Tüte mit drei Stücken Kuchen"
       ],
       "answer": 2
     }

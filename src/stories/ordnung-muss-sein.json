@@ -223,31 +223,31 @@
   },
   "quiz": [
     {
-      "q": "Welchen Spruch kennen die Deutschen laut Emma?",
+      "q": "Was hängt überall und nervt Tom zuerst?",
       "options": [
-        "Ordnung muss sein",
-        "Zeit ist Geld",
-        "Alles ist erlaubt"
+        "Viele Schilder mit Regeln, was verboten und erlaubt ist",
+        "Bilder von Politikern",
+        "Werbung für neue Geschäfte"
       ],
       "answer": 0
     },
     {
-      "q": "Was passiert nach zehn Uhr abends?",
+      "q": "Warum klopft der Nachbar an die Decke?",
       "options": [
-        "Es ist Ruhezeit und Lärm ist verboten",
-        "Alle hören laut Musik",
-        "Der Bus fährt nicht mehr"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Was passiert mit Toms Geldbörse?",
-      "options": [
-        "Sie ist für immer weg",
-        "Ein Mann gibt sie im Fundbüro ab",
-        "Ein Dieb nimmt das Geld"
+        "Weil Tom zu früh aufsteht",
+        "Weil Tom nach zweiundzwanzig Uhr laut Musik hört",
+        "Weil Tom die Treppe nicht putzt"
       ],
       "answer": 1
+    },
+    {
+      "q": "Was passiert mit Toms verlorener Geldbörse?",
+      "options": [
+        "Ein Dieb nimmt das ganze Geld",
+        "Sie bleibt für immer verschwunden",
+        "Ein Mann gibt sie beim Fundbüro ab, und nichts fehlt"
+      ],
+      "answer": 2
     }
   ]
 }

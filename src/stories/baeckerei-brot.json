@@ -154,28 +154,28 @@
   },
   "quiz": [
     {
-      "q": "Warum geht Tom zur Bäckerei?",
+      "q": "Warum bleibt Tom vor der Theke staunend stehen?",
       "options": [
-        "Er will Brötchen für das Frühstück kaufen",
-        "Er will Mia treffen",
-        "Er will Deutsch lernen"
+        "Es gibt dort sehr viele Sorten Brot",
+        "Die Verkäuferin spricht nur Berlinerisch",
+        "Es gibt nur noch Weißbrot"
       ],
       "answer": 0
     },
     {
-      "q": "Welches Wort für Brötchen benutzt Tom in der Bäckerei?",
+      "q": "Woher kennt Tom das Wort „Schrippen“?",
       "options": [
-        "Semmel",
-        "Schrippen",
-        "Weck"
+        "Aus dem Fernsehen",
+        "Von Mia",
+        "Von seiner Oma"
       ],
       "answer": 1
     },
     {
-      "q": "Wie heißt das Brötchen in München?",
+      "q": "Wie heißt das Brötchen bei Mias Oma in München?",
       "options": [
-        "Schrippe",
         "Weck",
+        "Schrippe",
         "Semmel"
       ],
       "answer": 2

@@ -205,31 +205,31 @@
   },
   "quiz": [
     {
+      "q": "Warum ist Tom verwirrt, als Mia vom Osterhasen erzählt?",
+      "options": [
+        "Er versteht nicht, warum ein Hase Eier bringt",
+        "Er hat Angst vor Hasen",
+        "Er mag keine Eier"
+      ],
+      "answer": 0
+    },
+    {
       "q": "Was macht die Familie am Samstag in der Küche?",
       "options": [
-        "Sie bemalen Eier",
-        "Sie backen Brot",
-        "Sie kochen Suppe"
+        "Sie backt einen großen Kuchen",
+        "Sie bemalt weiße Eier mit Farben",
+        "Sie kocht eine Suppe"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Wer versteckt die Eier im Garten?",
+      "q": "Warum riecht es drei Wochen später im Garten schlecht?",
       "options": [
-        "Mias Vater",
-        "Tom",
-        "Die Kinder"
+        "Die Blumen sind verwelkt",
+        "Ein Tier ist im Garten krank",
+        "Ein altes verstecktes Ei lag unter einem Busch"
       ],
-      "answer": 0
-    },
-    {
-      "q": "Warum roch es drei Wochen später im Garten schlecht?",
-      "options": [
-        "Ein altes Ei lag unter einem Busch",
-        "Der Müll war voll",
-        "Ein Tier war krank"
-      ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

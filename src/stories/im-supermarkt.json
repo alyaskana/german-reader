@@ -96,31 +96,31 @@
   "order": 3,
   "quiz": [
     {
-      "q": "Warum geht Lena in den Supermarkt?",
+      "q": "Warum geht Lena einkaufen?",
       "options": [
-        "Sie kocht heute für Freunde",
-        "Sie sucht Arbeit",
-        "Sie trifft eine Freundin"
+        "Sie kocht am Abend für Freunde",
+        "Sie hat großen Hunger",
+        "Sie sucht eine Arbeit"
       ],
       "answer": 0
     },
     {
       "q": "Wo findet Lena die Zwiebeln?",
       "options": [
-        "Im Kühlregal",
+        "Im Kühlregal ganz hinten",
         "In Gang drei beim Gemüse",
-        "An der Kasse"
+        "Direkt neben dem Brot"
       ],
       "answer": 1
     },
     {
-      "q": "Was hat Lena zu Hause vergessen zu kaufen?",
+      "q": "Was hat Lena im Supermarkt vergessen?",
       "options": [
+        "Die Milch",
         "Das Brot",
-        "Den Käse",
-        "Die Milch"
+        "Den Käse"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

@@ -155,31 +155,31 @@
   },
   "quiz": [
     {
-      "q": "Wie sagt man in Deutschland zum Chef?",
+      "q": "Was ist für Tom in Deutschland schwer?",
       "options": [
-        "Sie",
-        "Du",
-        "Herr"
+        "Er findet das Büro nicht",
+        "Er weiß nicht, wann man du oder Sie sagt",
+        "Er hat keine Kollegen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Tom falsch, als der Chef nach dem Bericht fragt?",
+      "options": [
+        "Er sagt du statt Sie zum Chef",
+        "Er antwortet gar nicht",
+        "Er lacht den Chef aus"
       ],
       "answer": 0
     },
     {
-      "q": "Was bietet der Chef Tom an?",
+      "q": "Warum wird Tom am Ende wieder rot?",
       "options": [
-        "Das Du",
-        "Mehr Geld",
-        "Einen freien Tag"
+        "Emma ist wütend auf ihn",
+        "Er hat den Bericht verloren",
+        "Die neue Frau ist die Chefin, aber er wollte sie duzen"
       ],
-      "answer": 0
-    },
-    {
-      "q": "Wer ist die neue Frau im Büro?",
-      "options": [
-        "Die neue Chefin",
-        "Eine Kundin",
-        "Toms Schwester"
-      ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

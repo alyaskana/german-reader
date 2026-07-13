@@ -126,31 +126,31 @@
   "order": 7,
   "quiz": [
     {
-      "q": "Wo arbeitet Tom jetzt?",
+      "q": "Warum hat Tom vor seinem ersten Meeting Angst?",
       "options": [
-        "In einem Büro in Berlin",
-        "In einem Café in München",
-        "In einer Schule"
+        "Er kennt niemanden im Büro",
+        "Er kommt zu spät",
+        "Sein Deutsch ist noch nicht perfekt"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
-      "q": "Welche Sprache spricht man im Büro?",
+      "q": "Welche Sprache sprechen die Kollegen im Büro wirklich?",
       "options": [
-        "Denglisch",
         "Nur Englisch",
+        "Deutsch mit vielen englischen Wörtern",
         "Nur Spanisch"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Was ist Toms Lieblingswort?",
+      "q": "Was schreibt Tom am Ende seiner Familie?",
       "options": [
-        "Das Homeoffice",
-        "Das Meeting",
-        "Der Beamer"
+        "Dass er einen neuen Chef hat",
+        "Dass er bald nach Hause kommt",
+        "Dass er schon fließend Denglisch spricht"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

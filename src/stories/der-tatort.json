@@ -176,31 +176,31 @@
   },
   "quiz": [
     {
-      "q": "Was ist der Tatort?",
+      "q": "Was machen die Freunde jeden Sonntag?",
       "options": [
-        "Ein Krimi im Fernsehen",
-        "Ein Restaurant",
-        "Ein Fußballspiel"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Was macht man, wenn der Tatort läuft?",
-      "options": [
-        "Man redet viel",
-        "Man ist ruhig und redet nicht",
-        "Man geht nach Hause"
+        "Sie gehen zusammen ins Kino",
+        "Sie schauen zusammen den Tatort",
+        "Sie spielen Karten"
       ],
       "answer": 1
     },
     {
-      "q": "Wer war am Ende der Mörder?",
+      "q": "Welche Regel gilt, wenn der Tatort läuft?",
       "options": [
-        "Der Nachbar",
-        "Ein Kommissar",
-        "Tom"
+        "Man spricht nicht",
+        "Man macht das Licht aus",
+        "Man isst keine Chips"
       ],
       "answer": 0
+    },
+    {
+      "q": "Wer war im Film der Mörder?",
+      "options": [
+        "Einer der Kommissare",
+        "Der Nachbar",
+        "Ein Gast auf dem Sofa"
+      ],
+      "answer": 1
     }
   ]
 }

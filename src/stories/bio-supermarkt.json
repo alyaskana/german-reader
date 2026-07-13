@@ -167,27 +167,27 @@
     {
       "q": "Warum kauft Mia Bio-Produkte?",
       "options": [
-        "Weil sie billiger sind",
-        "Weil es besser für die Natur ist",
-        "Weil sie aus Spanien kommen"
+        "Weil die normalen Produkte teurer sind",
+        "Weil die Tiere besser leben und die Bauern keine Chemie nutzen",
+        "Weil sie mehr Plastiktüten braucht"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht Tom am nächsten Tag?",
+      "q": "Warum bringt Mia ihre eigene Tasche mit?",
       "options": [
-        "Er kauft selbst Bio-Produkte",
-        "Er fährt nach Spanien",
-        "Er kauft im Discounter ein"
+        "Plastiktüten sind schlecht für die Umwelt",
+        "Sie hat kein Geld für Tüten",
+        "Die Tasche war ein Geschenk"
       ],
       "answer": 0
     },
     {
-      "q": "Wie schmeckt die Bio-Tomate?",
+      "q": "Was macht Tom am nächsten Tag?",
       "options": [
-        "Sehr schlecht",
-        "Genau wie im Discounter",
-        "Süß, frisch und aromatisch"
+        "Er kauft nur im Discounter ein",
+        "Er bringt Tomaten aus Spanien mit",
+        "Er kauft selbst Bio-Produkte ein"
       ],
       "answer": 2
     }

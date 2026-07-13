@@ -118,29 +118,29 @@
   "order": 2,
   "quiz": [
     {
-      "q": "Wohin lädt Mias Familie Tom ein?",
+      "q": "Wie lange dauert das Frühstück, denkt Tom am Anfang?",
       "options": [
-        "Zum Frühstück",
-        "Zum Abendessen",
-        "Ins Kino"
+        "Etwa dreißig Minuten",
+        "Den ganzen Vormittag",
+        "Ungefähr zwei Stunden"
       ],
       "answer": 0
     },
     {
-      "q": "Wie lange denkt Tom, dass das Frühstück dauert?",
+      "q": "Was passiert, als Tom nach einer Stunde aufstehen will?",
       "options": [
-        "Zwei Stunden",
-        "Dreißig Minuten",
-        "Den ganzen Tag"
+        "Alle stehen mit ihm auf",
+        "Mia gibt ihm noch einen Kaffee",
+        "Das Frühstück ist zu Ende"
       ],
       "answer": 1
     },
     {
-      "q": "Wie ist das Frühstück in Deutschland für Tom am Ende?",
+      "q": "Womit vergleicht Tom das deutsche Frühstück am Ende?",
       "options": [
-        "Eine schnelle Mahlzeit",
-        "Ein Fest zum Geburtstag",
-        "Wie ein Hobby, es dauert lange"
+        "Mit einem kurzen Snack",
+        "Mit einem Geburtstagsfest",
+        "Mit einem Kino, das lange dauert"
       ],
       "answer": 2
     }

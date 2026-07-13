@@ -169,29 +169,29 @@
   },
   "quiz": [
     {
-      "q": "Was hat Tom für das Abendessen vergessen?",
+      "q": "Warum geht Tom kurz vor Mitternacht zum Späti?",
       "options": [
-        "Die Butter",
-        "Das Bier",
-        "Das Brot"
+        "Für das Essen fehlt ihm die Butter",
+        "Er will ein kaltes Bier trinken",
+        "Er möchte Herrn Yilmaz besuchen"
       ],
       "answer": 0
     },
     {
-      "q": "Warum kann Tom im Späti nicht bezahlen?",
+      "q": "Warum arbeitet Herr Yilmaz so spät in der Nacht?",
       "options": [
-        "Der Späti ist geschlossen",
-        "Er hat sein Geld zu Hause vergessen",
-        "Herr Yilmaz will kein Geld"
+        "Weil er tagsüber lieber schläft",
+        "Weil die Leute auch nachts etwas brauchen",
+        "Weil der Supermarkt geschlossen ist"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht Herr Yilmaz, als Tom das Geld zurückbringt?",
+      "q": "Was passiert, als Tom am nächsten Tag das Geld zurückbringt?",
       "options": [
-        "Er ist böse",
-        "Er will mehr Geld",
-        "Er schenkt Tom einen Kaffee"
+        "Herr Yilmaz ist verärgert",
+        "Tom muss mehr bezahlen",
+        "Herr Yilmaz schenkt ihm einen Kaffee"
       ],
       "answer": 2
     }

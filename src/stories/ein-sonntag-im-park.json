@@ -94,8 +94,8 @@
       "q": "Was machen Nina und Max im Park?",
       "options": [
         "Ein Picknick",
-        "Sie schwimmen im See",
-        "Sie spielen Fußball"
+        "Fußball spielen",
+        "Im See schwimmen"
       ],
       "answer": 0
     },
@@ -104,18 +104,18 @@
       "options": [
         "Auf einen Baum",
         "In den See",
-        "Auf die Straße"
+        "Auf die Decke"
       ],
       "answer": 1
     },
     {
-      "q": "Wer bringt das Frisbee zurück?",
+      "q": "Wer holt das Frisbee aus dem Wasser?",
       "options": [
         "Max",
-        "Ein Hund",
-        "Nina"
+        "Nina",
+        "Ein Hund"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

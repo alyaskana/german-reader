@@ -93,31 +93,31 @@
   "order": 2,
   "quiz": [
     {
-      "q": "Welche Linie fährt zum Marienplatz?",
+      "q": "Was macht Tom auf dem Bahnsteig, bevor er einsteigt?",
       "options": [
-        "Die U3",
-        "Die U1",
-        "Die U6"
+        "Er kauft sich einen Kaffee",
+        "Er schaut auf den Plan mit den vielen Linien",
+        "Er ruft einen Freund an"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "q": "Warum findet Tom keinen Sitzplatz?",
       "options": [
         "Die U-Bahn ist sehr voll",
-        "Es gibt keine Sitze",
-        "Er will stehen"
+        "Es gibt gar keine Sitze",
+        "Er möchte lieber stehen"
       ],
       "answer": 0
     },
     {
-      "q": "Wie fährt Tom am Marienplatz nach oben?",
+      "q": "Wie denkt Tom am Ende über die U-Bahn?",
       "options": [
-        "Mit der Rolltreppe",
-        "Mit dem Aufzug",
-        "Mit der Treppe"
+        "Er will nie wieder mit ihr fahren",
+        "Er findet sie einfach und fährt morgen ohne Plan",
+        "Er findet München zu klein"
       ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }

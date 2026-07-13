@@ -105,31 +105,31 @@
   "order": 6,
   "quiz": [
     {
-      "q": "Was ist mit Jonas los?",
+      "q": "Warum ruft Jonas bei der Arztpraxis an?",
       "options": [
-        "Er ist krank und hat Fieber",
-        "Er hat sich das Bein gebrochen",
-        "Er ist gesund und munter"
+        "Er ist krank und braucht einen Termin",
+        "Er möchte Tabletten bestellen",
+        "Er sucht einen neuen Arzt"
       ],
       "answer": 0
     },
     {
-      "q": "Was sagt die Ärztin über Jonas?",
+      "q": "Was sagt die Ärztin nach der Untersuchung?",
       "options": [
-        "Er muss ins Krankenhaus",
-        "Er ist erkältet, das ist nicht schlimm",
-        "Er hat nichts, er kann arbeiten"
+        "Er muss sofort ins Krankenhaus",
+        "Er ist erkältet und soll sich nicht sorgen",
+        "Er ist völlig gesund"
       ],
       "answer": 1
     },
     {
       "q": "Was soll Jonas zu Hause tun?",
       "options": [
-        "Viel Sport machen",
-        "Tee trinken und viel schlafen",
-        "Sofort wieder arbeiten"
+        "Viel Sport treiben",
+        "Gleich wieder arbeiten gehen",
+        "Sich ausruhen und Tabletten nehmen"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

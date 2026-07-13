@@ -173,31 +173,31 @@
   },
   "quiz": [
     {
-      "q": "Was braucht Tom in Deutschland?",
+      "q": "Warum wählt Tom eine gesetzliche Krankenkasse?",
       "options": [
-        "Eine Krankenkasse",
-        "Ein neues Auto",
-        "Einen Führerschein"
+        "Weil sie gar nichts kostet",
+        "Weil die Familie oft mitversichert ist",
+        "Weil sie nur für reiche Leute ist"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum ist Tom schockiert, als er beim Arzt anruft?",
+      "options": [
+        "Der Termin ist erst in sechs Wochen",
+        "Der Arzt ist gerade im Urlaub",
+        "Er muss sofort viel bezahlen"
       ],
       "answer": 0
     },
     {
-      "q": "Wie lange muss Tom auf den Arzttermin warten?",
+      "q": "Wie viel muss Tom am Ende beim Arzt bezahlen?",
       "options": [
-        "Sechs Wochen",
-        "Einen Tag",
-        "Drei Monate"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Wie viel zahlt Tom am Ende beim Arzt?",
-      "options": [
-        "Nichts",
+        "Die Hälfte der Kosten",
         "Sehr viel Geld",
-        "Die Hälfte"
+        "Nichts, das zahlt die Krankenkasse"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

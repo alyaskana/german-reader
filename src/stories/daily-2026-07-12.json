@@ -105,29 +105,29 @@
   },
   "quiz": [
     {
-      "q": "Was wollen Lena und Tim am Samstag machen?",
+      "q": "Warum glaubt Tim am Anfang, dass das Picknick schlecht wird?",
       "options": [
-        "Ein Picknick im Park",
-        "Ins Kino gehen",
-        "Zu Hause bleiben"
+        "Weil der Himmel grau ist und dunkle Wolken hängen",
+        "Weil sie kein Essen dabei haben",
+        "Weil der Park zu weit weg ist"
       ],
       "answer": 0
     },
     {
-      "q": "Wie wird das Wetter im Park?",
+      "q": "Was passiert mit dem Wetter, als sie die Decke ausbreiten?",
       "options": [
-        "Die Sonne scheint wieder",
-        "Es regnet stark",
-        "Es schneit"
+        "Es beginnt stark zu regnen",
+        "Es wird kalt und windig",
+        "Die Wolken verschwinden und die Sonne scheint"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
-      "q": "Welches Tier kommt zu der Decke?",
+      "q": "Was machen Lena und Tim mit dem kleinen Ferkel?",
       "options": [
-        "Ein kleines Ferkel",
-        "Ein Hund",
-        "Eine Katze"
+        "Sie teilen eine Kirsche mit ihm",
+        "Sie bringen es zum Nachbarn zurück",
+        "Sie haben Angst und gehen weg"
       ],
       "answer": 0
     }

@@ -205,31 +205,31 @@
   },
   "quiz": [
     {
-      "q": "Auf welcher Spur überholt man in Deutschland?",
+      "q": "Warum wird Tom am Anfang auf der Autobahn nervös?",
       "options": [
-        "Links",
-        "Rechts",
-        "In der Mitte"
+        "Es gibt hier kein Tempolimit",
+        "Es regnet sehr stark",
+        "Das Auto ist kaputt"
       ],
       "answer": 0
     },
     {
-      "q": "Was bilden die Autos im Stau?",
+      "q": "Was machen die Autos, damit der Krankenwagen durch den Stau fahren kann?",
       "options": [
-        "Eine Rettungsgasse",
-        "Eine lange Reihe",
-        "Einen Kreis"
+        "Sie hupen alle laut",
+        "Sie bilden eine freie Gasse in der Mitte",
+        "Sie fahren einfach schneller"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "q": "Warum hat Tom am Ende plötzlich Eile?",
       "options": [
-        "Das Meeting hat schon begonnen",
-        "Es regnet",
-        "Er hat Hunger"
+        "Es fängt an zu regnen",
+        "Mia ist wütend auf ihn",
+        "Der Chef sagt, das Meeting hat schon begonnen"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

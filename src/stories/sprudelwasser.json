@@ -198,29 +198,29 @@
     {
       "q": "Was fragt der Kellner, als der Vater Wasser bestellt?",
       "options": [
-        "Still oder Sprudel?",
-        "Groß oder klein?",
-        "Warm oder kalt?"
+        "ob er stilles oder Sprudelwasser möchte",
+        "ob er lieber Saft möchte",
+        "ob er ein Bier möchte"
       ],
       "answer": 0
     },
     {
-      "q": "Warum servieren viele Restaurants kein Leitungswasser?",
+      "q": "Warum bekommt der Vater kein Leitungswasser?",
       "options": [
-        "Weil sie mit den Flaschen Geld verdienen",
-        "Weil das Wasser schlecht ist",
-        "Weil es verboten ist"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Was kauft der Vater am nächsten Tag im Supermarkt?",
-      "options": [
-        "Stilles Wasser",
-        "Sprudelwasser mit Kohlensäure",
-        "Nur Saft"
+        "Das Wasser aus dem Hahn ist schmutzig",
+        "Viele Restaurants verdienen lieber mit Flaschen Geld",
+        "Der Kellner hat keine Zeit"
       ],
       "answer": 1
+    },
+    {
+      "q": "Was macht der Vater am nächsten Tag im Supermarkt?",
+      "options": [
+        "Er kauft nur stilles Wasser",
+        "Er kauft gar kein Wasser",
+        "Er kauft auch Sprudelwasser"
+      ],
+      "answer": 2
     }
   ]
 }

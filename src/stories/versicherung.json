@@ -106,15 +106,6 @@
   "order": 4,
   "quiz": [
     {
-      "q": "Was fragt Jonas Tom über das neue Fahrrad?",
-      "options": [
-        "Ob er eine Versicherung hat",
-        "Wie teuer es war",
-        "Wo er es gekauft hat"
-      ],
-      "answer": 0
-    },
-    {
       "q": "Welche Versicherung ist laut Jonas die wichtigste?",
       "options": [
         "Die Haftpflichtversicherung",
@@ -124,13 +115,22 @@
       "answer": 0
     },
     {
-      "q": "Was passiert mit Toms Handy?",
+      "q": "Welche zwei Versicherungen schließt Tom ab?",
       "options": [
-        "Es fällt in eine Pfütze und ist kaputt",
-        "Er verliert es im Bus",
-        "Jonas nimmt es mit"
+        "Eine fürs Auto und die Wohnung",
+        "Eine fürs Fahrrad und die Haftpflicht",
+        "Eine fürs Handy und den Hund"
       ],
-      "answer": 0
+      "answer": 1
+    },
+    {
+      "q": "Warum hilft Tom die Versicherung beim kaputten Handy nicht?",
+      "options": [
+        "Weil das Handy zu alt ist",
+        "Weil er zu spät anruft",
+        "Weil er keine Versicherung für Handys hat"
+      ],
+      "answer": 2
     }
   ]
 }

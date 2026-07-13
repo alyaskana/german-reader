@@ -204,31 +204,31 @@
   },
   "quiz": [
     {
-      "q": "Was ist die wichtigste Regel in der Sauna?",
+      "q": "Was muss man in der Sauna unter den Körper legen?",
       "options": [
-        "Man muss laut sprechen",
-        "Man legt das Handtuch unter den Körper",
-        "Man trägt viel Kleidung"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Wie ist es in der Sauna?",
-      "options": [
-        "Es ist sehr still, niemand spricht laut",
-        "Alle reden und lachen",
-        "Es läuft laute Musik"
+        "ein Handtuch",
+        "eine Decke",
+        "die Kleidung"
       ],
       "answer": 0
     },
     {
-      "q": "Wie findet Tom die Sauna am Ende?",
+      "q": "Was macht der Mann beim Aufguss?",
       "options": [
-        "Er will nie wieder hin",
-        "Er will jeden Samstag in die Sauna",
-        "Er findet sie langweilig"
+        "Er öffnet die Tür für frische Luft",
+        "Er gießt Duftwasser auf die heißen Steine",
+        "Er bringt allen kaltes Wasser"
       ],
       "answer": 1
+    },
+    {
+      "q": "Was macht Tom zu Hause nach der Sauna?",
+      "options": [
+        "Er sucht im Internet eine Sauna in seiner Nähe",
+        "Er geht sofort ins Bett",
+        "Er ruft seine Kollegen an"
+      ],
+      "answer": 0
     }
   ]
 }

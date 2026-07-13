@@ -120,31 +120,31 @@
   "order": 5,
   "quiz": [
     {
-      "q": "Was sagt man in Deutschland über das Wetter?",
+      "q": "Wie ist Tom für die Wanderung angezogen?",
       "options": [
-        "Es gibt kein schlechtes Wetter, nur falsche Kleidung",
-        "Bei Regen bleibt man zu Hause",
-        "Man wandert nur bei Sonne"
+        "Mit Sneakern und einer dünnen Jacke",
+        "Mit Wanderschuhen und einer Regenjacke",
+        "Mit Gummistiefeln und einer Mütze"
       ],
       "answer": 0
     },
     {
-      "q": "Was passiert mit Toms Sneakern im Regen?",
+      "q": "Was passiert im Wald mit dem Wetter?",
       "options": [
-        "Sie bleiben trocken",
-        "Sie werden nass",
-        "Sie gehen kaputt"
+        "Es bleibt den ganzen Tag sonnig",
+        "Nach der Sonne kommen Wind und viel Regen",
+        "Es fängt an zu schneien"
       ],
       "answer": 1
     },
     {
-      "q": "Was kauft Tom am Abend online?",
+      "q": "Was macht Tom am Abend?",
       "options": [
-        "Wanderschuhe, eine Regenjacke und eine Mütze",
-        "Zwei Sneaker",
-        "Nur einen Rucksack"
+        "Er gibt Mia ihre Jacke zurück",
+        "Er bleibt beim nächsten Regen zu Hause",
+        "Er kauft online Wanderschuhe und Regenkleidung"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

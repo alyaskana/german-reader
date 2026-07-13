@@ -171,31 +171,31 @@
   },
   "quiz": [
     {
-      "q": "Wohin geht Tom zum ersten Mal?",
+      "q": "Warum ist der Weihnachtsmarkt so neu für Tom?",
       "options": [
-        "Auf einen Weihnachtsmarkt",
-        "In ein Restaurant",
-        "Ins Kino"
+        "So etwas gibt es in Spanien nicht",
+        "Er war noch nie in Berlin",
+        "Er mag keine Süßigkeiten"
       ],
       "answer": 0
     },
     {
-      "q": "Was trinken Tom und Mia gegen die Kälte?",
+      "q": "Warum kostet der Glühwein mehr, als Tom denkt?",
       "options": [
-        "Kalten Tee",
-        "Glühwein",
-        "Apfelsaftschorle"
+        "Weil er besonders süß ist",
+        "Wegen des Pfands für den Becher",
+        "Weil Mia zwei Tassen bestellt"
       ],
       "answer": 1
     },
     {
       "q": "Was macht Tom am Ende mit dem Becher?",
       "options": [
-        "Er gibt ihn zurück",
-        "Er behält ihn als Souvenir",
-        "Er verliert ihn"
+        "Er gibt ihn wieder zurück",
+        "Er verschenkt ihn an Mia",
+        "Er behält ihn als Souvenir"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

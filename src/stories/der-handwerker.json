@@ -161,31 +161,31 @@
   },
   "quiz": [
     {
-      "q": "Warum bleibt Tom den ganzen Tag zu Hause?",
+      "q": "Warum steht Tom am Montag schon um sieben Uhr auf?",
       "options": [
-        "Er wartet auf den Handwerker",
-        "Er ist krank",
-        "Er hat frei"
+        "Er muss früh zur Arbeit",
+        "Er denkt, der Handwerker kommt früh",
+        "Er kann nicht mehr schlafen"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Was ist bei Tom kaputt?",
+      "q": "Was macht Tom den ganzen Tag, während er wartet?",
       "options": [
-        "Die Waschmaschine",
-        "Der Kühlschrank",
-        "Das Auto"
+        "Er geht einkaufen",
+        "Er schaut oft aus dem Fenster",
+        "Er schläft den ganzen Tag"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Wann kommt der Handwerker endlich?",
+      "q": "Warum sagt der Handwerker, dass er pünktlich ist?",
       "options": [
-        "Um 15:58 Uhr",
-        "Am Morgen",
-        "Am nächsten Tag"
+        "Er ist schon am Morgen gekommen",
+        "Er hat vorher angerufen",
+        "Er ist noch vor sechzehn Uhr gekommen"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

@@ -241,29 +241,29 @@
   },
   "quiz": [
     {
-      "q": "Wohin will Tom fahren?",
+      "q": "Warum fährt Tom nach Hamburg?",
       "options": [
-        "Nach Berlin",
-        "Nach Hamburg",
-        "Nach Madrid"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Was steht auf der Anzeige?",
-      "options": [
-        "Verspätung",
-        "Der Zug ist pünktlich",
-        "Der Zug fährt nicht"
+        "Mia feiert dort ihren Geburtstag",
+        "Er sucht dort eine Arbeit",
+        "Er hat einen Termin beim Arzt"
       ],
       "answer": 0
     },
     {
-      "q": "Wer ist die junge Frau im Bus?",
+      "q": "Womit fährt Tom am Ende nach Hamburg?",
+      "options": [
+        "Mit einem anderen Zug",
+        "Mit dem Auto",
+        "Mit einem Bus"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wer ist die junge Frau aus dem Bus?",
       "options": [
         "Mias Schwester Lena",
-        "Eine Kollegin von Tom",
-        "Toms Freundin"
+        "Eine alte Freundin von Tom",
+        "Die Verkäuferin vom Bahnhof"
       ],
       "answer": 0
     }

@@ -104,29 +104,29 @@
     {
       "q": "Was bestellt Anna im Café?",
       "options": [
+        "Einen Tee und ein Brot",
         "Einen Cappuccino und Apfelkuchen",
-        "Einen Tee und Brot",
-        "Nur ein Wasser"
+        "Eine Cola und eine Suppe"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was macht Anna am Fenster, während es draußen regnet?",
+      "options": [
+        "Sie trinkt Kaffee und liest ein Buch",
+        "Sie telefoniert die ganze Zeit",
+        "Sie schläft am Tisch ein"
       ],
       "answer": 0
     },
     {
-      "q": "Was macht das Wetter draußen?",
+      "q": "Wer ist Paul?",
       "options": [
-        "Es regnet",
-        "Die Sonne scheint",
-        "Es schneit"
+        "Der freundliche Kellner",
+        "Annas Bruder",
+        "Der Mann mit dem großen Hund"
       ],
-      "answer": 0
-    },
-    {
-      "q": "Wer kommt mit einem großen Hund ins Café?",
-      "options": [
-        "Ein Mann namens Paul",
-        "Die Kellnerin",
-        "Annas Bruder"
-      ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

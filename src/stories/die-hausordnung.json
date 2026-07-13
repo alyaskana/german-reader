@@ -223,24 +223,24 @@
       "q": "Warum klopft die Nachbarin am Abend an Toms Tür?",
       "options": [
         "Die Musik ist nach 22 Uhr zu laut",
-        "Sie will einen Kuchen bringen",
-        "Sie sucht ihre Schuhe"
+        "Sie will ihn zum Essen einladen",
+        "Seine Schuhe stehen im Flur"
       ],
       "answer": 0
     },
     {
-      "q": "An welchem Tag darf Tom seine Wäsche waschen?",
+      "q": "Warum kann Tom am Samstag seine Wäsche nicht waschen?",
       "options": [
-        "Am Samstag",
-        "Am Donnerstag",
-        "Am Sonntag"
+        "Die Waschmaschine ist kaputt",
+        "Sein fester Waschtag ist der Donnerstag",
+        "Die Waschküche ist abgeschlossen"
       ],
       "answer": 1
     },
     {
-      "q": "Was gibt die strenge Nachbarin Tom am Ende?",
+      "q": "Was gibt die strenge Nachbarin Tom am Donnerstag?",
       "options": [
-        "Einen Zettel",
+        "Einen Zettel für die Schuhe",
         "Eine neue Hausordnung",
         "Einen selbst gebackenen Kuchen"
       ],

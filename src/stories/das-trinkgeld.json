@@ -175,29 +175,29 @@
   },
   "quiz": [
     {
-      "q": "Was bedeutet in Deutschland: „Stimmt so“?",
+      "q": "Was macht Tom zuerst falsch, als die Rechnung kommt?",
+      "options": [
+        "Er nimmt Geld vom Tisch",
+        "Er zahlt zu wenig",
+        "Er lässt kein Trinkgeld übrig"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Was bedeutet in Deutschland „Stimmt so“?",
       "options": [
         "Der Rest ist für die Kellnerin",
         "Die Rechnung ist falsch",
-        "Ich möchte zahlen"
+        "Ich möchte mein Wechselgeld"
       ],
       "answer": 0
     },
     {
-      "q": "Wie viel Trinkgeld gibt man ungefähr, wenn der Service gut war?",
+      "q": "Warum lacht der Kellner in der Bar über Tom?",
       "options": [
-        "Fünfzig Prozent",
-        "Zehn Prozent",
-        "Gar nichts"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Was macht Tom in der Bar falsch?",
-      "options": [
-        "Er gibt kein Trinkgeld",
-        "Er will zwanzig Euro Trinkgeld geben",
-        "Er trinkt keinen Kaffee"
+        "Weil Tom kein Bier trinkt",
+        "Weil Tom 20 Euro Trinkgeld für ein Bier geben will",
+        "Weil Tom nicht bezahlen kann"
       ],
       "answer": 1
     }

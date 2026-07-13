@@ -109,29 +109,29 @@
   "order": 6,
   "quiz": [
     {
-      "q": "Was ist Toms Plan für den Tag?",
+      "q": "Was nimmt sich Tom für den ganzen Tag vor?",
       "options": [
-        "Den ganzen Tag nur Deutsch sprechen",
-        "Nur Englisch sprechen",
-        "Zu Hause bleiben"
+        "Nur auf Deutsch zu sprechen",
+        "Kein Wort mehr zu reden",
+        "Vor allem Englisch zu üben"
       ],
       "answer": 0
     },
     {
-      "q": "Wie antwortet die Verkäuferin zuerst?",
+      "q": "Warum antworten die Leute Tom auf Englisch, erklärt Mia?",
       "options": [
-        "Auf Spanisch",
-        "Auf Englisch",
-        "Gar nicht"
+        "Weil sein Deutsch zu schlecht ist",
+        "Weil sie höflich sein oder Englisch üben wollen",
+        "Weil sie gar kein Deutsch können"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht Tom am nächsten Tag anders?",
+      "q": "Was macht Tom am nächsten Tag in der Bäckerei anders?",
       "options": [
-        "Er spricht Englisch",
-        "Er kauft nichts",
-        "Er bittet, auf Deutsch zu antworten"
+        "Er bestellt lieber auf Englisch",
+        "Er kauft am Ende gar nichts",
+        "Er bittet, ihm auf Deutsch zu antworten"
       ],
       "answer": 2
     }

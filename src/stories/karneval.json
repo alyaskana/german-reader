@@ -185,31 +185,31 @@
   "order": 26,
   "quiz": [
     {
-      "q": "Was ist an diesem Montag im Februar los?",
+      "q": "Was trägt Jonas im Büro?",
       "options": [
-        "Es ist Karneval",
-        "Es ist ein normaler Arbeitstag",
-        "Es ist Weihnachten"
+        "ein Bienenkostüm",
+        "ein Clownskostüm mit roter Nase",
+        "einen einfachen Anzug"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was soll man beim Umzug machen?",
+      "options": [
+        "Bonbons fangen",
+        "selbst Kostüme nähen",
+        "die ganze Zeit leise sein"
       ],
       "answer": 0
     },
     {
-      "q": "Was machen die Leute beim Umzug?",
+      "q": "Wie fühlt sich Tom am Ende des Tages?",
       "options": [
-        "Sie werfen Kamelle in die Menge",
-        "Sie verkaufen Bier",
-        "Sie tanzen im Büro"
+        "Er ist müde und wütend",
+        "Er ist glücklich und hatte den besten Tag",
+        "Er ist krank geworden"
       ],
-      "answer": 0
-    },
-    {
-      "q": "Wie findet Tom den Tag am Ende?",
-      "options": [
-        "Er hatte den besten Tag in Deutschland",
-        "Er war die ganze Zeit traurig",
-        "Er ist früh nach Hause gegangen"
-      ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }

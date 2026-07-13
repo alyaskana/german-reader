@@ -132,31 +132,31 @@
   },
   "quiz": [
     {
-      "q": "Was steht überall in Toms Küche?",
+      "q": "Was ist das Problem in Toms Küche?",
       "options": [
-        "Viele leere Flaschen",
-        "Schmutzige Teller",
-        "Alte Zeitungen"
+        "Überall stehen leere Flaschen",
+        "Der Kühlschrank ist kaputt",
+        "Es gibt kein Wasser mehr"
       ],
       "answer": 0
     },
     {
-      "q": "Was bekommt Tom für die leeren Flaschen?",
+      "q": "Was bekommt Tom am Pfandautomaten?",
       "options": [
-        "Nichts",
-        "Geld (Pfand)",
-        "Neue Flaschen"
+        "Eine neue volle Flasche",
+        "Einen Bon über 4,85 Euro",
+        "Einen warmen Kaffee"
       ],
       "answer": 1
     },
     {
-      "q": "Was hat Tom im Supermarkt vergessen?",
+      "q": "Warum wird Tom am Ende rot?",
       "options": [
-        "Seinen Bon",
-        "Die Tasche",
-        "Sein Fahrrad"
+        "Er hat gar kein Geld bekommen",
+        "Er ist vom Fahrrad gefallen",
+        "Er hat die teure Tasche im Supermarkt vergessen"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

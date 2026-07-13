@@ -147,31 +147,31 @@
   "order": 25,
   "quiz": [
     {
-      "q": "Worüber streiten die Mutter und die Oma?",
+      "q": "Wie macht Mias Mutter den Kartoffelsalat?",
       "options": [
-        "Wer den besten Kartoffelsalat macht",
-        "Wer kocht heute Abend",
-        "Wer mehr Kartoffeln kauft"
+        "mit Brühe, Essig und Öl",
+        "mit Mayonnaise",
+        "mit Butter und Salz"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum wird Tom rot?",
+      "options": [
+        "Mutter und Oma wollen, dass er den besten Salat wählt",
+        "Er hat eine Schüssel fallen lassen",
+        "Er mag keinen Kartoffelsalat"
       ],
       "answer": 0
     },
     {
-      "q": "Wie macht die Mutter aus dem Norden ihren Salat?",
+      "q": "Was sagt Tom am Ende über die zwei Salate?",
       "options": [
-        "Mit Brühe und Essig",
-        "Mit Mayonnaise",
-        "Mit Zucker"
-      ],
-      "answer": 1
-    },
-    {
-      "q": "Was sagt Tom am Ende?",
-      "options": [
+        "Der Salat aus dem Norden ist besser",
         "Der Salat aus dem Süden ist besser",
-        "Beide Salate sind Sieger",
-        "Kein Salat schmeckt ihm"
+        "Beide sind gleich gut, er kann nicht wählen"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

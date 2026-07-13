@@ -205,31 +205,31 @@
   "order": 37,
   "quiz": [
     {
-      "q": "Was ist die Kehrwoche?",
+      "q": "Was bedeutet die Kehrwoche in Toms Haus?",
       "options": [
-        "Jede Familie putzt eine Woche das Treppenhaus",
-        "Eine Woche Urlaub",
-        "Eine Woche ohne Arbeit"
+        "Jede Familie putzt eine Woche lang das Treppenhaus und den Gehweg",
+        "Alle Nachbarn putzen zusammen jeden Tag",
+        "Eine Firma reinigt das ganze Haus"
       ],
       "answer": 0
     },
     {
-      "q": "Warum putzte Tom zuerst nichts?",
+      "q": "Warum putzt Tom seine Kehrwoche zuerst nicht?",
       "options": [
-        "Er hatte viel Arbeit und vergaß den Plan",
-        "Er war krank",
-        "Er mochte Frau Weber nicht"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Was macht Frau Weber am Abend?",
-      "options": [
-        "Sie schimpft mit Tom",
-        "Sie bringt einen Kuchen",
-        "Sie putzt selbst die Treppe"
+        "Weil er den Plan nicht lesen kann",
+        "Weil er viel arbeitet und den Plan vergisst",
+        "Weil er die Nachbarin nicht mag"
       ],
       "answer": 1
+    },
+    {
+      "q": "Wie reagiert Frau Weber am Ende, als Tom alles geputzt hat?",
+      "options": [
+        "Sie schimpft laut mit ihm",
+        "Sie sagt gar nichts mehr",
+        "Sie bringt ihm einen Kuchen und lobt ihn"
+      ],
+      "answer": 2
     }
   ]
 }

@@ -227,31 +227,31 @@
   },
   "quiz": [
     {
-      "q": "Wem soll Tom am Martinstag helfen?",
+      "q": "Warum passt Tom an diesem Abend auf Lena auf?",
       "options": [
-        "Mias Nichte Lena",
-        "Einem alten Mann",
-        "Seinem Kollegen"
+        "Weil Mia arbeiten muss",
+        "Weil Lena krank ist",
+        "Weil Lena seine Tochter ist"
       ],
       "answer": 0
     },
     {
-      "q": "Warum weint der kleine Junge?",
+      "q": "Wer reitet vorne beim Umzug auf einem Pferd?",
       "options": [
-        "Er hat Hunger",
-        "Seine Laterne ist kaputt",
-        "Er hat sich verlaufen"
+        "Ein Polizist",
+        "Ein Mann als heiliger Martin",
+        "Der Bürgermeister der Stadt"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht Lena mit ihrer Laterne?",
+      "q": "Was macht Lena, als sie den weinenden Jungen sieht?",
       "options": [
-        "Sie wirft sie weg",
-        "Sie gibt sie dem Jungen",
-        "Sie verliert sie"
+        "Sie ruft nach Mia",
+        "Sie gibt ihm ihre Martinsgans",
+        "Sie schenkt ihm ihre Laterne"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

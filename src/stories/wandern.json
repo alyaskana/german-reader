@@ -199,31 +199,31 @@
   },
   "quiz": [
     {
-      "q": "Wohin will Tom am Sonntag?",
+      "q": "Was hat Tom diesmal richtig gemacht, bevor er wandern geht?",
       "options": [
-        "In die Berge wandern",
-        "Ans Meer fahren",
-        "Ins Kino gehen"
+        "Er ist ohne Schuhe gekommen",
+        "Er hat die richtige Ausrüstung dabei",
+        "Er ist viel zu spät gekommen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Was holt Mia bei der Pause aus dem Rucksack?",
+      "options": [
+        "Brot, Käse und Wurst",
+        "Eine Karte und einen Kompass",
+        "Kaffee und Kuchen"
       ],
       "answer": 0
     },
     {
-      "q": "Was machen Tom und Mia, als es regnet?",
+      "q": "Warum kann Tom auf dem Gipfel kein Foto machen?",
       "options": [
-        "Sie ziehen ihre Regenjacken an und gehen weiter",
-        "Sie gehen nach Hause",
-        "Sie warten in einer Hütte"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Warum kann Tom kein Foto machen?",
-      "options": [
-        "Sein Handy liegt unten im Auto",
         "Die Kamera ist kaputt",
-        "Es ist zu dunkel"
+        "Es ist plötzlich zu dunkel",
+        "Sein Handy liegt unten im Auto"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

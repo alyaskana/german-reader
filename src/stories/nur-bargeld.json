@@ -154,29 +154,29 @@
   "order": 19,
   "quiz": [
     {
-      "q": "Warum kann Tom in der Bäckerei nicht mit Karte bezahlen?",
+      "q": "Warum kann Tom in der Bäckerei nicht bezahlen?",
       "options": [
-        "Die Bäckerei nimmt nur Bargeld",
-        "Seine Karte ist kaputt",
-        "Er hat kein Konto"
+        "Er hat seine Karte vergessen",
+        "Das Brot ist zu teuer",
+        "Die Bäckerei nimmt nur Bargeld"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wohin geht Tom, um Geld zu holen?",
+      "options": [
+        "zum Geldautomaten um die Ecke",
+        "in die Apotheke",
+        "zurück nach Hause"
       ],
       "answer": 0
     },
     {
-      "q": "Was macht Tom, weil er nur zwei Euro hat?",
-      "options": [
-        "Er geht zum Geldautomaten",
-        "Er geht ohne Brötchen nach Hause",
-        "Er leiht sich Geld von Emma"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Was steht am nächsten Tag an der Bäckerei?",
+      "q": "Was ist am nächsten Tag in der Bäckerei anders?",
       "options": [
         "Sie ist geschlossen",
-        "Sie nehmen jetzt auch Karten",
-        "Es gibt kein Brot mehr"
+        "Sie nimmt jetzt auch Karten",
+        "Das Brot kostet mehr"
       ],
       "answer": 1
     }

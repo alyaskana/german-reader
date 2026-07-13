@@ -164,29 +164,29 @@
   },
   "quiz": [
     {
-      "q": "Wohin geht Tom, um sich anzumelden?",
+      "q": "Warum hat Tom bei der Terminsuche schlechte Laune?",
       "options": [
-        "Zum Bürgeramt",
-        "Zur Bank",
-        "Zum Handyladen"
+        "Der nächste freie Termin ist erst in sechs Wochen",
+        "Er hat seinen Pass verloren",
+        "Das Bürgeramt ist zu weit weg"
       ],
       "answer": 0
     },
     {
-      "q": "Wie lange muss Tom auf den Termin warten?",
+      "q": "Was sagt die Frau im Bürgeramt zu Toms Formular?",
       "options": [
-        "Sechs Wochen",
-        "Zwei Tage",
-        "Sechs Monate"
+        "Der Mietvertrag fehlt",
+        "Eine Unterschrift fehlt",
+        "Das Datum ist falsch"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Was hat Tom auf dem Formular vergessen?",
+      "q": "Warum muss Tom bald wieder zum Bürgeramt?",
       "options": [
-        "Die Unterschrift",
-        "Seinen Namen",
-        "Das Datum"
+        "Weil er mit Mia zusammen umzieht",
+        "Weil er das Papier verloren hat",
+        "Weil er einen neuen Job hat"
       ],
       "answer": 0
     }

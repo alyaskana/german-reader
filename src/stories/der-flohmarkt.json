@@ -206,31 +206,31 @@
   "order": 38,
   "quiz": [
     {
-      "q": "Was kauft Tom auf dem Flohmarkt?",
+      "q": "Was kauft Mia auf dem Flohmarkt?",
       "options": [
-        "Eine alte Lampe aus Messing",
-        "Einen neuen Computer",
-        "Ein altes Fahrrad"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Wie viel bezahlt Tom am Ende für die Lampe?",
-      "options": [
-        "Fünfzig Euro",
-        "Dreißig Euro",
-        "Zwanzig Euro"
+        "eine alte Messinglampe",
+        "einen alten Ring",
+        "ein Buch über Berlin"
       ],
       "answer": 1
+    },
+    {
+      "q": "Für wie viel Euro bekommt Tom am Ende die Lampe?",
+      "options": [
+        "für fünfzig Euro",
+        "für zwanzig Euro",
+        "für dreißig Euro"
+      ],
+      "answer": 2
     },
     {
       "q": "Warum gibt Tom die Lampe zurück?",
       "options": [
-        "Sie ist kaputt",
         "Sie war ein Geschenk für die Mutter des Verkäufers",
-        "Sie ist zu teuer"
+        "Sie hat einen Kratzer",
+        "Er möchte sein Geld zurück"
       ],
-      "answer": 1
+      "answer": 0
     }
   ]
 }

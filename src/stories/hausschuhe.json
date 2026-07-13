@@ -130,31 +130,31 @@
   "order": 1,
   "quiz": [
     {
-      "q": "Was soll Tom bei Mia zuerst machen?",
+      "q": "Warum soll Tom bei Mia die Schuhe ausziehen?",
       "options": [
-        "Die Blumen weglegen",
-        "Die Schuhe ausziehen",
-        "Tee kochen"
+        "Damit der Boden sauber bleibt",
+        "Weil seine Schuhe kaputt sind",
+        "Weil es in der Wohnung zu warm ist"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Was gibt Mia Tom für die Füße?",
+      "options": [
+        "Warme Socken",
+        "Ein Paar graue Hausschuhe",
+        "Ein Paar neue Stiefel"
       ],
       "answer": 1
     },
     {
-      "q": "Warum trägt man in Deutschland zu Hause keine Straßenschuhe?",
+      "q": "Was bemerkt Tom im Bus auf dem Heimweg?",
       "options": [
-        "So bleibt der Boden sauber",
-        "Weil es verboten ist",
-        "Weil Schuhe zu teuer sind"
+        "Er hat die Blumen vergessen",
+        "Er sitzt im falschen Bus",
+        "Er trägt noch Mias Hausschuhe"
       ],
-      "answer": 0
-    },
-    {
-      "q": "Was passiert im Bus am Ende?",
-      "options": [
-        "Tom trägt noch die Hausschuhe",
-        "Tom verliert seine Blumen",
-        "Tom trifft Mia wieder"
-      ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

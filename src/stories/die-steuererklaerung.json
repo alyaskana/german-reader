@@ -185,29 +185,29 @@
     {
       "q": "Was ist Elster?",
       "options": [
-        "Ein Vogel im Park",
-        "Das Programm vom Finanzamt",
-        "Ein Kollege von Tom"
+        "Das Online-Programm vom Finanzamt",
+        "Ein echter Vogel im Garten",
+        "Ein Buch über Steuern"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
-      "q": "Wer hilft Tom bei der Steuererklärung?",
+      "q": "Warum dauert das Anlegen des Kontos so lange?",
       "options": [
-        "Lukas",
-        "Mia",
-        "Das Finanzamt"
+        "Weil das Internet nicht funktioniert",
+        "Weil Tom einen Code per Post bekommen muss",
+        "Weil das Finanzamt geschlossen ist"
       ],
       "answer": 1
     },
     {
       "q": "Was bekommt Tom am Ende vom Finanzamt?",
       "options": [
-        "Eine Rückerstattung von 800 Euro",
-        "Eine Strafe",
-        "Einen neuen Ordner"
+        "Eine hohe Nachzahlung",
+        "Nur einen Brief ohne Geld",
+        "Eine Rückerstattung von 800 Euro"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

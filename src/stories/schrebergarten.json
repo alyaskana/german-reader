@@ -192,29 +192,29 @@
     {
       "q": "Was ist ein Schrebergarten?",
       "options": [
-        "Ein kleiner Garten in der Stadt",
-        "Ein großer Bauernhof",
-        "Ein Park im Wald"
+        "ein großer Bauernhof außerhalb der Stadt",
+        "ein kleiner Garten in der Stadt zum Entspannen",
+        "ein öffentlicher Park für alle"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "q": "Was macht Tom aus Versehen im Garten?",
       "options": [
         "Er tritt in Opas Erdbeerbeet",
         "Er zerbricht den Gartenzwerg",
-        "Er schneidet die Hecke"
+        "Er schneidet die Hecke ab"
       ],
       "answer": 0
     },
     {
-      "q": "Wie ist der Nachbar Herr Schmidt am Ende?",
+      "q": "Was schenkt Herr Schmidt Tom zum Abschied?",
       "options": [
-        "Er ist böse und schickt Tom weg",
-        "Er ist eigentlich sehr nett",
-        "Er redet nicht mehr mit Tom"
+        "einen Korb mit Tomaten",
+        "eine rote Mütze",
+        "einen kleinen Gartenzwerg"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

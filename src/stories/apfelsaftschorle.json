@@ -122,31 +122,31 @@
   "order": 9,
   "quiz": [
     {
-      "q": "Was will Tom zuerst bestellen?",
+      "q": "Was möchte Tom im Biergarten zuerst trinken?",
       "options": [
-        "Eine Cola",
         "Eine Apfelsaftschorle",
-        "Ein Bier"
+        "Eine Cola",
+        "Ein Mineralwasser"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Warum trinken die Leute die Schorle im Sommer so gern?",
+      "options": [
+        "Weil sie kalt und erfrischend ist",
+        "Weil sie warm und stark ist",
+        "Weil sie sehr süß und teuer ist"
       ],
       "answer": 0
     },
     {
-      "q": "Was ist eine Apfelsaftschorle?",
+      "q": "Was macht Toms Bruder, nachdem er die Schorle probiert hat?",
       "options": [
-        "Apfelsaft mit Milch",
-        "Apfelsaft mit Mineralwasser",
-        "Apfelsaft mit Cola"
+        "Er trinkt lieber eine Cola",
+        "Er geht sofort nach Hause",
+        "Er bestellt noch eine Schorle"
       ],
-      "answer": 1
-    },
-    {
-      "q": "Was macht Toms Bruder im Restaurant?",
-      "options": [
-        "Er trinkt nur Wasser",
-        "Er bestellt auch eine Schorle",
-        "Er geht nach Hause"
-      ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

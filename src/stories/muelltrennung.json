@@ -125,31 +125,31 @@
   },
   "quiz": [
     {
-      "q": "Warum stehen fünf Eimer in der Küche?",
+      "q": "Warum wundert sich Tom in der Küche?",
       "options": [
-        "Für die Mülltrennung",
-        "Für Wasser",
-        "Für die Wäsche"
+        "Es stehen fünf Eimer für den Müll da",
+        "Der Müll riecht sehr schlecht",
+        "Die Küche ist ganz schmutzig"
       ],
       "answer": 0
     },
     {
-      "q": "Wohin kommt das Papier?",
+      "q": "Wohin gehört die alte Zeitung?",
       "options": [
         "In den Biomüll",
         "In die blaue Tonne",
-        "In den gelben Sack"
+        "In den Gelben Sack"
       ],
       "answer": 1
     },
     {
-      "q": "Was macht man in Deutschland mit dem Glas?",
+      "q": "Was muss Tom beim Glas beachten?",
       "options": [
-        "Man trennt die Farben",
-        "Alles in einen Eimer",
-        "In den Restmüll"
+        "Er muss die Flaschen vorher waschen",
+        "Er muss die Etiketten entfernen",
+        "Er muss weißes und grünes Glas trennen"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

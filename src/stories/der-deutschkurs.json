@@ -244,31 +244,31 @@
   },
   "quiz": [
     {
-      "q": "Warum ist Tom heute so nervös?",
+      "q": "Was wollte Tom am Anfang manchmal machen, weil alles so schwer war?",
       "options": [
-        "Es gibt eine Prüfung",
-        "Er hat verschlafen",
-        "Er hat kein Buch"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Wie lange haben die Schüler für die Prüfung Zeit?",
-      "options": [
-        "Dreißig Minuten",
-        "Sechzig Minuten",
-        "Zwei Stunden"
+        "Nach Spanien zurückfahren",
+        "Den Kurs aufhören",
+        "Einen anderen Lehrer suchen"
       ],
       "answer": 1
     },
     {
-      "q": "Wie ist Toms Note am Ende?",
+      "q": "Welche Aufgabe findet Tom in der Prüfung besonders schwer?",
       "options": [
-        "Sehr gut",
-        "Schlecht",
-        "Er ist durchgefallen"
+        "Einen Brief an einen Freund schreiben",
+        "Die Artikel eintragen",
+        "Den Text über den Markt lesen"
       ],
       "answer": 0
+    },
+    {
+      "q": "Wie fällt Toms Prüfung am Ende aus?",
+      "options": [
+        "Er fällt durch",
+        "Er muss sie wiederholen",
+        "Er besteht sie mit einer sehr guten Note"
+      ],
+      "answer": 2
     }
   ]
 }

@@ -105,31 +105,31 @@
   "order": 3,
   "quiz": [
     {
-      "q": "Wann wollen sie grillen?",
+      "q": "Was will Tom zuerst, und was sagt Mia dazu?",
       "options": [
-        "Morgen",
-        "Samstag in zwei Wochen",
-        "Heute Abend"
+        "Tom will spontan grillen, aber Mia will einen Plan",
+        "Tom will einen Plan, aber Mia will spontan sein",
+        "Beide wollen sofort losfahren"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
-      "q": "Was soll Tom kaufen?",
+      "q": "Was bringt Lukas zum Grillen mit?",
       "options": [
-        "Fleisch und Salat",
-        "Den Grill und Kohle",
-        "Brot und Getränke"
+        "Kartoffelsalat",
+        "Brot und Getränke",
+        "Den Grill und die Kohle"
       ],
       "answer": 2
     },
     {
-      "q": "Was sagt Mia am Ende über den Plan?",
+      "q": "Wie läuft es am Samstag beim Grillen?",
       "options": [
-        "Mit einem Plan klappt alles",
-        "Ein Plan ist nicht nötig",
-        "Der Plan war falsch"
+        "Es fehlt das Fleisch",
+        "Alle sind pünktlich da und nichts fehlt",
+        "Viele Gäste kommen zu spät"
       ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }

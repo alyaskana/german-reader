@@ -71,31 +71,31 @@
   },
   "quiz": [
     {
-      "q": "Was macht Mia heute?",
+      "q": "Wo möchte Mia arbeiten?",
       "options": [
-        "Sie hat ein Vorstellungsgespräch",
-        "Sie geht ins Kino",
-        "Sie kocht für Freunde"
+        "In einem Restaurant",
+        "In einem Café",
+        "In einem Geschäft"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie antwortet Mia der Chefin auf die vielen Fragen?",
+      "options": [
+        "Ruhig und freundlich",
+        "Nervös und schnell",
+        "Laut und wütend"
       ],
       "answer": 0
     },
     {
-      "q": "Was sagt Tom zu Mia?",
+      "q": "Warum ruft Mia am Ende Tom an?",
       "options": [
-        "Ich drücke dir die Daumen",
-        "Bis später",
-        "Guten Appetit"
+        "Sie kommt zu spät zum Gespräch",
+        "Sie hat die Stelle bekommen",
+        "Sie sucht ein anderes Café"
       ],
-      "answer": 0
-    },
-    {
-      "q": "Bekommt Mia den Job?",
-      "options": [
-        "Ja",
-        "Nein",
-        "Vielleicht"
-      ],
-      "answer": 0
+      "answer": 1
     }
   ]
 }

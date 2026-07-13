@@ -147,31 +147,31 @@
   },
   "quiz": [
     {
-      "q": "Warum kann Tom am Sonntag nicht einkaufen?",
+      "q": "Warum will Tom am Sonntagmorgen zum Supermarkt gehen?",
       "options": [
-        "Die Geschäfte sind zu",
-        "Er hat kein Geld",
-        "Er ist müde"
+        "Der Kühlschrank ist fast leer",
+        "Er möchte Freunde treffen",
+        "Er langweilt sich zu Hause"
       ],
       "answer": 0
     },
     {
-      "q": "Warum darf Tom am Sonntag nicht waschen?",
+      "q": "Warum darf Tom am Sonntag seine Kleidung nicht waschen?",
       "options": [
-        "Man darf keinen Lärm machen",
-        "Die Waschmaschine ist kaputt",
-        "Es gibt kein Wasser"
+        "Es gibt kein Wasser mehr",
+        "Die Waschmaschine macht zu viel Lärm",
+        "Die Maschine ist kaputt"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
-      "q": "Was machen Tom und Mia zusammen?",
+      "q": "Warum kauft Tom am Montag kein Brot mehr?",
       "options": [
-        "Sie backen Brot",
-        "Sie gehen einkaufen",
-        "Sie waschen Kleidung"
+        "Der Supermarkt hat immer noch zu",
+        "Er mag kein Brot mehr",
+        "Das selbst gebackene Brot hat besser geschmeckt"
       ],
-      "answer": 0
+      "answer": 2
     }
   ]
 }

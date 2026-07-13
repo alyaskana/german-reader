@@ -119,27 +119,27 @@
   "order": 10,
   "quiz": [
     {
-      "q": "Was ist ein Radler?",
+      "q": "Was ist ein Radler, das Lukas Tom empfiehlt?",
       "options": [
         "Bier mit Zitronenlimo",
-        "Wein mit Wasser",
+        "Wein mit Mineralwasser",
         "Cola mit Weizenbier"
       ],
       "answer": 0
     },
     {
-      "q": "Was trinken die Deutschen laut Emma im Winter?",
+      "q": "Warum findet Mia die Mischungen gut?",
       "options": [
-        "Radler",
-        "Glühwein",
-        "Weinschorle"
+        "Damit die Party schneller vorbei ist",
+        "Weil sie weniger Zucker und Alkohol haben",
+        "Weil sie besser aussehen"
       ],
       "answer": 1
     },
     {
-      "q": "Was mischt Tom am Ende selbst?",
+      "q": "Was mischt Tom am Ende zu seiner „Tom-Schorle“?",
       "options": [
-        "Bier und Limo",
+        "Bier und Limonade",
         "Cola und Weizenbier",
         "Apfelsaft, Wasser und Zitrone"
       ],

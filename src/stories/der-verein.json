@@ -162,31 +162,31 @@
   },
   "quiz": [
     {
-      "q": "Warum möchte Jonas in einem Verein sein?",
+      "q": "Warum ist Jonas in einem Verein?",
       "options": [
-        "Weil er einen kleinen Garten haben möchte",
-        "Weil er neue Freunde sucht",
-        "Weil er gern liest"
+        "Weil man dafür oft einen Verein braucht, um einen Garten zu haben",
+        "Weil er dort neue Sprachen lernt",
+        "Weil er Vorsitzender werden will"
       ],
       "answer": 0
     },
     {
-      "q": "Was muss Tom tun, um Mitglied zu werden?",
+      "q": "Was steht in der Satzung des Vereins?",
       "options": [
-        "Einen Zaun bauen",
-        "Ein Formular ausfüllen und den Beitrag bezahlen",
-        "Dreißig Paragrafen schreiben"
+        "Nur Regeln für den Beitrag",
+        "Regeln für Rasen, Zaun und sogar Gartenzwerge",
+        "Regeln nur für die Öffnungszeiten"
       ],
       "answer": 1
     },
     {
-      "q": "Warum kann Tom nicht sofort anfangen?",
+      "q": "Warum kann Tom seinen Garten nicht sofort bekommen?",
       "options": [
-        "Er hat kein Geld",
-        "Es gibt keinen freien Garten",
-        "Er ist kein Mitglied"
+        "Weil er den Beitrag nicht bezahlt hat",
+        "Weil er kein Mitglied ist",
+        "Weil es keinen freien Garten gibt und er warten muss"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

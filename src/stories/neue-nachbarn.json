@@ -97,29 +97,29 @@
   "order": 4,
   "quiz": [
     {
-      "q": "Was bringt Frau Meier den neuen Nachbarn?",
+      "q": "Warum steht ein großer Umzugswagen vor dem Haus?",
       "options": [
-        "Einen Kuchen",
-        "Kartons",
-        "Tee"
+        "Sara und David ziehen ein",
+        "Familie Meier zieht weg",
+        "Im Garten ist ein Grillfest"
       ],
       "answer": 0
     },
     {
       "q": "Was ist David von Beruf?",
       "options": [
-        "Lehrer",
-        "Koch",
-        "Verkäufer"
+        "Er ist Lehrer",
+        "Er ist Koch",
+        "Er ist Verkäufer"
       ],
       "answer": 1
     },
     {
-      "q": "Was machen die Meiers am Sonntag?",
+      "q": "Wozu lädt Frau Meier die neuen Nachbarn ein?",
       "options": [
-        "Sie fahren weg",
-        "Sie waschen Wäsche",
-        "Sie machen ein Grillfest im Garten"
+        "Zu einem Ausflug in die Stadt",
+        "Zu einem Kaffee am Morgen",
+        "Zu einem Grillfest im Garten"
       ],
       "answer": 2
     }

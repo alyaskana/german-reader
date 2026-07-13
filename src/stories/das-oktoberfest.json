@@ -242,31 +242,31 @@
   },
   "quiz": [
     {
-      "q": "Wohin fährt Tom zum ersten Mal?",
+      "q": "Was trägt Lukas auf dem Oktoberfest?",
       "options": [
-        "Nach Berlin",
-        "Nach München zum Oktoberfest",
-        "Nach Spanien"
+        "ein blaues Dirndl",
+        "eine Lederhose und einen grünen Hut",
+        "einen weißen Anzug"
       ],
       "answer": 1
     },
     {
-      "q": "Warum ist Tom im Zelt plötzlich allein?",
+      "q": "Warum kann Tom Mia nicht anrufen?",
       "options": [
-        "Er hat die Gruppe verloren",
-        "Seine Freunde sind nach Hause gegangen",
-        "Er wollte allein sein"
+        "Sein Handy-Akku ist leer",
+        "Er hat kein Handy dabei",
+        "Er kennt ihre Nummer nicht"
       ],
       "answer": 0
     },
     {
-      "q": "Wer hilft Tom, als er verloren ist?",
+      "q": "Wer hilft Tom, als er allein ist?",
       "options": [
-        "Der Kellner",
-        "Ein älterer Mann und seine Familie",
-        "Ein Polizist"
+        "Der Kellner im Zelt",
+        "Seine Kollegen Jonas und Lukas",
+        "Ein älterer Mann und seine Familie"
       ],
-      "answer": 1
+      "answer": 2
     }
   ]
 }

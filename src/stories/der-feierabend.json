@@ -165,29 +165,29 @@
   },
   "quiz": [
     {
-      "q": "Was machen Toms Kollegen um 17 Uhr?",
+      "q": "Was machen Toms Kollegen um genau 17 Uhr?",
       "options": [
-        "Sie gehen nach Hause",
-        "Sie arbeiten weiter",
-        "Sie kochen im Büro"
+        "Sie hören auf und gehen nach Hause",
+        "Sie kochen zusammen im Büro",
+        "Sie fangen neue Arbeit an"
       ],
       "answer": 0
     },
     {
-      "q": "Warum bleibt Tom am ersten Tag länger im Büro?",
+      "q": "Warum ist Tom am nächsten Morgen so müde?",
       "options": [
-        "Der Chef sagt es ihm",
-        "Er will fleißig sein",
-        "Er hat viel zu tun mit den Kollegen"
+        "Er hat am Abend lange gefeiert",
+        "Er ist zwei Stunden länger geblieben",
+        "Er konnte zu Hause nicht schlafen"
       ],
       "answer": 1
     },
     {
-      "q": "Was sagt der Chef über den Feierabend?",
+      "q": "Was macht Tom, nachdem der Chef mit ihm gesprochen hat?",
       "options": [
-        "Man soll lange arbeiten",
-        "Man muss am Abend zurückkommen",
-        "Nach der Arbeit soll man sich erholen"
+        "Er arbeitet wieder länger als die anderen",
+        "Er bleibt allein im leeren Büro",
+        "Er geht mit den Kollegen in eine Kneipe"
       ],
       "answer": 2
     }
