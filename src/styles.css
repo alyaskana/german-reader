@@ -753,32 +753,49 @@ button {
 .feedback-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 .feedback-btn {
-  padding: 12px 20px;
-  border-radius: 999px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-  font-size: 0.9rem;
+  flex: 1;
+  max-width: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 4px;
+  font-size: 0.95rem;
   font-weight: 700;
-  transition: transform 0.12s, box-shadow 0.18s;
+  color: var(--ink-soft);
+  transition: transform 0.12s, color 0.15s;
 }
 
 .feedback-btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
 }
 
 .feedback-btn.chosen {
-  background: var(--accent);
-  color: var(--on-accent);
-  box-shadow: 0 6px 16px rgba(245, 166, 35, 0.35);
+  color: var(--ink);
 }
 
 .feedback-emoji {
-  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  transition: background 0.15s, box-shadow 0.18s;
+}
+
+.feedback-btn.chosen .feedback-emoji {
+  background: var(--accent-wash);
+  box-shadow: 0 4px 14px rgba(245, 166, 35, 0.28);
+}
+
+.feedback-emoji .reaction {
+  width: 44px;
+  height: 44px;
 }
 
 /* ---------- word list ---------- */
@@ -1199,8 +1216,8 @@ button {
     font-size: 1.14rem;
   }
 
-  .feedback-btn {
-    padding: 11px 16px;
+  .feedback-buttons {
+    gap: 10px;
   }
 }
 .import-hint { margin-top: 12px; margin-bottom: 0; font-size: 0.85rem; }
@@ -1335,12 +1352,7 @@ button {
   height: 100%;
 }
 
-.feedback-emoji .reaction {
-  width: 34px;
-  height: 34px;
-}
-
 .story-status.read .reaction {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
