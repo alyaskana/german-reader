@@ -61,15 +61,20 @@ export default function App() {
     [allStories, feedback, lastStoryId],
   )
 
-  // Opening a story counts toward the reading streak and sets the resume point.
+  // Opening a story sets the resume point for "continue reading".
   useEffect(() => {
     if (route.screen !== 'story') return
     const opened = allStories.find((s) => s.id === route.id)
     if (!opened) return
-    setActivity(recordActivity())
     setLastStoryId(opened.id)
     setLastStoryIdState(opened.id)
   }, [route, allStories])
+
+  // Rating a story marks it read: updates feedback and counts toward the streak.
+  function rateStory(fb: Record<string, Feedback>) {
+    setFeedback(fb)
+    setActivity(recordActivity())
+  }
 
   // Cross-device sync: merge remote state on load and (debounced) after changes.
   function applySync(data: SyncData) {
@@ -212,7 +217,7 @@ export default function App() {
             words={words}
             onWordsChange={setWords}
             feedback={feedback[story.id]}
-            onFeedbackChange={setFeedback}
+            onFeedbackChange={rateStory}
             onBack={() =>
               go(story.collection ? `collection/${story.collection}` : story.custom ? 'collection/meine' : '')
             }
