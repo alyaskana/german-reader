@@ -29,9 +29,9 @@ interface ActiveWord {
 }
 
 const FEEDBACK_OPTIONS: { value: Feedback; label: string }[] = [
-  { value: 'easy', label: 'Легко' },
-  { value: 'ok', label: 'Норм' },
-  { value: 'hard', label: 'Сложно' },
+  { value: 'easy', label: 'Leicht' },
+  { value: 'ok', label: 'Mittel' },
+  { value: 'hard', label: 'Schwer' },
 ]
 
 export function StoryReader({
