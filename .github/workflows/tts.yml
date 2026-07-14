@@ -1,0 +1,61 @@
+name: Озвучка историй (TTS)
+
+# Прогоняет scripts/tts.mjs на раннере GitHub (там сеть к OpenAI открыта),
+# коммитит новые mp3 в main → это триггерит деплой.
+# Ключ хранится в секрете репозитория OPENAI_API_KEY, в чат/код не попадает.
+#
+# Как добавить ключ (один раз):
+#   Settings → Secrets and variables → Actions → New repository secret
+#   Name: OPENAI_API_KEY   Value: sk-...
+# Запуск: вкладка Actions → «Озвучка историй (TTS)» → Run workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      story:
+        description: 'ID истории (пусто = все ещё не озвученные). Напр.: im-cafe'
+        required: false
+        default: ''
+      voice:
+        description: 'Голос (marin, coral, sage, nova, alloy…)'
+        required: false
+        default: 'marin'
+      force:
+        description: 'Перегенерить уже озвученные абзацы'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tts
+  cancel-in-progress: false
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Сгенерировать аудио
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TTS_VOICE: ${{ inputs.voice }}
+        run: node scripts/tts.mjs ${{ inputs.story }} ${{ inputs.force && '--force' || '' }}
+      - name: Закоммитить аудио
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/audio
+          if git diff --cached --quiet; then
+            echo "Нет новых mp3 — коммитить нечего."
+          else
+            git commit -m "Озвучка историй (TTS)"
+            git push
+          fi

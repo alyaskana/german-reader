@@ -20,11 +20,9 @@ const STORIES_DIR = join(ROOT, 'src', 'stories')
 const OUT_DIR = join(ROOT, 'public', 'audio')
 
 // ── настройки озвучки (можно переопределить через env) ──────────────────────
-const VOICE = process.env.TTS_VOICE || 'alloy' // alloy echo fable onyx nova shimmer coral sage ash ballad
+const VOICE = process.env.TTS_VOICE || 'marin' // marin cedar alloy echo fable onyx nova shimmer coral sage ash ballad
 const MODEL = process.env.TTS_MODEL || 'gpt-4o-mini-tts' // или 'tts-1' / 'tts-1-hd'
-const STYLE =
-  process.env.TTS_STYLE ||
-  'Sprich klar, natürlich und in ruhigem Tempo, als freundlicher Erzähler für Deutschlerner (A1–A2). Wörtliche Rede lebendig, aber nicht übertrieben betonen.'
+const STYLE = process.env.TTS_STYLE || 'Sprich langsam und deutlich, freundlich, für Deutschlerner'
 // ────────────────────────────────────────────────────────────────────────────
 
 const KEY = process.env.OPENAI_API_KEY
@@ -33,6 +31,8 @@ if (!KEY) {
   process.exit(1)
 }
 const FORCE = process.argv.includes('--force')
+// позиционные аргументы (не флаги) = фильтр по id истории, напр. `npm run tts -- im-cafe`
+const ONLY = process.argv.slice(2).filter((a) => !a.startsWith('--'))
 
 // {{Wort|перевод}} → Wort ; {{+Teil}} → Teil ; {{Wort}} → Wort
 const MARKER = /\{\{(\+)?([^|{}]+?)(?:\|([^|{}]+))?\}\}/g
@@ -65,12 +65,16 @@ async function tts(text) {
 }
 
 const files = (await readdir(STORIES_DIR)).filter((f) => f.endsWith('.json')).sort()
-const manifest = {}
+// начинаем с существующего манифеста, чтобы частичный прогон не терял озвученные истории
+await mkdir(OUT_DIR, { recursive: true })
+const MANIFEST = join(OUT_DIR, 'manifest.json')
+const manifest = existsSync(MANIFEST) ? JSON.parse(await readFile(MANIFEST, 'utf8')) : {}
 let made = 0
 let chars = 0
 
 for (const f of files) {
   const story = JSON.parse(await readFile(join(STORIES_DIR, f), 'utf8'))
+  if (ONLY.length && !ONLY.some((id) => story.id === id || story.id.includes(id))) continue
   const paras = (story.paragraphs || []).map(plain).filter(Boolean)
   if (!paras.length) continue
   manifest[story.id] = paras.length
@@ -87,8 +91,7 @@ for (const f of files) {
   }
 }
 
-await mkdir(OUT_DIR, { recursive: true })
-await writeFile(join(OUT_DIR, 'manifest.json'), JSON.stringify(manifest))
+await writeFile(MANIFEST, JSON.stringify(manifest))
 
 console.log(
   `\nГотово. Озвучено историй: ${Object.keys(manifest).length}. ` +
