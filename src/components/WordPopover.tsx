@@ -1,7 +1,10 @@
 import { useLayoutEffect, useRef, useState } from 'react'
+import { useWordAudio } from './useWordAudio'
 
 interface Props {
   word: string
+  /** citation form to pronounce (may differ from the shown word for plurals) */
+  playText: string
   /** null → no translation available, offer an external translator link */
   gloss: string | null
   anchor: HTMLElement
@@ -13,8 +16,9 @@ interface Props {
 const MARGIN = 12
 const GAP = 10
 
-export function WordPopover({ word, gloss, anchor, saved, onToggleSave, onClose }: Props) {
+export function WordPopover({ word, playText, gloss, anchor, saved, onToggleSave, onClose }: Props) {
   const ref = useRef<HTMLDivElement>(null)
+  const audio = useWordAudio()
   const [style, setStyle] = useState<{ left: number; top: number; below: boolean; arrow: number }>()
 
   useLayoutEffect(() => {
@@ -53,7 +57,19 @@ export function WordPopover({ word, gloss, anchor, saved, onToggleSave, onClose 
         }
       >
         <div className="popover-text">
-          <strong>{word}</strong>
+          <strong>
+            {audio.has(playText) && (
+              <button
+                type="button"
+                className="popover-play"
+                onClick={() => audio.play(playText)}
+                aria-label="Прослушать слово"
+              >
+                🔊
+              </button>
+            )}
+            {word}
+          </strong>
           <span>{gloss !== null ? gloss : 'перевода нет в этой истории'}</span>
         </div>
         {gloss !== null ? (

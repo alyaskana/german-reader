@@ -129,22 +129,20 @@
     }
   ],
   "nouns": {
-    "ampel": "die",
-    "arm": "der",
-    "auto": "das",
-    "fenster": "das",
-    "hause": "das",
-    "kind": "das",
-    "leute": "die",
-    "mann": "der",
-    "mensch": "der",
-    "mädchen": "das",
-    "nacht": "die",
-    "respekt": "der",
-    "straße": "die",
-    "tag": "der",
-    "uhr": "die",
-    "vorbild": "das",
-    "vorbilder": "die"
+    "ampel": "die Ampel · die Ampeln",
+    "arm": "der Arm · die Arme",
+    "auto": "das Auto · die Autos",
+    "fenster": "das Fenster · die Fenster",
+    "kind": "das Kind · die Kinder",
+    "leute": "die Leute",
+    "mann": "der Mann · die Männer",
+    "mensch": "der Mensch · die Menschen",
+    "mädchen": "das Mädchen · die Mädchen",
+    "respekt": "der Respekt",
+    "straße": "die Straße · die Straßen",
+    "tag": "der Tag · die Tage",
+    "uhr": "die Uhr · die Uhren",
+    "vorbild": "das Vorbild · die Vorbilder",
+    "vorbilder": "das Vorbild · die Vorbilder"
   }
 }

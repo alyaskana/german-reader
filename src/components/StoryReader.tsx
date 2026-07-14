@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
-import { articleForm } from '../lib/nouns'
+import { nounDisplay, nounStudyForm } from '../lib/nouns'
 import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
 import { Quiz } from './Quiz'
@@ -25,7 +25,10 @@ interface ActiveWord {
   key: string
   /** paragraph index + gloss group, to highlight both parts of a split unit */
   groupKey: string | null
+  /** display form shown in the popover (e.g. "die Kinder · das Kind") */
   word: string
+  /** citation form saved to the dictionary / used for audio (e.g. "das Kind") */
+  save: string
   gloss: string | null
   anchor: HTMLElement
 }
@@ -59,14 +62,20 @@ export function StoryReader({
     gloss: string,
     anchor: HTMLElement,
   ) {
-    const label = articleForm(story, unit)
-    setActive((cur) => (cur?.key === key ? null : { key, groupKey, word: label, gloss, anchor }))
+    setActive((cur) =>
+      cur?.key === key
+        ? null
+        : { key, groupKey, word: nounDisplay(story, unit), save: nounStudyForm(story, unit), gloss, anchor },
+    )
   }
 
   function tapPlain(key: string, word: string, anchor: HTMLElement) {
     const gloss = story.dict?.[word.toLowerCase()] ?? null
-    const label = articleForm(story, word)
-    setActive((cur) => (cur?.key === key ? null : { key, groupKey: null, word: label, gloss, anchor }))
+    setActive((cur) =>
+      cur?.key === key
+        ? null
+        : { key, groupKey: null, word: nounDisplay(story, word), save: nounStudyForm(story, word), gloss, anchor },
+    )
   }
 
   return (
@@ -141,9 +150,9 @@ export function StoryReader({
                   word={t.word}
                   gloss={t.gloss}
                   showInline={mode === 'always'}
-                  saved={isSaved(words, articleForm(story, t.unit))}
+                  saved={isSaved(words, nounStudyForm(story, t.unit))}
                   continuation={t.continuation}
-                  learned={learned.has(articleForm(story, t.unit).toLowerCase())}
+                  learned={learned.has(nounStudyForm(story, t.unit).toLowerCase())}
                   active={active?.groupKey === groupKey}
                   onTap={(anchor) => tapGloss(key, groupKey, t.unit, t.gloss, anchor)}
                 />
@@ -180,12 +189,12 @@ export function StoryReader({
       {active && (
         <WordPopover
           word={active.word}
+          playText={active.save}
           gloss={active.gloss}
           anchor={active.anchor}
-          saved={isSaved(words, active.word)}
+          saved={isSaved(words, active.save)}
           onToggleSave={() =>
-            active.gloss !== null &&
-            onWordsChange(toggleWord(active.word, active.gloss, story.id))
+            active.gloss !== null && onWordsChange(toggleWord(active.save, active.gloss, story.id))
           }
           onClose={() => setActive(null)}
         />

@@ -99,16 +99,16 @@
     }
   ],
   "nouns": {
-    "café": "das",
-    "chefin": "die",
-    "daumen": "der",
-    "ende": "das",
-    "fragen": "die",
-    "freund": "der",
-    "job": "der",
-    "morgen": "der",
-    "sorge": "die",
-    "tag": "der",
-    "vorstellungsgespräch": "das"
+    "café": "das Café · die Cafés",
+    "chefin": "die Chefin · die Chefinnen",
+    "daumen": "der Daumen · die Daumen",
+    "ende": "das Ende · die Enden",
+    "fragen": "die Frage · die Fragen",
+    "freund": "der Freund · die Freunde",
+    "job": "der Job · die Jobs",
+    "morgen": "der Morgen · die Morgen",
+    "sorge": "die Sorge · die Sorgen",
+    "tag": "der Tag · die Tage",
+    "vorstellungsgespräch": "das Vorstellungsgespräch · die Vorstellungsgespräche"
   }
 }

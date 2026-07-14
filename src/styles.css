@@ -776,6 +776,19 @@ button {
   white-space: nowrap;
 }
 
+.popover-play {
+  font-size: 0.85rem;
+  margin-right: 6px;
+  vertical-align: baseline;
+  opacity: 0.85;
+  transition: opacity 0.12s, transform 0.12s;
+}
+
+.popover-play:hover {
+  opacity: 1;
+  transform: scale(1.12);
+}
+
 .popover-text span {
   font-size: 0.85rem;
   opacity: 0.75;

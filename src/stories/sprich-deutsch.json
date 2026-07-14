@@ -137,18 +137,18 @@
     }
   ],
   "nouns": {
-    "brötchen": "die",
-    "bäckerei": "die",
-    "café": "das",
-    "freudentanz": "der",
-    "kellner": "der",
-    "leute": "die",
-    "mann": "der",
-    "morgen": "der",
-    "plan": "der",
-    "tag": "der",
-    "tür": "die",
-    "verkäuferin": "die",
-    "wort": "das"
+    "brötchen": "das Brötchen · die Brötchen",
+    "bäckerei": "die Bäckerei · die Bäckereien",
+    "café": "das Café · die Cafés",
+    "freudentanz": "der Freudentanz · die Freudentänze",
+    "kellner": "der Kellner · die Kellner",
+    "leute": "die Leute",
+    "mann": "der Mann · die Männer",
+    "morgen": "der Morgen · die Morgen",
+    "plan": "der Plan · die Pläne",
+    "tag": "der Tag · die Tage",
+    "tür": "die Tür · die Türen",
+    "verkäuferin": "die Verkäuferin · die Verkäuferinnen",
+    "wort": "das Wort · die Wörter"
   }
 }

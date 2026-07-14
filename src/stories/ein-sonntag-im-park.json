@@ -119,21 +119,21 @@
     }
   ],
   "nouns": {
-    "abend": "der",
-    "bruder": "der",
-    "brötchen": "das",
-    "decke": "die",
-    "frisbee": "das",
-    "himmel": "der",
-    "hund": "der",
-    "obst": "das",
-    "park": "der",
-    "picknick": "das",
-    "see": "der",
-    "sonne": "die",
-    "sonntag": "der",
-    "tee": "der",
-    "wasser": "das",
-    "wolke": "die"
+    "abend": "der Abend · die Abende",
+    "bruder": "der Bruder · die Brüder",
+    "brötchen": "das Brötchen · die Brötchen",
+    "decke": "die Decke · die Decken",
+    "frisbee": "das Frisbee · die Frisbees",
+    "himmel": "der Himmel",
+    "hund": "der Hund · die Hunde",
+    "obst": "das Obst",
+    "park": "der Park · die Parks",
+    "picknick": "das Picknick · die Picknicks",
+    "see": "der See · die Seen",
+    "sonne": "die Sonne",
+    "sonntag": "der Sonntag · die Sonntage",
+    "tee": "der Tee",
+    "wasser": "das Wasser",
+    "wolke": "die Wolke · die Wolken"
   }
 }

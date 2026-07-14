@@ -10,6 +10,10 @@ name: Озвучка историй (TTS)
 # Запуск: вкладка Actions → «Озвучка историй (TTS)» → Run workflow.
 
 on:
+  # авто-озвучка: когда в main появляется/меняется история (напр. дневная от Routine)
+  push:
+    branches: [main]
+    paths: ['src/stories/**']
   workflow_dispatch:
     inputs:
       story:

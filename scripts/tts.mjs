@@ -50,10 +50,15 @@ const plain = (s) => s.replace(MARKER, '$2').replace(/\s+/g, ' ').trim()
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
-async function tts(text) {
+// стиль для отдельных слов — как учитель, показывающий произношение
+const WORD_STYLE =
+  process.env.TTS_WORD_STYLE ||
+  'Sprich dieses einzelne deutsche Wort oder diese kurze Wendung langsam und deutlich aus, wie ein Lehrer, der die richtige Aussprache vormacht.'
+
+async function tts(text, style = STYLE) {
   const body = { model: MODEL, voice: VOICE, input: text, response_format: 'mp3' }
   // instructions понимает только gpt-4o-*-tts, для tts-1 их не шлём
-  if (MODEL.startsWith('gpt-4o')) body.instructions = STYLE
+  if (MODEL.startsWith('gpt-4o')) body.instructions = style
 
   for (let attempt = 1; ; attempt++) {
     const res = await fetch('https://api.openai.com/v1/audio/speech', {
@@ -103,10 +108,66 @@ for (const f of files) {
 
 await writeFile(MANIFEST, JSON.stringify(manifest))
 
+// ── озвучка отдельных слов (для попапа) ─────────────────────────────────────
+// slug должен совпадать с wordSlug() в src/lib/audio.ts
+const slugify = (s) =>
+  s
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+// форма для озвучки: у существительных — единственное число (до « · »)
+const studyForm = (surface, citation) =>
+  citation ? citation.split(' · ')[0].trim() : surface
+
+const WORDS_DIR = join(OUT_DIR, 'words')
+await mkdir(WORDS_DIR, { recursive: true })
+const WORDS_MANIFEST = join(WORDS_DIR, 'manifest.json')
+const wordsSet = new Set(existsSync(WORDS_MANIFEST) ? JSON.parse(await readFile(WORDS_MANIFEST, 'utf8')) : [])
+
+// собрать уникальные слова: существительные (словарная форма) + остальной dict
+const wordSpoken = new Map() // slug -> произносимый текст
+for (const f of files) {
+  const story = JSON.parse(await readFile(join(STORIES_DIR, f), 'utf8'))
+  if (ONLY.length && !ONLY.some((id) => story.id === id || story.id.includes(id))) continue
+  const nouns = story.nouns || {}
+  for (const [surface, citation] of Object.entries(nouns)) {
+    const spoken = studyForm(surface, citation)
+    const slug = slugify(spoken)
+    if (slug) wordSpoken.set(slug, spoken)
+  }
+  for (const w of Object.keys(story.dict || {})) {
+    if (nouns[w]) continue // существительное озвучим словарной формой
+    const slug = slugify(w)
+    if (slug && !wordSpoken.has(slug)) wordSpoken.set(slug, w)
+  }
+}
+
+let wmade = 0
+let wchars = 0
+for (const [slug, spoken] of wordSpoken) {
+  const out = join(WORDS_DIR, `${slug}.mp3`)
+  if (existsSync(out) && !FORCE) {
+    wordsSet.add(slug)
+    continue
+  }
+  const buf = await tts(spoken, WORD_STYLE)
+  await writeFile(out, buf)
+  wordsSet.add(slug)
+  wmade++
+  wchars += spoken.length
+  if (wmade % 25 === 0) console.log(`♪ слов озвучено: ${wmade}…`)
+}
+await writeFile(WORDS_MANIFEST, JSON.stringify([...wordsSet].sort()))
+
+const totalChars = chars + wchars
 console.log(
-  `\nГотово. Озвучено историй: ${Object.keys(manifest).length}. ` +
-    `Новых mp3: ${made}, символов синтезировано: ${chars}.`,
+  `\nГотово. Историй: ${Object.keys(manifest).length}, новых mp3 (абзацы): ${made}. ` +
+    `Слов озвучено (новых): ${wmade} из ${wordSpoken.size}.`,
 )
-if (chars) {
-  console.log(`Грубая оценка стоимости этого прогона: ~$${((chars / 1000) * 0.015).toFixed(2)}.`)
+if (totalChars) {
+  console.log(`Символов синтезировано: ${totalChars}. Грубая оценка: ~$${((totalChars / 1000) * 0.015).toFixed(2)}.`)
 }

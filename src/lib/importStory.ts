@@ -71,9 +71,9 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       typeof s.nouns !== 'object' ||
       s.nouns === null ||
       Array.isArray(s.nouns) ||
-      !Object.values(s.nouns).every((v) => v === 'der' || v === 'die' || v === 'das')
+      !Object.values(s.nouns).every((v) => typeof v === 'string')
     )
-      return { error: 'Поле "nouns" должно быть объектом «существительное → der/die/das».' }
+      return { error: 'Поле "nouns" должно быть объектом «существительное → словарная форма».' }
     nouns = Object.fromEntries(
       Object.entries(s.nouns as Record<string, string>).map(([k, v]) => [k.toLowerCase(), v]),
     )
