@@ -22,7 +22,13 @@ const OUT_DIR = join(ROOT, 'public', 'audio')
 // ── настройки озвучки (можно переопределить через env) ──────────────────────
 const VOICE = process.env.TTS_VOICE || 'marin' // marin cedar alloy echo fable onyx nova shimmer coral sage ash ballad
 const MODEL = process.env.TTS_MODEL || 'gpt-4o-mini-tts' // или 'tts-1' / 'tts-1-hd'
-const STYLE = process.env.TTS_STYLE || 'Sprich langsam und deutlich, freundlich, für Deutschlerner'
+const STYLE =
+  process.env.TTS_STYLE ||
+  'Lies wie ein lebendiger Hörbuch-Erzähler für Deutschlerner. Sprich deutlich und ' +
+    'nicht zu schnell, aber mit warmer, natürlicher Betonung – niemals monoton oder ' +
+    'mechanisch. Bei wörtlicher Rede in Anführungszeichen schlüpfe in die Figur und ' +
+    'gib echtes Gefühl hinein (Freude, Überraschung, Entschuldigung, Lächeln), ' +
+    'variiere Tonhöhe und Tempo. Mach kurze, natürliche Pausen an Kommas und Punkten.'
 // ────────────────────────────────────────────────────────────────────────────
 
 const KEY = process.env.OPENAI_API_KEY
