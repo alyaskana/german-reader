@@ -24,11 +24,15 @@ const VOICE = process.env.TTS_VOICE || 'marin' // marin cedar alloy echo fable o
 const MODEL = process.env.TTS_MODEL || 'gpt-4o-mini-tts' // или 'tts-1' / 'tts-1-hd'
 const STYLE =
   process.env.TTS_STYLE ||
-  'Lies wie ein lebendiger Hörbuch-Erzähler für Deutschlerner. Sprich deutlich und ' +
-    'nicht zu schnell, aber mit warmer, natürlicher Betonung – niemals monoton oder ' +
-    'mechanisch. Bei wörtlicher Rede in Anführungszeichen schlüpfe in die Figur und ' +
-    'gib echtes Gefühl hinein (Freude, Überraschung, Entschuldigung, Lächeln), ' +
-    'variiere Tonhöhe und Tempo. Mach kurze, natürliche Pausen an Kommas und Punkten.'
+  'Lies wie ein warmherziger Märchen-Erzähler, der Kindern vorliest – lebendig, ' +
+    'ausdrucksstark und liebevoll, aber deutlich und nicht zu schnell, damit ' +
+    'Deutschlerner alles verstehen. Male Gefühle mit der Stimme aus: bei Wörtern ' +
+    'und Momenten wie lächeln, sich freuen, staunen, seufzen, erschrecken oder sich ' +
+    'entschuldigen wird die Stimme hörbar wärmer, weicher, fröhlicher oder ' +
+    'überraschter – ganz nach Gefühl. Bei wörtlicher Rede schlüpfe voll in die Figur. ' +
+    'Variiere Tonhöhe, Lautstärke und Tempo, mach kleine spannungsvolle Pausen an ' +
+    'Kommas und Punkten. Klinge herzlich und ein bisschen verspielt, wie in einem ' +
+    'Kinderhörbuch.'
 // ────────────────────────────────────────────────────────────────────────────
 
 const KEY = process.env.OPENAI_API_KEY
