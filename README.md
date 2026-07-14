@@ -47,7 +47,7 @@ OPENAI_API_KEY=sk-... TTS_VOICE=nova npm run tts   # другой голос
 OPENAI_API_KEY=sk-... npm run tts -- --force # перегенерить всё заново
 ```
 
-Настройки — вверху `scripts/tts.mjs`: голос (`TTS_VOICE`: alloy/echo/fable/onyx/nova/shimmer/coral/sage…), модель (`TTS_MODEL`, по умолчанию `gpt-4o-mini-tts`), стиль чтения (`TTS_STYLE`). Скрипт пропускает уже озвученные абзацы, поэтому после новых историй его можно просто запустить ещё раз — доозвучит только новое (~$0.015 за 1000 символов). Готовые `mp3` и `public/audio/manifest.json` коммитятся в репо; пуш в `main` их публикует.
+Настройки — вверху `scripts/tts.mjs`: голос (`TTS_VOICE`, по умолчанию `marin`), модель (`TTS_MODEL`, по умолчанию `gpt-4o-mini-tts`), стиль чтения (`TTS_STYLE`, по умолчанию «Sprich langsam und deutlich, freundlich, für Deutschlerner»). Скрипт пропускает уже озвученные абзацы, поэтому после новых историй его можно просто запустить ещё раз — доозвучит только новое (~$0.015 за 1000 символов). Готовые `mp3` и `public/audio/manifest.json` коммитятся в репо; пуш в `main` их публикует.
 
 ## Перенос в отдельный репозиторий
 
