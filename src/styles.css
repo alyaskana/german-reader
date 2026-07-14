@@ -557,6 +557,74 @@ button {
   transform: translateY(-1px);
 }
 
+.listen-toggle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-ink);
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform 0.12s;
+  white-space: nowrap;
+}
+
+.listen-toggle:hover {
+  transform: translateY(-1px);
+}
+
+/* абзац с кнопкой озвучки слева */
+.para {
+  position: relative;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+.para .para-play {
+  position: absolute;
+  left: -6px;
+  top: 0.35em;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--accent-ink);
+  background: var(--surface);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.15s, transform 0.15s, background 0.15s;
+}
+
+.para:hover .para-play,
+.para.speaking .para-play {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* подсветка читаемого сейчас абзаца */
+.para.speaking {
+  background: rgba(245, 166, 35, 0.1);
+}
+
+.para.speaking .para-play {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* на узких экранах кнопка не помещается слева — сдвигаем текст */
+@media (max-width: 640px) {
+  .para {
+    padding-left: 34px;
+  }
+  .para .para-play {
+    left: 0;
+  }
+}
+
 .reader h1 {
   font-family: var(--sans);
   font-size: 2rem;
