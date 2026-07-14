@@ -127,5 +127,24 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "ampel": "die",
+    "arm": "der",
+    "auto": "das",
+    "fenster": "das",
+    "hause": "das",
+    "kind": "das",
+    "leute": "die",
+    "mann": "der",
+    "mensch": "der",
+    "mädchen": "das",
+    "nacht": "die",
+    "respekt": "der",
+    "straße": "die",
+    "tag": "der",
+    "uhr": "die",
+    "vorbild": "das",
+    "vorbilder": "die"
+  }
 }

@@ -156,5 +156,28 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "blumen": "die",
+    "boden": "der",
+    "bus": "der",
+    "deutscher": "der",
+    "flur": "der",
+    "freundin": "die",
+    "fußboden": "der",
+    "füße": "die",
+    "hausschuhe": "die",
+    "küche": "die",
+    "leute": "die",
+    "mal": "das",
+    "paar": "das",
+    "schuhe": "die",
+    "straßenschuhe": "die",
+    "tee": "der",
+    "tür": "die",
+    "uhr": "die",
+    "woche": "die",
+    "wohnung": "die"
+  }
 }

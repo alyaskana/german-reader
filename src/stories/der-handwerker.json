@@ -187,5 +187,38 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "angst": "die",
+    "arbeit": "die",
+    "auto": "das",
+    "entschuldigung": "die",
+    "fenster": "das",
+    "firma": "die",
+    "frau": "die",
+    "handwerker": "der",
+    "haus": "das",
+    "hause": "das",
+    "kaffee": "der",
+    "kollege": "der",
+    "mann": "der",
+    "minute": "die",
+    "minuten": "die",
+    "mittag": "der",
+    "montag": "der",
+    "märchen": "das",
+    "problem": "das",
+    "pünktlichkeit": "die",
+    "stunde": "die",
+    "stunden": "die",
+    "tag": "der",
+    "telefon": "das",
+    "termin": "der",
+    "tür": "die",
+    "uhr": "die",
+    "uhrzeit": "die",
+    "verkehr": "der",
+    "waschmaschine": "die",
+    "wort": "das"
+  }
 }

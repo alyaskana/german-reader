@@ -199,5 +199,34 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "arten": "die",
+    "arzt": "der",
+    "behandlung": "die",
+    "dank": "der",
+    "ende": "das",
+    "familie": "die",
+    "frau": "die",
+    "gehalt": "das",
+    "geld": "das",
+    "hause": "das",
+    "hilfe": "die",
+    "kollege": "der",
+    "kopfschmerzen": "die",
+    "krankenkasse": "die",
+    "menschen": "die",
+    "minuten": "die",
+    "monat": "der",
+    "notfall": "der",
+    "system": "das",
+    "telefon": "das",
+    "termin": "der",
+    "versichertenkarte": "die",
+    "warten": "das",
+    "wartezimmer": "das",
+    "woche": "die",
+    "wochen": "die",
+    "zeit": "die"
+  }
 }

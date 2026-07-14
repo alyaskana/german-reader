@@ -190,5 +190,38 @@
       ],
       "answer": 0
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "bankkonto": "das",
+    "bürgeramt": "das",
+    "bürokratie": "die",
+    "fehler": "der",
+    "formular": "das",
+    "frau": "die",
+    "glück": "das",
+    "hand": "die",
+    "handy": "das",
+    "hause": "das",
+    "kind": "das",
+    "laune": "die",
+    "meldebescheinigung": "die",
+    "mietvertrag": "der",
+    "minuten": "die",
+    "nummer": "die",
+    "papier": "das",
+    "papiere": "die",
+    "pass": "der",
+    "pflicht": "die",
+    "staat": "der",
+    "stift": "der",
+    "stunde": "die",
+    "tag": "der",
+    "termin": "der",
+    "termine": "die",
+    "unterschrift": "die",
+    "weihnachten": "das",
+    "wochen": "die",
+    "wohnung": "die"
+  }
 }

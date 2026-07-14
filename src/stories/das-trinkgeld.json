@@ -201,5 +201,29 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "bar": "die",
+    "betrag": "der",
+    "bier": "das",
+    "café": "das",
+    "cent": "der",
+    "euro": "der",
+    "geld": "das",
+    "geste": "die",
+    "jahr": "das",
+    "kaffee": "der",
+    "kellner": "der",
+    "kellnerin": "die",
+    "kollegin": "die",
+    "kuchen": "der",
+    "prozent": "das",
+    "rechnung": "die",
+    "rest": "der",
+    "service": "der",
+    "summe": "die",
+    "tisch": "der",
+    "trinkgeld": "das",
+    "wochen": "die"
+  }
 }

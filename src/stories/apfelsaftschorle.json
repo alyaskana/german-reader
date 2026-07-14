@@ -148,5 +148,35 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "apfelsaft": "der",
+    "apfelsaftschorle": "die",
+    "biergarten": "der",
+    "blasen": "die",
+    "bruder": "der",
+    "büro": "das",
+    "cola": "die",
+    "durst": "der",
+    "flasche": "die",
+    "glas": "das",
+    "grad": "der",
+    "hause": "das",
+    "kellner": "der",
+    "kollegen": "die",
+    "liter": "der",
+    "millionen": "die",
+    "mineralwasser": "das",
+    "nationalgetränk": "das",
+    "park": "der",
+    "restaurant": "das",
+    "schorle": "die",
+    "schorlen": "die",
+    "sommer": "der",
+    "sonne": "die",
+    "tag": "der",
+    "tisch": "der",
+    "woche": "die",
+    "zug": "der"
+  }
 }

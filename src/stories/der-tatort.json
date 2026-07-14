@@ -202,5 +202,39 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "chips": "die",
+    "ende": "das",
+    "fall": "der",
+    "fernsehen": "das",
+    "fernseher": "der",
+    "fernsehfilm": "der",
+    "fest": "das",
+    "film": "der",
+    "finger": "der",
+    "getränke": "die",
+    "handy": "das",
+    "kommissare": "die",
+    "krimi": "der",
+    "küche": "die",
+    "menschen": "die",
+    "millionen": "die",
+    "mord": "der",
+    "mund": "der",
+    "mörder": "der",
+    "nachbar": "der",
+    "pause": "die",
+    "regel": "die",
+    "sofa": "das",
+    "sonntag": "der",
+    "spannung": "die",
+    "szene": "die",
+    "tatort": "der",
+    "tradition": "die",
+    "täter": "der",
+    "uhr": "die",
+    "viertel": "das",
+    "wort": "das"
+  }
 }

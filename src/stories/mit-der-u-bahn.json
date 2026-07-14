@@ -119,5 +119,27 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "bahn": "die",
+    "bahnsteig": "der",
+    "entschuldigung": "die",
+    "frau": "die",
+    "halt": "der",
+    "linie": "die",
+    "linien": "die",
+    "mal": "das",
+    "menschen": "die",
+    "minuten": "die",
+    "musik": "die",
+    "plan": "der",
+    "rathaus": "das",
+    "rolltreppe": "die",
+    "sitzplatz": "der",
+    "stationen": "die",
+    "stimme": "die",
+    "touristen": "die",
+    "tür": "die",
+    "u-bahn": "die"
+  }
 }

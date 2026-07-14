@@ -123,5 +123,27 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "enkelin": "die",
+    "familie": "die",
+    "freunde": "die",
+    "garten": "der",
+    "grillfest": "das",
+    "hand": "die",
+    "haus": "das",
+    "kartons": "die",
+    "koch": "der",
+    "kuchen": "der",
+    "lehrerin": "die",
+    "nachbarin": "die",
+    "nachbarn": "die",
+    "paar": "das",
+    "sonntag": "der",
+    "stadt": "die",
+    "tee": "der",
+    "umzugswagen": "der",
+    "wohnung": "die",
+    "zeit": "die"
+  }
 }

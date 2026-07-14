@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
+import { articleForm } from '../lib/nouns'
 import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
 import { Quiz } from './Quiz'
@@ -58,12 +59,14 @@ export function StoryReader({
     gloss: string,
     anchor: HTMLElement,
   ) {
-    setActive((cur) => (cur?.key === key ? null : { key, groupKey, word: unit, gloss, anchor }))
+    const label = articleForm(story, unit)
+    setActive((cur) => (cur?.key === key ? null : { key, groupKey, word: label, gloss, anchor }))
   }
 
   function tapPlain(key: string, word: string, anchor: HTMLElement) {
     const gloss = story.dict?.[word.toLowerCase()] ?? null
-    setActive((cur) => (cur?.key === key ? null : { key, groupKey: null, word, gloss, anchor }))
+    const label = articleForm(story, word)
+    setActive((cur) => (cur?.key === key ? null : { key, groupKey: null, word: label, gloss, anchor }))
   }
 
   return (
@@ -138,9 +141,9 @@ export function StoryReader({
                   word={t.word}
                   gloss={t.gloss}
                   showInline={mode === 'always'}
-                  saved={isSaved(words, t.unit)}
+                  saved={isSaved(words, articleForm(story, t.unit))}
                   continuation={t.continuation}
-                  learned={learned.has(t.unit.toLowerCase())}
+                  learned={learned.has(articleForm(story, t.unit).toLowerCase())}
                   active={active?.groupKey === groupKey}
                   onTap={(anchor) => tapGloss(key, groupKey, t.unit, t.gloss, anchor)}
                 />

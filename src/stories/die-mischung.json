@@ -145,5 +145,39 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "abends": "der",
+    "alkohol": "der",
+    "apfelsaft": "der",
+    "bier": "das",
+    "cola": "die",
+    "colaweizen": "das",
+    "ende": "das",
+    "flaschen": "die",
+    "freitagabend": "der",
+    "getränk": "das",
+    "getränke": "die",
+    "gewürzen": "die",
+    "glühwein": "der",
+    "limo": "die",
+    "logik": "die",
+    "mineralwasser": "das",
+    "party": "die",
+    "radler": "der",
+    "regel": "die",
+    "saft": "der",
+    "sommer": "der",
+    "stück": "das",
+    "tisch": "der",
+    "wein": "der",
+    "weinschorle": "die",
+    "weizenbier": "das",
+    "weißwein": "der",
+    "winter": "der",
+    "zitrone": "die",
+    "zitronenlimo": "die",
+    "zucker": "der"
+  }
 }

@@ -16,6 +16,9 @@ export interface Story {
   wordOfDay?: { term: string; gloss: string }
   /** short comprehension quiz shown after the story */
   quiz?: QuizQuestion[]
+  /** definite article for nouns of the text, keyed by lowercased surface form
+   *  (e.g. { "decke": "die", "himmel": "der" }); used to show "die Decke" on tap */
+  nouns?: Record<string, string>
   /** true for stories added by the user via "Добавить историю" */
   custom?: boolean
 }

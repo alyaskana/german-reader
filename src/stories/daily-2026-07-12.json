@@ -131,5 +131,30 @@
       ],
       "answer": 0
     }
-  ]
+  ],
+  "nouns": {
+    "brot": "das",
+    "bruder": "der",
+    "decke": "die",
+    "ferkel": "das",
+    "gast": "der",
+    "glückstag": "der",
+    "himmel": "der",
+    "jacken": "die",
+    "jahres": "das",
+    "kirsche": "die",
+    "kirschen": "die",
+    "käse": "der",
+    "moment": "der",
+    "nachbargarten": "der",
+    "nachmittag": "der",
+    "park": "der",
+    "picknick": "das",
+    "samstag": "der",
+    "schwein": "das",
+    "sommertag": "der",
+    "sonne": "die",
+    "sonnenschirm": "der",
+    "wolken": "die"
+  }
 }

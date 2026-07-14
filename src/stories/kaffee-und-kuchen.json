@@ -168,5 +168,31 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "apfelkuchen": "der",
+    "bauch": "der",
+    "familie": "die",
+    "großmutter": "die",
+    "kaffee": "der",
+    "kuchen": "der",
+    "käsekuchen": "der",
+    "mann": "der",
+    "minuten": "die",
+    "ohr": "das",
+    "oma": "die",
+    "ritual": "das",
+    "sahne": "die",
+    "sonntag": "der",
+    "stunden": "die",
+    "stück": "das",
+    "stücke": "die",
+    "tasse": "die",
+    "teller": "der",
+    "tisch": "der",
+    "torte": "die",
+    "tür": "die",
+    "tüte": "die",
+    "uhr": "die"
+  }
 }

@@ -144,5 +144,38 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "brot": "das",
+    "brötchen": "das",
+    "eier": "die",
+    "familie": "die",
+    "fest": "das",
+    "frühstück": "das",
+    "hobby": "das",
+    "honig": "der",
+    "joghurt": "der",
+    "kaffee": "der",
+    "kino": "das",
+    "käse": "der",
+    "mahlzeit": "die",
+    "marmelade": "die",
+    "minuten": "die",
+    "mutter": "die",
+    "nachbarn": "die",
+    "obst": "das",
+    "pläne": "die",
+    "samstag": "der",
+    "sorten": "die",
+    "stunde": "die",
+    "tassen": "die",
+    "tisch": "der",
+    "toast": "der",
+    "uhr": "die",
+    "vater": "der",
+    "wetter": "das",
+    "woche": "die",
+    "wurst": "die"
+  }
 }

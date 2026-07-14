@@ -132,5 +132,28 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "auto": "das",
+    "fahrrad": "das",
+    "fenster": "das",
+    "freund": "der",
+    "haftpflicht": "die",
+    "haftpflichtversicherung": "die",
+    "handy": "das",
+    "handys": "die",
+    "hund": "der",
+    "kollege": "der",
+    "land": "das",
+    "möbel": "die",
+    "pfütze": "die",
+    "rad": "das",
+    "tag": "der",
+    "versicherung": "die",
+    "versicherungen": "die",
+    "witz": "der",
+    "woche": "die",
+    "wohnung": "die"
+  }
 }

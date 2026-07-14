@@ -173,5 +173,36 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "angst": "die",
+    "brühe": "die",
+    "essig": "der",
+    "familie": "die",
+    "familienessen": "das",
+    "gast": "der",
+    "jahren": "die",
+    "kartoffeln": "die",
+    "kartoffelsalat": "der",
+    "kuchen": "der",
+    "länder": "die",
+    "mayonnaise": "die",
+    "mutter": "die",
+    "norden": "der",
+    "oma": "die",
+    "püree": "das",
+    "salat": "der",
+    "salate": "die",
+    "salaten": "die",
+    "schüsseln": "die",
+    "sieger": "die",
+    "sommertag": "der",
+    "sonntag": "der",
+    "streit": "der",
+    "suppe": "die",
+    "süden": "der",
+    "tisch": "der",
+    "vater": "der",
+    "öl": "das"
+  }
 }

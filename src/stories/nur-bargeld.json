@@ -180,5 +180,41 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "apotheke": "die",
+    "arbeit": "die",
+    "bargeld": "das",
+    "brot": "das",
+    "brötchen": "die",
+    "bäckerei": "die",
+    "bäckereien": "die",
+    "ecke": "die",
+    "euro": "der",
+    "geld": "das",
+    "geldautomat": "der",
+    "geldschein": "der",
+    "geschichte": "die",
+    "hand": "die",
+    "hause": "das",
+    "hunger": "der",
+    "kaffee": "der",
+    "karte": "die",
+    "karten": "die",
+    "kasse": "die",
+    "kioske": "die",
+    "kneipen": "die",
+    "kollegin": "die",
+    "kopf": "der",
+    "kuchen": "der",
+    "könig": "der",
+    "minuten": "die",
+    "problem": "das",
+    "schild": "das",
+    "stück": "das",
+    "tag": "der",
+    "tasche": "die",
+    "verkäuferin": "die"
+  }
 }

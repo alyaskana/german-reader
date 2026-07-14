@@ -146,5 +146,33 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "familie": "die",
+    "gummistiefel": "die",
+    "hause": "das",
+    "jacke": "die",
+    "kinder": "die",
+    "kleidung": "die",
+    "minuten": "die",
+    "mutter": "die",
+    "mütze": "die",
+    "nachricht": "die",
+    "oktober": "der",
+    "pfützen": "die",
+    "regen": "der",
+    "regenjacke": "die",
+    "regenjacken": "die",
+    "rucksack": "der",
+    "sneaker": "die",
+    "socken": "die",
+    "sonne": "die",
+    "stunden": "die",
+    "vater": "der",
+    "wald": "der",
+    "wanderschuhe": "die",
+    "wetter": "das",
+    "wind": "der"
+  }
 }

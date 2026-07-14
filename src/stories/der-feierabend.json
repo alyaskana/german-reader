@@ -191,5 +191,33 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "arbeit": "die",
+    "bier": "das",
+    "büro": "das",
+    "chef": "der",
+    "computer": "der",
+    "ende": "das",
+    "fehler": "der",
+    "feierabend": "der",
+    "geräusch": "das",
+    "hause": "das",
+    "jacke": "die",
+    "kneipe": "die",
+    "kollegen": "die",
+    "kopf": "der",
+    "leben": "das",
+    "mal": "das",
+    "menschen": "die",
+    "minuten": "die",
+    "mitarbeiter": "der",
+    "monat": "der",
+    "morgen": "der",
+    "stunden": "die",
+    "tag": "der",
+    "tasche": "die",
+    "uhr": "die"
+  }
 }

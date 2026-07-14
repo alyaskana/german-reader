@@ -128,5 +128,27 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "apfelkuchen": "der",
+    "buch": "das",
+    "bücher": "die",
+    "café": "das",
+    "cappuccino": "der",
+    "entschuldigung": "die",
+    "fenster": "das",
+    "hund": "der",
+    "hunde": "die",
+    "kaffee": "der",
+    "kellnerin": "die",
+    "kopf": "der",
+    "kuchen": "der",
+    "mann": "der",
+    "problem": "das",
+    "regen": "der",
+    "schoß": "der",
+    "stadt": "die",
+    "stück": "das",
+    "tag": "der"
+  }
 }
