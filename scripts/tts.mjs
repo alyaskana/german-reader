@@ -20,7 +20,7 @@ const STORIES_DIR = join(ROOT, 'src', 'stories')
 const OUT_DIR = join(ROOT, 'public', 'audio')
 
 // ── настройки озвучки (можно переопределить через env) ──────────────────────
-const VOICE = process.env.TTS_VOICE || 'marin' // marin cedar alloy echo fable onyx nova shimmer coral sage ash ballad
+const VOICE = process.env.TTS_VOICE || 'sage' // marin cedar alloy echo fable onyx nova shimmer coral sage ash ballad
 const MODEL = process.env.TTS_MODEL || 'gpt-4o-mini-tts' // или 'tts-1' / 'tts-1-hd'
 const STYLE =
   process.env.TTS_STYLE ||
