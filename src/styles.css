@@ -574,16 +574,23 @@ button {
 }
 
 /* абзац с кнопкой озвучки слева */
+/* кнопка озвучки — отдельная колонка слева, текст рядом (без перекрытия) */
 .para {
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   border-radius: 12px;
   transition: background 0.2s;
 }
 
+.para > p {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .para .para-play {
-  position: absolute;
-  left: -6px;
-  top: 0.35em;
+  flex: 0 0 auto;
+  margin-top: 0.3em;
   width: 30px;
   height: 30px;
   display: flex;
@@ -594,15 +601,13 @@ button {
   background: var(--surface);
   border-radius: 999px;
   box-shadow: var(--shadow);
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.15s, transform 0.15s, background 0.15s;
+  opacity: 0.4;
+  transition: opacity 0.15s, background 0.15s;
 }
 
 .para:hover .para-play,
 .para.speaking .para-play {
   opacity: 1;
-  transform: translateX(0);
 }
 
 /* подсветка читаемого сейчас абзаца */
@@ -613,16 +618,6 @@ button {
 .para.speaking .para-play {
   background: var(--accent);
   color: #fff;
-}
-
-/* на узких экранах кнопка не помещается слева — сдвигаем текст */
-@media (max-width: 640px) {
-  .para {
-    padding-left: 34px;
-  }
-  .para .para-play {
-    left: 0;
-  }
 }
 
 .reader h1 {
