@@ -6,6 +6,7 @@ import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
 import { Quiz } from './Quiz'
 import { ReactionIcon } from './ReactionIcon'
+import { useStoryAudio } from './useStoryAudio'
 import { WordPopover } from './WordPopover'
 
 interface Props {
@@ -48,6 +49,7 @@ export function StoryReader({
   const paragraphs = useMemo(() => story.paragraphs.map(parseParagraph), [story])
   const wordCount = useMemo(() => storyWordCount(story), [story])
   const learned = useMemo(() => learnedSet(words), [words])
+  const audio = useStoryAudio(story)
 
   function tapGloss(
     key: string,
@@ -78,6 +80,16 @@ export function StoryReader({
         >
           {mode === 'always' ? 'Переводы: видны' : 'Переводы: по тапу'}
         </button>
+        {audio.hasAudio && (
+          <button
+            type="button"
+            className="listen-toggle"
+            onClick={audio.toggleAll}
+            title="Озвучить историю целиком"
+          >
+            {audio.isPlaying ? '⏸ Пауза' : '🔊 Слушать'}
+          </button>
+        )}
       </header>
 
       <h1>{story.title}</h1>
@@ -89,7 +101,18 @@ export function StoryReader({
 
       <div className="text">
         {paragraphs.map((tokens, pi) => (
-          <p key={pi}>
+          <div key={pi} className={`para${audio.current === pi ? ' speaking' : ''}`}>
+            {audio.hasAudio && (
+              <button
+                type="button"
+                className="para-play"
+                onClick={() => audio.playParagraph(pi)}
+                aria-label="Озвучить абзац"
+              >
+                {audio.current === pi ? '⏸' : '▶'}
+              </button>
+            )}
+            <p>
             {tokens.map((t, ti) => {
               const key = `${pi}:${ti}`
               if (t.type === 'text') {
@@ -123,7 +146,8 @@ export function StoryReader({
                 />
               )
             })}
-          </p>
+            </p>
+          </div>
         ))}
       </div>
 
