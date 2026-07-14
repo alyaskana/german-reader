@@ -137,5 +137,24 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "angst": "die",
+    "augen": "die",
+    "beckenrand": "der",
+    "eis": "das",
+    "freibad": "das",
+    "kinder": "die",
+    "kurs": "der",
+    "rand": "der",
+    "schwierigste": "das",
+    "schwimmkurs": "der",
+    "sommerferien": "die",
+    "sprung": "der",
+    "sprungbrett": "das",
+    "trainerin": "die",
+    "vater": "der",
+    "wasser": "das",
+    "woche": "die"
+  }
 }
