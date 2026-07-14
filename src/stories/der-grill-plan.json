@@ -131,5 +131,33 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "brot": "das",
+    "fleisch": "das",
+    "freunde": "die",
+    "freunden": "die",
+    "getränke": "die",
+    "grad": "der",
+    "grill": "der",
+    "gruppenchat": "der",
+    "idee": "die",
+    "kalender": "der",
+    "kartoffelsalat": "der",
+    "kohle": "die",
+    "liste": "die",
+    "park": "der",
+    "party": "die",
+    "plan": "der",
+    "salat": "der",
+    "salate": "die",
+    "samstag": "der",
+    "see": "der",
+    "sonne": "die",
+    "tage": "die",
+    "uhr": "die",
+    "wetterbericht": "der",
+    "woche": "die",
+    "wochen": "die"
+  }
 }

@@ -158,5 +158,30 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "automaten": "der",
+    "boden": "der",
+    "bon": "der",
+    "ende": "das",
+    "euro": "der",
+    "fahrrad": "das",
+    "flasche": "die",
+    "flaschen": "die",
+    "geld": "das",
+    "hause": "das",
+    "kasse": "die",
+    "küche": "die",
+    "kühlschrank": "der",
+    "limonade": "die",
+    "maschine": "die",
+    "pfand": "das",
+    "pfandautomaten": "der",
+    "supermarkt": "der",
+    "tag": "der",
+    "tasche": "die",
+    "tisch": "der",
+    "wort": "das"
+  }
 }

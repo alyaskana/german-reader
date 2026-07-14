@@ -181,5 +181,27 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "bericht": "der",
+    "büro": "das",
+    "chef": "der",
+    "chefin": "die",
+    "entschuldigung": "die",
+    "fehler": "der",
+    "frau": "die",
+    "freunden": "die",
+    "hand": "die",
+    "kollege": "der",
+    "kollegen": "die",
+    "kollegin": "die",
+    "menschen": "die",
+    "montag": "der",
+    "praktikantin": "die",
+    "problem": "das",
+    "ritual": "das",
+    "tag": "der",
+    "wörter": "die",
+    "zeit": "die"
+  }
 }

@@ -152,5 +152,37 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "angst": "die",
+    "beamer": "der",
+    "büro": "das",
+    "call": "der",
+    "chef": "der",
+    "deadline": "die",
+    "denglisch": "das",
+    "deutsch": "das",
+    "deutschen": "die",
+    "englisch": "das",
+    "engländer": "der",
+    "familie": "die",
+    "feedback": "das",
+    "file": "das",
+    "handy": "das",
+    "homeoffice": "das",
+    "kollegin": "die",
+    "kunden": "der",
+    "leute": "die",
+    "lieblingswort": "das",
+    "mails": "die",
+    "meeting": "das",
+    "nachrichten": "die",
+    "notizbuch": "das",
+    "problem": "das",
+    "projekt": "das",
+    "schlafzimmer": "das",
+    "update": "das",
+    "wörter": "die"
+  }
 }

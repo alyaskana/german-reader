@@ -162,5 +162,29 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "büro": "das",
+    "deutschen": "die",
+    "erste": "der",
+    "job": "der",
+    "kollegen": "die",
+    "meeting": "das",
+    "minute": "die",
+    "minuten": "die",
+    "montag": "der",
+    "nachricht": "die",
+    "pause": "die",
+    "punkt": "der",
+    "raum": "der",
+    "regel": "die",
+    "stunde": "die",
+    "tag": "der",
+    "telefon": "das",
+    "tisch": "der",
+    "tür": "die",
+    "uhr": "die",
+    "viertel": "das",
+    "wecker": "der"
+  }
 }

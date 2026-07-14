@@ -191,5 +191,37 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "april": "der",
+    "bauer": "der",
+    "bauern": "der",
+    "bissen": "der",
+    "butter": "die",
+    "büro": "das",
+    "foto": "das",
+    "frühling": "der",
+    "gemüse": "das",
+    "handy": "das",
+    "hause": "das",
+    "hof": "der",
+    "jahr": "das",
+    "kartoffeln": "die",
+    "kilo": "das",
+    "küche": "die",
+    "land": "das",
+    "lebens": "das",
+    "menschen": "die",
+    "restaurant": "das",
+    "schinken": "der",
+    "schlange": "die",
+    "spargel": "der",
+    "spargelzeit": "die",
+    "stunde": "die",
+    "teller": "der",
+    "thema": "das",
+    "tisch": "der",
+    "wochenende": "das",
+    "wort": "das"
+  }
 }

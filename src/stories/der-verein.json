@@ -188,5 +188,36 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "beitrag": "der",
+    "formular": "das",
+    "formulare": "die",
+    "frau": "die",
+    "garten": "der",
+    "gartenzwerge": "die",
+    "geduld": "die",
+    "idee": "die",
+    "jahre": "die",
+    "kleingartenverein": "der",
+    "menschen": "die",
+    "minuten": "die",
+    "mitglied": "das",
+    "namen": "der",
+    "paragrafen": "die",
+    "protokoll": "das",
+    "rasen": "der",
+    "regeln": "die",
+    "satzung": "die",
+    "schild": "das",
+    "stunde": "die",
+    "tisch": "der",
+    "treffen": "das",
+    "verein": "der",
+    "vorsitzende": "der",
+    "vorstand": "der",
+    "warteliste": "die",
+    "witz": "der",
+    "zaun": "der"
+  }
 }

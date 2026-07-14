@@ -197,5 +197,39 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "baum": "der",
+    "becher": "der",
+    "buden": "die",
+    "dezember": "der",
+    "farben": "die",
+    "finger": "die",
+    "geld": "das",
+    "glühwein": "der",
+    "himmel": "der",
+    "hände": "die",
+    "idee": "die",
+    "lebkuchen": "der",
+    "lichter": "die",
+    "mal": "das",
+    "mandeln": "die",
+    "mann": "der",
+    "menschen": "die",
+    "musik": "die",
+    "pfand": "das",
+    "platz": "der",
+    "souvenir": "das",
+    "stadt": "die",
+    "stand": "der",
+    "ständen": "die",
+    "tassen": "die",
+    "theke": "die",
+    "tisch": "der",
+    "weihnachtsmann": "der",
+    "weihnachtsmarkt": "der",
+    "winter": "der",
+    "wort": "das",
+    "zimt": "der"
+  }
 }

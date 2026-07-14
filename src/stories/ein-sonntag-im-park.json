@@ -117,5 +117,23 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "bruder": "der",
+    "brötchen": "das",
+    "decke": "die",
+    "frisbee": "das",
+    "himmel": "der",
+    "hund": "der",
+    "obst": "das",
+    "park": "der",
+    "picknick": "das",
+    "see": "der",
+    "sonne": "die",
+    "sonntag": "der",
+    "tee": "der",
+    "wasser": "das",
+    "wolke": "die"
+  }
 }

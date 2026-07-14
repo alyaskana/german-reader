@@ -122,5 +122,30 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "brot": "das",
+    "eier": "die",
+    "einkaufsliste": "die",
+    "einkaufswagen": "der",
+    "entschuldigung": "die",
+    "euro": "der",
+    "freunde": "die",
+    "gang": "der",
+    "gemüse": "das",
+    "handy": "das",
+    "karte": "die",
+    "kasse": "die",
+    "käse": "der",
+    "kühlregal": "das",
+    "milch": "die",
+    "pasta": "die",
+    "samstag": "der",
+    "schlange": "die",
+    "supermarkt": "der",
+    "tüte": "die",
+    "verkäufer": "der",
+    "zwiebeln": "die"
+  }
 }

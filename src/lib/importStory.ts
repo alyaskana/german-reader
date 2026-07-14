@@ -65,6 +65,20 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
     )
   }
 
+  let nouns: Record<string, string> | undefined
+  if (s.nouns !== undefined) {
+    if (
+      typeof s.nouns !== 'object' ||
+      s.nouns === null ||
+      Array.isArray(s.nouns) ||
+      !Object.values(s.nouns).every((v) => v === 'der' || v === 'die' || v === 'das')
+    )
+      return { error: 'Поле "nouns" должно быть объектом «существительное → der/die/das».' }
+    nouns = Object.fromEntries(
+      Object.entries(s.nouns as Record<string, string>).map(([k, v]) => [k.toLowerCase(), v]),
+    )
+  }
+
   const id =
     typeof s.id === 'string' && s.id.trim()
       ? s.id.trim()
@@ -82,6 +96,7 @@ export function parseStoryJson(raw: string): { story: Story } | { error: string 
       level: typeof s.level === 'string' && s.level.trim() ? s.level.trim() : 'A1',
       paragraphs: s.paragraphs as string[],
       dict,
+      nouns,
       cover,
       quiz: parseQuiz(s.quiz),
       custom: true,

@@ -195,5 +195,41 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "abend": "der",
+    "abendessen": "das",
+    "berliner": "die",
+    "bier": "das",
+    "butter": "die",
+    "chips": "die",
+    "ecke": "die",
+    "essen": "das",
+    "geld": "das",
+    "glück": "das",
+    "hause": "das",
+    "heimat": "die",
+    "kaffee": "der",
+    "kasse": "die",
+    "kunden": "die",
+    "kühlschrank": "der",
+    "laden": "der",
+    "leute": "die",
+    "minuten": "die",
+    "mitternacht": "die",
+    "nachbar": "der",
+    "nachbarn": "die",
+    "nacht": "die",
+    "problem": "das",
+    "regalen": "die",
+    "schokolade": "die",
+    "späti": "der",
+    "stadt": "die",
+    "straße": "die",
+    "stück": "das",
+    "supermarkt": "der",
+    "supermärkte": "die",
+    "tag": "der",
+    "zeitungen": "die"
+  }
 }

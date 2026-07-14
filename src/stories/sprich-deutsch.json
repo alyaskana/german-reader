@@ -135,5 +135,20 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "brötchen": "die",
+    "bäckerei": "die",
+    "café": "das",
+    "freudentanz": "der",
+    "kellner": "der",
+    "leute": "die",
+    "mann": "der",
+    "morgen": "der",
+    "plan": "der",
+    "tag": "der",
+    "tür": "die",
+    "verkäuferin": "die",
+    "wort": "das"
+  }
 }

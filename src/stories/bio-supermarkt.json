@@ -191,5 +191,42 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "bauern": "die",
+    "bio-bananen": "die",
+    "bio-eier": "die",
+    "bio-kaffee": "der",
+    "bio-käse": "der",
+    "bio-milch": "die",
+    "bio-produkte": "die",
+    "bio-tomate": "die",
+    "bio-tomaten": "die",
+    "chemie": "die",
+    "deutsche": "die",
+    "discounter": "der",
+    "einkaufskorb": "der",
+    "energie": "die",
+    "euro": "der",
+    "geld": "das",
+    "hause": "das",
+    "kasse": "die",
+    "kinder": "die",
+    "leben": "das",
+    "milch": "die",
+    "nachhaltigkeit": "die",
+    "natur": "die",
+    "obst": "das",
+    "plastiktüten": "die",
+    "preise": "die",
+    "region": "die",
+    "supermarkt": "der",
+    "tag": "der",
+    "tasche": "die",
+    "tiere": "die",
+    "tomaten": "die",
+    "transport": "der",
+    "tüte": "die",
+    "umwelt": "die"
+  }
 }

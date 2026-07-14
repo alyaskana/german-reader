@@ -173,5 +173,35 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "brot": "das",
+    "eier": "die",
+    "geschäfte": "die",
+    "hefe": "die",
+    "idee": "die",
+    "jacke": "die",
+    "kleidung": "die",
+    "kopf": "der",
+    "kühlschrank": "der",
+    "läden": "die",
+    "lärm": "der",
+    "mehl": "das",
+    "milch": "die",
+    "montag": "der",
+    "nachbarn": "die",
+    "ruhe": "die",
+    "ruhetag": "der",
+    "sonntag": "der",
+    "sonntagmorgen": "der",
+    "sonntagsbrot": "das",
+    "spaß": "der",
+    "stunden": "die",
+    "supermarkt": "der",
+    "tag": "der",
+    "teig": "der",
+    "waschmaschine": "die",
+    "wasser": "das",
+    "wohnung": "die"
+  }
 }

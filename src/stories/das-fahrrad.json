@@ -193,5 +193,38 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "arm": "der",
+    "brücke": "die",
+    "büro": "das",
+    "fahrrad": "das",
+    "fuß": "der",
+    "gehweg": "der",
+    "gesicht": "das",
+    "handy": "das",
+    "handzeichen": "das",
+    "helm": "der",
+    "kollege": "der",
+    "kreuzung": "die",
+    "licht": "das",
+    "mal": "das",
+    "mann": "der",
+    "mannes": "der",
+    "park": "der",
+    "problem": "das",
+    "rad": "das",
+    "radfahren": "das",
+    "radfahrer": "die",
+    "radweg": "der",
+    "regeln": "die",
+    "seite": "die",
+    "sonne": "die",
+    "stadt": "die",
+    "straße": "die",
+    "tipps": "die",
+    "unfall": "der",
+    "vorsicht": "die",
+    "weg": "der"
+  }
 }

@@ -97,5 +97,18 @@
       ],
       "answer": 1
     }
-  ]
+  ],
+  "nouns": {
+    "café": "das",
+    "chefin": "die",
+    "daumen": "der",
+    "ende": "das",
+    "fragen": "die",
+    "freund": "der",
+    "job": "der",
+    "morgen": "der",
+    "sorge": "die",
+    "tag": "der",
+    "vorstellungsgespräch": "das"
+  }
 }

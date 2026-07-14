@@ -180,5 +180,40 @@
       ],
       "answer": 2
     }
-  ]
+  ],
+  "nouns": {
+    "angst": "die",
+    "baguettes": "die",
+    "berliner": "der",
+    "brezel": "die",
+    "brezeln": "die",
+    "brot": "das",
+    "brötchen": "das",
+    "bäckerei": "die",
+    "deutsch": "das",
+    "dialekt": "der",
+    "frühstück": "das",
+    "hause": "das",
+    "hunger": "der",
+    "küche": "die",
+    "land": "das",
+    "oma": "die",
+    "samstagmorgen": "der",
+    "schrippe": "die",
+    "schrippen": "die",
+    "semmel": "die",
+    "sorten": "die",
+    "spanisch": "das",
+    "süden": "der",
+    "theke": "die",
+    "tisch": "der",
+    "tüte": "die",
+    "verkäuferin": "die",
+    "vollkorn": "das",
+    "vollkornbrote": "die",
+    "weck": "der",
+    "weißbrot": "das",
+    "wort": "das",
+    "wörter": "die"
+  }
 }
