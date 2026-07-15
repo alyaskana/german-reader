@@ -812,6 +812,19 @@ button {
   color: #fff;
 }
 
+/* на телефоне — кнопку под слово, во всю ширину (удобнее попадать) */
+@media (max-width: 640px) {
+  .popover {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .popover-save {
+    text-align: center;
+    padding: 10px 14px;
+  }
+}
+
 /* ---------- feedback ---------- */
 
 .feedback {
