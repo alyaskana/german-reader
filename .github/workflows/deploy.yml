@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # TTS-Action коммитит аудио через GITHUB_TOKEN — такой пуш не запускает деплой
+  # напрямую, поэтому деплоим после завершения озвучки.
+  workflow_run:
+    workflows: ['Озвучка историй (TTS)']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -17,6 +23,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # при запуске «после TTS» деплоим только если озвучка прошла успешно
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
