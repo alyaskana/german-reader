@@ -171,6 +171,7 @@ export default function App() {
           syncEnabled={Boolean(getSyncToken())}
           streak={streak}
           continueStory={continueStory}
+          hasProgress={Boolean(lastStoryId) || Object.keys(feedback).length > 0}
           dailyStory={daily}
         />
       )}

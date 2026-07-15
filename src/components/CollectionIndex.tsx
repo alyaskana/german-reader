@@ -12,6 +12,8 @@ interface Props {
   syncEnabled: boolean
   streak: number
   continueStory: Story | null
+  /** true once the reader has opened/rated any story — switches the resume label */
+  hasProgress: boolean
   dailyStory: Story | null
 }
 
@@ -24,6 +26,7 @@ export function CollectionIndex({
   syncEnabled,
   streak,
   continueStory,
+  hasProgress,
   dailyStory,
 }: Props) {
   const groups: { collection: Collection; items: Story[] }[] = []
@@ -76,7 +79,9 @@ export function CollectionIndex({
             <img className="continue-cover" src={coverSrc(continueStory.cover)} alt="" />
           )}
           <span className="continue-main">
-            <span className="continue-label">Продолжить чтение</span>
+            <span className="continue-label">
+              {hasProgress ? 'Продолжить чтение' : 'Начать чтение'}
+            </span>
             <span className="continue-title">{continueStory.title}</span>
             <span className="continue-coll">
               {collectionById(continueStory.collection).title}
