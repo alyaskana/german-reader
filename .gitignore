@@ -5,3 +5,8 @@ dist
 *.tsbuildinfo
 .env
 .env.*
+
+# third-party agent skills (installed via `npx skills add`); not app code
+.agents/
+.claude/skills/
+skills-lock.json
