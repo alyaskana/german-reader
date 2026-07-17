@@ -18,8 +18,8 @@
   --shadow-hover: 0 8px 26px rgba(60, 50, 30, 0.13);
   --serif: 'Literata', Georgia, serif;
   --sans: 'Inter', system-ui, sans-serif;
-  /* display serif for titles — warmth + editorial character */
-  --display: 'Fraunces', 'Literata', Georgia, serif;
+  /* display font for titles — rounded, friendly */
+  --display: 'Fredoka', 'Inter', system-ui, sans-serif;
   /* flat pastel panel fills (cycled across story cards) */
   --c1: #fbe3c7;
   --c2: #e3ecd9;
@@ -87,6 +87,30 @@ button:active {
   font-family: var(--display);
   letter-spacing: -0.01em;
   font-optical-sizing: auto;
+}
+
+/* accent UI chrome — labels, chips, tabs, primary buttons (keep own tracking) */
+.app-header nav button,
+.streak-chip,
+.daily-label,
+.continue-label,
+.story-date,
+.collection-de,
+.folder-de,
+.folder-progress-label,
+.back,
+.mode-toggle,
+.listen-toggle,
+.wod-save,
+.popover-save,
+.feedback-btn,
+.grade-btn,
+.generate-btn,
+.word-export-btn,
+.manual-toggle,
+.quiz-title,
+.train-banner strong {
+  font-family: var(--display);
 }
 
 button {
