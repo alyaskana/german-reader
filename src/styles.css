@@ -18,8 +18,8 @@
   --shadow-hover: 0 8px 26px rgba(60, 50, 30, 0.13);
   --serif: 'Literata', Georgia, serif;
   --sans: 'Inter', system-ui, sans-serif;
-  /* display font — Fredoka (latin), Nunito (cyrillic, since Fredoka lacks it) */
-  --display: 'Fredoka', 'Nunito', 'Inter', system-ui, sans-serif;
+  /* display font (reverted to the original UI sans) */
+  --display: 'Inter', system-ui, sans-serif;
   /* flat pastel panel fills (cycled across story cards) */
   --c1: #fbe3c7;
   --c2: #e3ecd9;
@@ -1603,10 +1603,10 @@ button {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   text-align: left;
-  padding: 18px;
-  margin-bottom: 18px;
+  padding: 12px;
+  margin-bottom: 14px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1623,8 +1623,8 @@ button {
 }
 
 .daily-cover {
-  width: 96px;
-  height: 96px;
+  width: 72px;
+  height: 72px;
   flex-shrink: 0;
   object-fit: cover;
   border-radius: var(--radius-sm);
@@ -1639,7 +1639,7 @@ button {
 }
 
 .daily-label {
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -1647,14 +1647,14 @@ button {
 }
 
 .daily-title {
-  font-size: 1.42rem;
+  font-size: 1.12rem;
   font-weight: 800;
   letter-spacing: -0.015em;
   color: var(--ink);
 }
 
 .daily-word {
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   color: var(--ink-soft);
   white-space: nowrap;
   overflow: hidden;
