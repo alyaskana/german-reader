@@ -27,6 +27,13 @@
   --c4: #fbdfd9;
   --c5: #d8ebef;
   --c6: #f9e7b3;
+  /* dark, background-tinted ink for titles on each pastel card */
+  --c1-ink: #6a4519;
+  --c2-ink: #3a4a2a;
+  --c3-ink: #423a5e;
+  --c4-ink: #653832;
+  --c5-ink: #2f4a54;
+  --c6-ink: #5a4715;
 }
 
 * {
@@ -78,6 +85,7 @@ button:active {
 .collection-head h2,
 .reader h1,
 .story-title,
+.folder-title,
 .continue-title,
 .daily-title,
 .generate h2,
@@ -262,6 +270,20 @@ button {
 .collection-index li:nth-child(6n + 4) .folder-card { background: var(--c4); }
 .collection-index li:nth-child(6n + 5) .folder-card { background: var(--c5); }
 .collection-index li:nth-child(6n + 6) .folder-card { background: var(--c6); }
+
+/* title ink tinted to match each card's background (instead of flat near-black) */
+.collection-index li:nth-child(6n + 1) .folder-title,
+.story-list li:nth-child(6n + 1) .story-title { color: var(--c1-ink); }
+.collection-index li:nth-child(6n + 2) .folder-title,
+.story-list li:nth-child(6n + 2) .story-title { color: var(--c2-ink); }
+.collection-index li:nth-child(6n + 3) .folder-title,
+.story-list li:nth-child(6n + 3) .story-title { color: var(--c3-ink); }
+.collection-index li:nth-child(6n + 4) .folder-title,
+.story-list li:nth-child(6n + 4) .story-title { color: var(--c4-ink); }
+.collection-index li:nth-child(6n + 5) .folder-title,
+.story-list li:nth-child(6n + 5) .story-title { color: var(--c5-ink); }
+.collection-index li:nth-child(6n + 6) .folder-title,
+.story-list li:nth-child(6n + 6) .story-title { color: var(--c6-ink); }
 
 /* stacked "pages" peeking out below → looks like a folder/collection */
 .folder-card::before,
@@ -1581,10 +1603,10 @@ button {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   text-align: left;
-  padding: 12px;
-  margin-bottom: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1601,8 +1623,8 @@ button {
 }
 
 .daily-cover {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   flex-shrink: 0;
   object-fit: cover;
   border-radius: var(--radius-sm);
@@ -1617,7 +1639,7 @@ button {
 }
 
 .daily-label {
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -1625,14 +1647,14 @@ button {
 }
 
 .daily-title {
-  font-size: 1.12rem;
+  font-size: 1.42rem;
   font-weight: 800;
   letter-spacing: -0.015em;
   color: var(--ink);
 }
 
 .daily-word {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: var(--ink-soft);
   white-space: nowrap;
   overflow: hidden;
