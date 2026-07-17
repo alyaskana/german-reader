@@ -18,8 +18,8 @@
   --shadow-hover: 0 8px 26px rgba(60, 50, 30, 0.13);
   --serif: 'Literata', Georgia, serif;
   --sans: 'Inter', system-ui, sans-serif;
-  /* display font for titles — rounded, friendly */
-  --display: 'Fredoka', 'Inter', system-ui, sans-serif;
+  /* display font — Fredoka (latin), Nunito (cyrillic, since Fredoka lacks it) */
+  --display: 'Fredoka', 'Nunito', 'Inter', system-ui, sans-serif;
   /* flat pastel panel fills (cycled across story cards) */
   --c1: #fbe3c7;
   --c2: #e3ecd9;
