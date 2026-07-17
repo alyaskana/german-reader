@@ -39,6 +39,11 @@ const FEEDBACK_OPTIONS: { value: Feedback; label: string }[] = [
   { value: 'hard', label: 'Schwer' },
 ]
 
+/** Meaning without the literal gloss: strips a trailing "(букв. …)" part. */
+function idiomMeaning(gloss: string): string {
+  return gloss.replace(/\s*\(\s*букв[^)]*\)\s*$/i, '').trim()
+}
+
 export function StoryReader({
   story,
   mode,
@@ -108,6 +113,26 @@ export function StoryReader({
       <p className="subtitle">
         {story.titleRu} · {story.level} · {wordCount} слов
       </p>
+
+      {story.wordOfDay && (
+        <div className="word-of-day">
+          <div className="wod-text">
+            <span className="wod-term">{story.wordOfDay.term}</span>
+            <span className="wod-gloss">{story.wordOfDay.gloss}</span>
+          </div>
+          <button
+            type="button"
+            className={`wod-save${isSaved(words, story.wordOfDay.term) ? ' is-saved' : ''}`}
+            onClick={() =>
+              onWordsChange(
+                toggleWord(story.wordOfDay!.term, idiomMeaning(story.wordOfDay!.gloss), story.id),
+              )
+            }
+          >
+            {isSaved(words, story.wordOfDay.term) ? '✓ в словах' : '+ в словарь'}
+          </button>
+        </div>
+      )}
 
       {story.cover && <img className="reader-cover" src={coverSrc(story.cover)} alt="" />}
 
