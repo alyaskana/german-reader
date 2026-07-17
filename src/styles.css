@@ -686,6 +686,69 @@ button {
   margin-bottom: 28px;
 }
 
+/* idiom-of-the-day block (daily stories): term + meaning, quick save */
+.word-of-day {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 2px 0 24px;
+  padding: 14px 16px;
+  background: var(--accent-wash);
+  border-radius: var(--radius-sm);
+}
+
+.wod-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.wod-term {
+  font-family: var(--display);
+  font-size: 1.06rem;
+  font-weight: 600;
+  color: var(--accent-ink);
+}
+
+.wod-gloss {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+
+.wod-save {
+  flex-shrink: 0;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: transform 0.12s, background 0.15s;
+}
+
+.wod-save:hover {
+  transform: translateY(-1px);
+}
+
+.wod-save.is-saved {
+  background: var(--accent-strong);
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .word-of-day {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .wod-save {
+    text-align: center;
+  }
+}
+
 .text p {
   font-family: var(--serif);
   font-size: 1.22rem;

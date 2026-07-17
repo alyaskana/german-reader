@@ -60,11 +60,7 @@ export function CollectionIndex({
               📅 История дня{dailyDate(dailyStory.id) ? ` · ${dailyDate(dailyStory.id)}` : ''}
             </span>
             <span className="daily-title">{dailyStory.title}</span>
-            {dailyStory.wordOfDay && (
-              <span className="daily-word">
-                {dailyStory.wordOfDay.term} — {dailyStory.wordOfDay.gloss}
-              </span>
-            )}
+            <span className="daily-word">{dailyStory.titleRu}</span>
           </span>
         </button>
       )}
