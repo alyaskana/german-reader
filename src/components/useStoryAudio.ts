@@ -60,11 +60,9 @@ export function useStoryAudio(story: Story) {
       a.addEventListener('ended', () => {
         if (indexRef.current + 1 < countRef.current) loadAtRef.current(indexRef.current + 1, true)
         else {
-          // finished the story — reset resume position to the start
+          // finished the story — stop where we are (no jump), but resume from
+          // the start next time it's opened
           setPlaying(false)
-          setProgress(0)
-          indexRef.current = 0
-          setIndex(0)
           savePos(storyIdRef.current, 0)
         }
       })
@@ -124,6 +122,7 @@ export function useStoryAudio(story: Story) {
   const toggle = useCallback(() => {
     const a = getAudio()
     if (!a.src) return loadAt(indexRef.current, true) // resume from saved paragraph
+    if (a.ended) return loadAt(0, true) // finished → replay from the start
     if (a.paused) a.play().catch(() => {})
     else a.pause()
   }, [getAudio, loadAt])
