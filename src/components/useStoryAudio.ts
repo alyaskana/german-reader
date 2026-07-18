@@ -1,61 +1,176 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Story } from '../lib/types'
 import { loadAudioManifest, paragraphAudioUrl } from '../lib/audio'
 
-type Playing = { mode: 'single' | 'all'; index: number } | null
-
 /**
- * Управляет воспроизведением озвучки истории (по одному mp3 на абзац).
- * Возвращает состояние для подсветки и методы плей/стоп.
+ * Story narration player: one mp3 per paragraph, played back-to-back.
+ * Real pause/resume (keeps position), prev/next, progress, speed, and
+ * lock-screen controls via the MediaSession API.
  */
 export function useStoryAudio(story: Story) {
-  const [count, setCount] = useState(0) // сколько абзацев озвучено; 0 → аудио нет
-  const [playing, setPlaying] = useState<Playing>(null)
-  const audioRef = useRef<HTMLAudioElement | null>(null)
+  const [count, setCount] = useState(0) // voiced paragraphs; 0 = no audio
+  const [index, setIndex] = useState(0) // currently loaded paragraph
+  const [playing, setPlaying] = useState(false)
+  const [started, setStarted] = useState(false) // has playback begun at all
+  const [progress, setProgress] = useState(0) // 0..1 within current paragraph
+  const [rate, setRateState] = useState(1)
 
-  // сколько абзацев доступно для этой истории
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+  const countRef = useRef(0)
+  const indexRef = useRef(0)
+  const rateRef = useRef(1)
+  countRef.current = count
+  indexRef.current = index
+  rateRef.current = rate
+
+  // lazily create the element and wire listeners once
+  const getAudio = useCallback(() => {
+    if (!audioRef.current) {
+      const a = new Audio()
+      a.addEventListener('play', () => {
+        setPlaying(true)
+        setStarted(true)
+      })
+      a.addEventListener('pause', () => setPlaying(false))
+      a.addEventListener('timeupdate', () =>
+        setProgress(a.duration ? a.currentTime / a.duration : 0),
+      )
+      a.addEventListener('ended', () => {
+        if (indexRef.current + 1 < countRef.current) loadAt(indexRef.current + 1, true)
+        else {
+          setPlaying(false)
+          setProgress(0)
+        }
+      })
+      audioRef.current = a
+    }
+    return audioRef.current
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const loadAt = useCallback(
+    (i: number, autoplay: boolean) => {
+      const a = getAudio()
+      indexRef.current = i
+      setIndex(i)
+      setProgress(0)
+      a.src = paragraphAudioUrl(story.id, i)
+      a.playbackRate = rateRef.current
+      if (autoplay) a.play().catch(() => {})
+    },
+    [getAudio, story.id],
+  )
+
+  // load voiced-paragraph count; reset when the story changes
   useEffect(() => {
     let alive = true
-    setPlaying(null)
+    const a = audioRef.current
+    if (a) {
+      a.pause()
+      a.removeAttribute('src')
+    }
+    setPlaying(false)
+    setStarted(false)
+    setIndex(0)
+    setProgress(0)
+    indexRef.current = 0
     loadAudioManifest().then((m) => {
       if (alive) setCount(m[story.id] ?? 0)
     })
     return () => {
       alive = false
+      audioRef.current?.pause()
     }
   }, [story.id])
 
-  // проигрывание текущего абзаца + переход к следующему в режиме "слушать всё"
-  useEffect(() => {
-    if (!audioRef.current) audioRef.current = new Audio()
-    const a = audioRef.current
-    if (!playing) {
-      a.pause()
-      return
-    }
-    a.src = paragraphAudioUrl(story.id, playing.index)
-    a.play().catch(() => setPlaying(null))
-    const onEnded = () =>
-      setPlaying((p) => {
-        if (!p) return null
-        if (p.mode === 'all' && p.index + 1 < count) return { mode: 'all', index: p.index + 1 }
-        return null
-      })
-    a.addEventListener('ended', onEnded)
-    return () => a.removeEventListener('ended', onEnded)
-  }, [playing, story.id, count])
+  const toggle = useCallback(() => {
+    const a = getAudio()
+    if (!a.src) return loadAt(0, true)
+    if (a.paused) a.play().catch(() => {})
+    else a.pause()
+  }, [getAudio, loadAt])
 
-  // остановить звук при уходе с истории
-  useEffect(() => () => audioRef.current?.pause(), [])
+  const playParagraph = useCallback(
+    (i: number) => {
+      const a = getAudio()
+      if (i === indexRef.current && a.src && !a.paused) a.pause()
+      else loadAt(i, true)
+    },
+    [getAudio, loadAt],
+  )
+
+  const next = useCallback(() => {
+    if (indexRef.current + 1 < countRef.current) loadAt(indexRef.current + 1, true)
+  }, [loadAt])
+
+  const prev = useCallback(() => {
+    const a = getAudio()
+    if (a.currentTime > 2 || indexRef.current === 0) a.currentTime = 0
+    else loadAt(indexRef.current - 1, !a.paused)
+  }, [getAudio, loadAt])
+
+  const setRate = useCallback((r: number) => {
+    setRateState(r)
+    rateRef.current = r
+    if (audioRef.current) audioRef.current.playbackRate = r
+  }, [])
+
+  /** jump across the whole story (0..1) to the matching paragraph */
+  const seekStory = useCallback(
+    (frac: number) => {
+      if (!countRef.current) return
+      const i = Math.min(countRef.current - 1, Math.max(0, Math.floor(frac * countRef.current)))
+      loadAt(i, true)
+    },
+    [loadAt],
+  )
+
+  // lock-screen / hardware controls
+  useEffect(() => {
+    if (!('mediaSession' in navigator) || count === 0) return
+    const ms = navigator.mediaSession
+    try {
+      ms.metadata = new MediaMetadata({
+        title: story.title,
+        artist: 'Lesezeit',
+        album: story.titleRu || 'Немецкие истории',
+      })
+    } catch {
+      /* MediaMetadata may be unavailable */
+    }
+    ms.setActionHandler('play', () => toggle())
+    ms.setActionHandler('pause', () => toggle())
+    ms.setActionHandler('previoustrack', () => prev())
+    ms.setActionHandler('nexttrack', () => next())
+    return () => {
+      ms.setActionHandler('play', null)
+      ms.setActionHandler('pause', null)
+      ms.setActionHandler('previoustrack', null)
+      ms.setActionHandler('nexttrack', null)
+    }
+  }, [story.id, count, toggle, prev, next])
+
+  useEffect(() => {
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = playing ? 'playing' : 'paused'
+  }, [playing])
 
   return {
     hasAudio: count > 0,
-    current: playing?.index ?? null,
-    isPlaying: playing !== null,
-    /** тапнуть по абзацу: играть его / остановить, если уже играет */
-    playParagraph: (i: number) =>
-      setPlaying((p) => (p?.index === i ? null : { mode: 'single', index: i })),
-    /** кнопка "слушать всю историю" / пауза */
-    toggleAll: () => setPlaying((p) => (p ? null : { mode: 'all', index: 0 })),
+    count,
+    index,
+    isPlaying: playing,
+    started,
+    progress,
+    /** progress across the whole story, 0..1 */
+    storyProgress: count ? (index + progress) / count : 0,
+    rate,
+    /** paragraph to highlight in the text (null when not active) */
+    current: started ? index : null,
+    toggle,
+    playParagraph,
+    next,
+    prev,
+    setRate,
+    seekStory,
   }
 }

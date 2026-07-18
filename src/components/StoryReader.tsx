@@ -5,6 +5,7 @@ import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
 import { nounDisplay, nounStudyForm } from '../lib/nouns'
 import { coverSrc } from '../lib/cover'
 import { GlossWord } from './GlossWord'
+import { MiniPlayer } from './MiniPlayer'
 import { Quiz } from './Quiz'
 import { ReactionIcon } from './ReactionIcon'
 import { useStoryAudio } from './useStoryAudio'
@@ -101,7 +102,7 @@ export function StoryReader({
           <button
             type="button"
             className="listen-toggle"
-            onClick={audio.toggleAll}
+            onClick={audio.toggle}
             title="Озвучить историю целиком"
           >
             {audio.isPlaying ? '⏸ Пауза' : '🔊 Слушать'}
@@ -146,7 +147,7 @@ export function StoryReader({
                 onClick={() => audio.playParagraph(pi)}
                 aria-label="Озвучить абзац"
               >
-                {audio.current === pi ? '⏸' : '▶'}
+                {audio.current === pi && audio.isPlaying ? '⏸' : '▶'}
               </button>
             )}
             <p>
@@ -224,6 +225,8 @@ export function StoryReader({
           onClose={() => setActive(null)}
         />
       )}
+
+      <MiniPlayer audio={audio} />
     </article>
   )
 }
