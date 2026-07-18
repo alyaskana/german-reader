@@ -2,6 +2,25 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Story } from '../lib/types'
 import { loadAudioManifest, paragraphAudioUrl } from '../lib/audio'
 
+// remember the last-played paragraph per story, to resume later
+const POS_KEY = 'gr.audioPos'
+function loadPos(id: string): number {
+  try {
+    return JSON.parse(localStorage.getItem(POS_KEY) || '{}')[id] ?? 0
+  } catch {
+    return 0
+  }
+}
+function savePos(id: string, i: number) {
+  try {
+    const m = JSON.parse(localStorage.getItem(POS_KEY) || '{}')
+    m[id] = i
+    localStorage.setItem(POS_KEY, JSON.stringify(m))
+  } catch {
+    /* ignore quota / private mode */
+  }
+}
+
 /**
  * Story narration player: one mp3 per paragraph, played back-to-back.
  * Real pause/resume (keeps position), prev/next, progress, speed, and
@@ -19,9 +38,12 @@ export function useStoryAudio(story: Story) {
   const countRef = useRef(0)
   const indexRef = useRef(0)
   const rateRef = useRef(1)
+  const storyIdRef = useRef(story.id)
+  const loadAtRef = useRef<(i: number, autoplay: boolean) => void>(() => {})
   countRef.current = count
   indexRef.current = index
   rateRef.current = rate
+  storyIdRef.current = story.id
 
   // lazily create the element and wire listeners once
   const getAudio = useCallback(() => {
@@ -36,10 +58,14 @@ export function useStoryAudio(story: Story) {
         setProgress(a.duration ? a.currentTime / a.duration : 0),
       )
       a.addEventListener('ended', () => {
-        if (indexRef.current + 1 < countRef.current) loadAt(indexRef.current + 1, true)
+        if (indexRef.current + 1 < countRef.current) loadAtRef.current(indexRef.current + 1, true)
         else {
+          // finished the story — reset resume position to the start
           setPlaying(false)
           setProgress(0)
+          indexRef.current = 0
+          setIndex(0)
+          savePos(storyIdRef.current, 0)
         }
       })
       audioRef.current = a
@@ -51,15 +77,18 @@ export function useStoryAudio(story: Story) {
   const loadAt = useCallback(
     (i: number, autoplay: boolean) => {
       const a = getAudio()
+      const id = storyIdRef.current
       indexRef.current = i
       setIndex(i)
       setProgress(0)
-      a.src = paragraphAudioUrl(story.id, i)
+      a.src = paragraphAudioUrl(id, i)
       a.playbackRate = rateRef.current
+      savePos(id, i)
       if (autoplay) a.play().catch(() => {})
     },
-    [getAudio, story.id],
+    [getAudio],
   )
+  loadAtRef.current = loadAt
 
   // load voiced-paragraph count; reset when the story changes
   useEffect(() => {
@@ -69,13 +98,22 @@ export function useStoryAudio(story: Story) {
       a.pause()
       a.removeAttribute('src')
     }
+    const saved = loadPos(story.id)
     setPlaying(false)
     setStarted(false)
-    setIndex(0)
+    setIndex(saved)
     setProgress(0)
-    indexRef.current = 0
+    indexRef.current = saved
     loadAudioManifest().then((m) => {
-      if (alive) setCount(m[story.id] ?? 0)
+      if (!alive) return
+      const c = m[story.id] ?? 0
+      setCount(c)
+      // saved position out of range (story changed) → start over
+      if (indexRef.current >= c) {
+        indexRef.current = 0
+        setIndex(0)
+        savePos(story.id, 0)
+      }
     })
     return () => {
       alive = false
@@ -85,7 +123,7 @@ export function useStoryAudio(story: Story) {
 
   const toggle = useCallback(() => {
     const a = getAudio()
-    if (!a.src) return loadAt(0, true)
+    if (!a.src) return loadAt(indexRef.current, true) // resume from saved paragraph
     if (a.paused) a.play().catch(() => {})
     else a.pause()
   }, [getAudio, loadAt])

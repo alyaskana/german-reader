@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Feedback, GlossMode, SavedWord, Story } from '../lib/types'
 import { parseParagraph, splitWords, storyWordCount } from '../lib/parse'
 import { isSaved, learnedSet, setFeedback, toggleWord } from '../lib/storage'
@@ -60,6 +60,13 @@ export function StoryReader({
   const wordCount = useMemo(() => storyWordCount(story), [story])
   const learned = useMemo(() => learnedSet(words), [words])
   const audio = useStoryAudio(story)
+  const paraRefs = useRef<(HTMLDivElement | null)[]>([])
+
+  // follow the narration: scroll the currently-read paragraph into view
+  useEffect(() => {
+    if (audio.current == null) return
+    paraRefs.current[audio.current]?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }, [audio.current])
 
   function tapGloss(
     key: string,
@@ -139,7 +146,13 @@ export function StoryReader({
 
       <div className="text">
         {paragraphs.map((tokens, pi) => (
-          <div key={pi} className={`para${audio.current === pi ? ' speaking' : ''}`}>
+          <div
+            key={pi}
+            ref={(el) => {
+              paraRefs.current[pi] = el
+            }}
+            className={`para${audio.current === pi ? ' speaking' : ''}`}
+          >
             {audio.hasAudio && (
               <button
                 type="button"
