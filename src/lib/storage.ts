@@ -60,6 +60,15 @@ export function removeWord(word: string): SavedWord[] {
   return words
 }
 
+/** Edit only the translation of a saved word (the word itself is the match key). */
+export function editGloss(word: string, gloss: string): SavedWord[] {
+  const words = getWords().map((w) =>
+    w.word.toLowerCase() === word.toLowerCase() ? { ...w, gloss, updatedAt: Date.now() } : w,
+  )
+  write(KEYS.words, words)
+  return words
+}
+
 export function setLearned(word: string, learned: boolean): SavedWord[] {
   const words = getWords().map((w) =>
     w.word.toLowerCase() === word.toLowerCase() ? { ...w, learned, updatedAt: Date.now() } : w,
