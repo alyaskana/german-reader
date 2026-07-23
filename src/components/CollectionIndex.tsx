@@ -58,6 +58,7 @@ export function CollectionIndex({
           <span className="daily-main">
             <span className="daily-label">
               📅 История дня{dailyDate(dailyStory.id) ? ` · ${dailyDate(dailyStory.id)}` : ''}
+              {dailyStory.level ? ` · ${dailyStory.level}` : ''}
             </span>
             <span className="daily-title">{dailyStory.title}</span>
             <span className="daily-word">{dailyStory.titleRu}</span>
@@ -81,6 +82,7 @@ export function CollectionIndex({
             <span className="continue-title">{continueStory.title}</span>
             <span className="continue-coll">
               {collectionById(continueStory.collection).title}
+              {continueStory.level ? ` · ${continueStory.level}` : ''}
             </span>
           </span>
           <span className="continue-arrow" aria-hidden="true">

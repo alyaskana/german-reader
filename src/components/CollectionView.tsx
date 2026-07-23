@@ -60,6 +60,7 @@ export function CollectionView({
                   </span>
                   <span className="story-card-meta">
                     {dailyDate(s.id) && <span className="story-date">{dailyDate(s.id)}</span>}
+                    {s.level && <span className="story-level">{s.level}</span>}
                     <span className="story-words">{storyWordCount(s)} слов</span>
                     {fb && (
                       <span className="story-status read">

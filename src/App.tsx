@@ -156,7 +156,7 @@ export default function App() {
         <header className="app-header">
           <div className="brand">
             <h1>Lesezeit</h1>
-            <p>истории на немецком · A1</p>
+            <p>истории на немецком</p>
           </div>
           <nav>
             <button
