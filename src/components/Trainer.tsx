@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { SavedWord } from '../lib/types'
 import { setLearned } from '../lib/storage'
+import { useWordAudio } from './useWordAudio'
+
+const AUTOPLAY_KEY = 'gr.trainerAutoplay'
 
 interface Props {
   words: SavedWord[]
@@ -19,8 +22,24 @@ export function Trainer({ words, onWordsChange, onBack }: Props) {
   const [idx, setIdx] = useState(0)
   const [revealed, setRevealed] = useState(false)
   const [known, setKnown] = useState(0)
+  const [autoplay, setAutoplay] = useState(() => localStorage.getItem(AUTOPLAY_KEY) !== 'off')
+  const audio = useWordAudio()
 
   const current = words.find((w) => w.word === queue[idx])
+  const canPlay = current ? audio.has(current.word) : false
+
+  function toggleAutoplay() {
+    setAutoplay((a) => {
+      localStorage.setItem(AUTOPLAY_KEY, a ? 'off' : 'on')
+      return !a
+    })
+  }
+
+  // auto-play the word when a new card appears (if enabled and audio exists)
+  useEffect(() => {
+    if (autoplay && current && audio.has(current.word)) audio.play(current.word)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx, autoplay])
 
   function next(markKnown: boolean) {
     if (!current) return
@@ -59,23 +78,45 @@ export function Trainer({ words, onWordsChange, onBack }: Props) {
         <button type="button" className="back" onClick={onBack}>
           ← Мои слова
         </button>
-        <span className="trainer-progress">
-          {idx + 1} / {queue.length}
-        </span>
+        <div className="trainer-head-side">
+          <button
+            type="button"
+            className={`autoplay-toggle${autoplay ? ' on' : ''}`}
+            onClick={toggleAutoplay}
+            title="Автопроигрывание слова при показе карточки"
+          >
+            {autoplay ? '🔊 авто' : '🔊 по тапу'}
+          </button>
+          <span className="trainer-progress">
+            {idx + 1} / {queue.length}
+          </span>
+        </div>
       </header>
 
-      <button
-        type="button"
-        className={`flashcard${revealed ? ' revealed' : ''}`}
-        onClick={() => setRevealed(true)}
-      >
-        <span className="flashcard-word">{current.word}</span>
-        {revealed ? (
-          <span className="flashcard-gloss">{current.gloss}</span>
-        ) : (
-          <span className="flashcard-hint">нажми, чтобы увидеть перевод</span>
+      <div className="flashcard-wrap">
+        <button
+          type="button"
+          className={`flashcard${revealed ? ' revealed' : ''}`}
+          onClick={() => setRevealed(true)}
+        >
+          <span className="flashcard-word">{current.word}</span>
+          {revealed ? (
+            <span className="flashcard-gloss">{current.gloss}</span>
+          ) : (
+            <span className="flashcard-hint">нажми, чтобы увидеть перевод</span>
+          )}
+        </button>
+        {canPlay && (
+          <button
+            type="button"
+            className="flashcard-play"
+            onClick={() => audio.play(current.word)}
+            aria-label="Прослушать слово"
+          >
+            🔊
+          </button>
         )}
-      </button>
+      </div>
 
       {revealed ? (
         <div className="trainer-grades">
