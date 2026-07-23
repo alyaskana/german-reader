@@ -616,6 +616,27 @@ button {
   margin-bottom: 28px;
 }
 
+/* mobile: keep the top bar reachable from anywhere (Назад / вкладки) */
+@media (max-width: 640px) {
+  .app-header,
+  .reader-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: calc(8px + env(safe-area-inset-top, 0px)) 20px 10px;
+    background: var(--bg);
+    box-shadow: 0 4px 12px -6px rgba(60, 50, 30, 0.22);
+  }
+  .app-header {
+    margin-bottom: 22px;
+  }
+  .reader-header {
+    margin-bottom: 20px;
+  }
+}
+
 .back {
   font-size: 0.9rem;
   font-weight: 700;
