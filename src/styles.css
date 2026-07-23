@@ -1225,17 +1225,17 @@ button {
 .autoplay-toggle {
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--accent-ink);
-  background: var(--accent-wash);
+  color: var(--ink-soft);
+  background: var(--bg);
   padding: 6px 12px;
   border-radius: 999px;
   white-space: nowrap;
-  opacity: 0.55;
-  transition: opacity 0.15s, transform 0.12s;
+  transition: background 0.15s, color 0.15s, transform 0.12s;
 }
 
 .autoplay-toggle.on {
-  opacity: 1;
+  color: var(--accent-ink);
+  background: var(--accent-wash);
 }
 
 .autoplay-toggle:active {
