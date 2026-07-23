@@ -12,6 +12,7 @@ import {
   setLastStoryId,
   setMode as persistMode,
 } from './lib/storage'
+import { localDay } from './lib/storage'
 import { computeStreak, dailyStory, nextStory } from './lib/progress'
 import { CollectionIndex } from './components/CollectionIndex'
 import { CollectionView } from './components/CollectionView'
@@ -51,12 +52,27 @@ export default function App() {
   const [mode, setMode] = useState<GlossMode>(getMode)
   const [activity, setActivity] = useState<string[]>(getActivity)
   const [lastStoryId, setLastStoryIdState] = useState<string>(getLastStoryId)
+  const [today, setToday] = useState<string>(localDay)
+
+  // iOS resumes the home-screen app frozen in yesterday's render, so re-read
+  // the date whenever the app returns to the foreground.
+  useEffect(() => {
+    const refresh = () => setToday(localDay())
+    document.addEventListener('visibilitychange', refresh)
+    window.addEventListener('focus', refresh)
+    window.addEventListener('pageshow', refresh)
+    return () => {
+      document.removeEventListener('visibilitychange', refresh)
+      window.removeEventListener('focus', refresh)
+      window.removeEventListener('pageshow', refresh)
+    }
+  }, [])
 
   const allStories = useMemo(() => [...builtinStories, ...customStories], [customStories])
   const learning = words.filter((w) => !w.learned).length
 
-  const streak = useMemo(() => computeStreak(activity), [activity])
-  const daily = useMemo(() => dailyStory(allStories), [allStories])
+  const streak = useMemo(() => computeStreak(activity, today), [activity, today])
+  const daily = useMemo(() => dailyStory(allStories, today), [allStories, today])
   const continueStory = useMemo(
     () => nextStory(allStories, feedback, lastStoryId),
     [allStories, feedback, lastStoryId],
