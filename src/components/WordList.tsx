@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { SavedWord, Story } from '../lib/types'
-import { removeWord, setLearned } from '../lib/storage'
+import { editGloss, removeWord, setLearned } from '../lib/storage'
 import { downloadCsv, wordsToTsv } from '../lib/exportWords'
 
 interface Props {
@@ -12,6 +12,18 @@ interface Props {
 
 export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
   const [copied, setCopied] = useState(false)
+  const [editing, setEditing] = useState<string | null>(null)
+  const [draft, setDraft] = useState('')
+
+  function startEdit(w: SavedWord) {
+    setEditing(w.word)
+    setDraft(w.gloss)
+  }
+  function saveEdit(w: SavedWord) {
+    const g = draft.trim()
+    if (g && g !== w.gloss) onWordsChange(editGloss(w.word, g))
+    setEditing(null)
+  }
 
   async function copyTsv() {
     await navigator.clipboard.writeText(wordsToTsv(words))
@@ -57,26 +69,70 @@ export function WordList({ words, allStories, onWordsChange, onTrain }: Props) {
             <li key={w.word} className="word-row">
               <div className="word-row-text">
                 <strong>{w.word}</strong>
-                <span className="word-gloss">{w.gloss}</span>
+                {editing === w.word ? (
+                  <input
+                    className="word-edit-input"
+                    value={draft}
+                    autoFocus
+                    onChange={(e) => setDraft(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') saveEdit(w)
+                      if (e.key === 'Escape') setEditing(null)
+                    }}
+                  />
+                ) : (
+                  <span className="word-gloss">{w.gloss}</span>
+                )}
                 {story && <span className="word-source">из «{story.title}»</span>}
               </div>
               <div className="word-row-side">
-                <button
-                  type="button"
-                  className={`word-status${w.learned ? ' learned' : ''}`}
-                  onClick={() => onWordsChange(setLearned(w.word, !w.learned))}
-                  title={w.learned ? 'Вернуть в изучение' : 'Отметить знакомым'}
-                >
-                  {w.learned ? '✓ знаю' : 'учу'}
-                </button>
-                <button
-                  type="button"
-                  className="word-remove"
-                  onClick={() => onWordsChange(removeWord(w.word))}
-                  aria-label={`Удалить ${w.word}`}
-                >
-                  ×
-                </button>
+                {editing === w.word ? (
+                  <>
+                    <button
+                      type="button"
+                      className="word-status"
+                      onClick={() => saveEdit(w)}
+                      aria-label="Сохранить перевод"
+                    >
+                      ✓
+                    </button>
+                    <button
+                      type="button"
+                      className="word-remove"
+                      onClick={() => setEditing(null)}
+                      aria-label="Отменить"
+                    >
+                      ×
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      className="word-edit"
+                      onClick={() => startEdit(w)}
+                      aria-label={`Изменить перевод: ${w.word}`}
+                    >
+                      ✎
+                    </button>
+                    <button
+                      type="button"
+                      className={`word-status${w.learned ? ' learned' : ''}`}
+                      onClick={() => onWordsChange(setLearned(w.word, !w.learned))}
+                      title={w.learned ? 'Вернуть в изучение' : 'Отметить знакомым'}
+                    >
+                      {w.learned ? '✓ знаю' : 'учу'}
+                    </button>
+                    <button
+                      type="button"
+                      className="word-remove"
+                      onClick={() => onWordsChange(removeWord(w.word))}
+                      aria-label={`Удалить ${w.word}`}
+                    >
+                      ×
+                    </button>
+                  </>
+                )}
               </div>
             </li>
           )
