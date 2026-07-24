@@ -18,6 +18,10 @@ registerSW({
   },
 })
 
+// iOS Safari ignores user-scalable=no in tabs — block its pinch-zoom gesture.
+// (double-tap zoom and sideways pan are handled by touch-action: pan-y in CSS)
+document.addEventListener('gesturestart', (e) => e.preventDefault())
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />

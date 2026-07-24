@@ -45,6 +45,15 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* app-like touch: vertical scroll only — no pinch-zoom, no double-tap zoom */
+  touch-action: pan-y;
+}
+
+html,
+body {
+  /* no sideways scroll / bounce */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
