@@ -11,9 +11,9 @@
   },
   "cover": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120' preserveAspectRatio='xMidYMid slice'><rect width='200' height='120' fill='#bfe3f2'/><circle cx='170' cy='22' r='16' fill='#f2b84c'/><rect x='0' y='92' width='200' height='28' fill='#9bd66b'/><path d='M20,120 L20,92' stroke='#e0736b' stroke-width='4'/><path d='M20,92 L36,92' stroke='#ffffff' stroke-width='4'/><circle cx='95' cy='60' r='10' fill='#3a3a3a'/><path d='M95,70 L95,92' stroke='#3a3a3a' stroke-width='5' stroke-linecap='round'/><path d='M95,76 L80,88 M95,76 L112,70' stroke='#3a3a3a' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M95,92 L82,110 M95,92 L110,104' stroke='#3a3a3a' stroke-width='5' fill='none' stroke-linecap='round'/><ellipse cx='60' cy='104' rx='6' ry='3' fill='#e0736b'/><ellipse cx='75' cy='108' rx='5' ry='2.5' fill='#e0736b'/><ellipse cx='115' cy='106' rx='5' ry='2.5' fill='#e0736b'/></svg>",
   "paragraphs": [
-    "Es ist ein heißer Julitag mitten in den Sommerferien. Im Park ist heute ein kleines Sommerfest mit einem {{Wettlauf|забег, соревнование по бегу}} für Kinder. Lukas zieht seine {{Laufschuhe|кроссовки для бега}} an und ist schon nervös.",
+    "Es ist ein heißer Julitag mitten in den Sommerferien. Im Park ist heute ein kleines Sommerfest mit einem {{Wettlauf|забег, соревнование по бегу}} für Kinder. Lukas {{zieht|надевает (anziehen)}} seine Laufschuhe {{+an}} und ist schon nervös.",
     "Die Sonne scheint stark, und alle Kinder stehen an der {{Startlinie|линия старта}}. Seine Freundin Emma winkt ihm zu. „Viel Glück!“, ruft sie. Der Trainer {{pfeift|свистит (pfeifen)}}, und der Lauf beginnt.",
-    "Nach wenigen Metern kommt Lukas schon {{ins Schwitzen|начинает потеть от жары и волнения (ins Schwitzen kommen)}}. Die Hitze ist groß, und seine Beine werden müde. Aber er denkt an das kühle Wasser danach und läuft weiter.",
+    "Nach wenigen Metern kommt Lukas schon {{ins Schwitzen|начинает потеть от жары и волнения (ins Schwitzen kommen)}}. Die Hitze ist groß, und seine Beine werden müde. Aber er {{denkt|думает о (denken an)}} {{+an}} das kühle Wasser danach und läuft weiter.",
     "An der letzten Kurve {{überholt|обгоняет (überholen)}} ihn ein anderer Junge. Lukas {{gibt|сдаётся (aufgeben: gibt … auf)}} trotzdem nicht {{+auf}} und rennt so schnell er kann bis zum Ziel. Er wird Dritter, ganz {{außer Atem|запыхавшись, без дыхания}}, aber glücklich.",
     "Emma bringt ihm ein Glas Wasser und ein Eis. „Du warst super!“, sagt sie. Lukas lacht: „Ja, aber ich bin richtig ins Schwitzen gekommen!“ Am Abend feiern alle zusammen mit Musik und leckerem Kuchen."
   ],
@@ -22,7 +22,7 @@
     "abend": "вечер",
     "alle": "все",
     "am": "в (an dem)",
-    "an": "в, у, к (предлог); также: zieht … an — надевает (anziehen)",
+    "an": "на, у, к (предлог)",
     "anderer": "другой",
     "beginnt": "начинается (beginnen)",
     "beine": "ноги (Bein)",
@@ -69,6 +69,7 @@
     "kommt": "приходит; здесь: kommt … ins Schwitzen — начинает потеть (kommen)",
     "kuchen": "пирог, торт",
     "kühle": "прохладный (kühl)",
+    "laufschuhe": "кроссовки для бега (Laufschuh)",
     "kurve": "поворот",
     "lacht": "смеётся (lachen)",
     "lauf": "забег, бег",
@@ -109,7 +110,7 @@
     "werden": "становятся (werden)",
     "wird": "становится (werden)",
     "ziel": "цель, финиш",
-    "zieht": "надевает (anziehen: zieht … an)",
+    "zieht": "надевает (anziehen)",
     "zu": "к",
     "zum": "к (zu dem)",
     "zusammen": "вместе"
