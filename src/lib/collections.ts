@@ -31,6 +31,13 @@ export const collections: Collection[] = [
     subtitle: 'короткие сценки из обычной жизни',
     emoji: '☕',
   },
+  {
+    id: 'abenteuer',
+    title: 'Kleine Abenteuer',
+    titleRu: 'Маленькие приключения',
+    subtitle: 'истории уровня A2 — с прошедшим временем и неожиданным финалом',
+    emoji: '🧭',
+  },
 ]
 
 const byId = new Map(collections.map((c) => [c.id, c]))
